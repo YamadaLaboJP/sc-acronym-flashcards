@@ -1,254 +1,254 @@
 略語,正式名称,一言定義,分類,重要
-NIST,National Institute of Standards and Technology,米国国立標準技術研究所。SP800シリーズを出している,標準・組織,0
-ISO,International Organization for Standardization,国際標準化機構,標準・組織,0
-IEC,International Electrotechnical Commission,国際電気標準会議,標準・組織,0
-IPA,Information-technology Promotion Agency,情報処理推進機構。SC試験を実施している,標準・組織,0
-JPCERT/CC,Japan Computer Emergency Response Team Coordination Center,日本のインシデント対応調整機関,標準・組織,0
-NISC,National center of Incident readiness and Strategy for Cybersecurity,内閣サイバーセキュリティセンター,標準・組織,0
-CRYPTREC,Cryptography Research and Evaluation Committees,電子政府推奨暗号リストを作る評価プロジェクト,標準・組織,0
-CSIRT,Computer Security Incident Response Team,組織内のインシデント対応チーム,標準・組織,1
-ISMS,Information Security Management System,情報セキュリティマネジメントシステム（ISO/IEC 27001）,標準・組織,0
-CC,Common Criteria,IT製品のセキュリティを評価する国際基準（ISO/IEC 15408）,標準・組織,0
-OWASP,Open Worldwide Application Security Project,Webアプリのセキュリティ向上を目指すコミュニティ,標準・組織,0
-PCI DSS,Payment Card Industry Data Security Standard,クレジットカード会員データを守る業界基準,標準・組織,0
-SCAP,Security Content Automation Protocol,脆弱性管理を自動化するための標準仕様群,SCAP,0
-CVE,Common Vulnerabilities and Exposures,個々の脆弱性に付ける共通の識別番号,SCAP,0
-CVSS,Common Vulnerability Scoring System,脆弱性の深刻度を評価する共通指標,SCAP,1
-CWE,Common Weakness Enumeration,脆弱性の種類を分類した共通一覧,SCAP,0
-CPE,Common Platform Enumeration,製品・プラットフォームを表す共通の名前,SCAP,0
-XCCDF,eXtensible Configuration Checklist Description Format,セキュリティ設定チェックリストを書くための形式,SCAP,0
-OVAL,Open Vulnerability and Assessment Language,脆弱性や設定状態の検査方法を書く言語,SCAP,0
-JVN,Japan Vulnerability Notes,日本の脆弱性対策情報ポータル,SCAP,0
-AES,Advanced Encryption Standard,現在標準の共通鍵ブロック暗号,暗号,0
-RSA,Rivest–Shamir–Adleman,素因数分解の難しさを利用した公開鍵暗号,暗号,0
-ECC,Elliptic Curve Cryptography,楕円曲線を使う公開鍵暗号。短い鍵で高い強度が出る,暗号,0
-SHA,Secure Hash Algorithm,安全なハッシュ関数のシリーズ（SHA-2、SHA-3など）,暗号,0
-HMAC,Hash-based Message Authentication Code,ハッシュ関数を使うメッセージ認証コード,暗号,0
-PKI,Public Key Infrastructure,公開鍵証明書で信頼を成り立たせる基盤,暗号,0
-CA,Certificate Authority,デジタル証明書を発行する認証局,暗号,0
-RA,Registration Authority,証明書申請者の本人確認を行う登録局,暗号,0
-CRL,Certificate Revocation List,失効した証明書の一覧,暗号,0
-OCSP,Online Certificate Status Protocol,証明書が失効していないかをその場で確認するプロトコル,暗号,0
-TLS,Transport Layer Security,通信を暗号化するプロトコル（SSLの後継）,暗号,0
-HSM,Hardware Security Module,暗号鍵を安全に保管・処理する専用ハードウェア,暗号,0
-MFA,Multi-Factor Authentication,複数の要素を組み合わせる多要素認証,認証・認可,0
-OTP,One-Time Password,一度だけ使えるパスワード,認証・認可,0
-TOTP,Time-based One-Time Password,時刻をもとに生成するOTP,認証・認可,0
-SSO,Single Sign-On,1回の認証で複数のサービスを使えるしくみ,認証・認可,0
-SAML,Security Assertion Markup Language,XMLで認証情報を受け渡すSSOの標準,認証・認可,0
-OAuth,Open Authorization,権限の委譲（認可）を行う標準,認証・認可,0
-OIDC,OpenID Connect,OAuth 2.0の上で認証を行うしくみ,認証・認可,0
-FIDO,Fast IDentity Online,パスワードを使わない認証の標準,認証・認可,0
-Kerberos,Kerberos,チケットを使うネットワーク認証方式,認証・認可,0
-LDAP,Lightweight Directory Access Protocol,ディレクトリサービスへのアクセス用プロトコル,認証・認可,0
-RADIUS,Remote Authentication Dial-In User Service,ネットワークの認証・認可・課金（UDP）,認証・認可,0
-TACACS+,Terminal Access Controller Access-Control System Plus,AAAを個別に扱い通信全体を暗号化する（TCP）,認証・認可,0
-WAF,Web Application Firewall,Webアプリへの攻撃を防ぐファイアウォール,ネットワーク・防御,0
-IDS,Intrusion Detection System,侵入を検知するシステム,ネットワーク・防御,0
-IPS,Intrusion Prevention System,侵入を検知して遮断するシステム,ネットワーク・防御,0
-UTM,Unified Threat Management,複数のセキュリティ機能をまとめた統合脅威管理装置,ネットワーク・防御,1
-DMZ,DeMilitarized Zone,内部と外部の間に置く公開サーバ用の緩衝ネットワーク,ネットワーク・防御,0
-VPN,Virtual Private Network,暗号化して作る仮想的な専用線,ネットワーク・防御,0
-IPsec,IP Security,IP層で暗号化と認証を行うプロトコル,ネットワーク・防御,0
-SSH,Secure Shell,暗号化されたリモートログイン,ネットワーク・防御,0
-SIEM,Security Information and Event Management,ログを集めて相関分析し脅威を見つけるしくみ,監視・対応,1
-SOC,Security Operation Center,セキュリティを常時監視する組織,監視・対応,1
-EDR,Endpoint Detection and Response,端末上の脅威を検知して対応する製品,監視・対応,1
-NDR,Network Detection and Response,ネットワーク通信を分析して脅威を検知・対応する製品,監視・対応,0
-NDR,Non-Delivery Report,メールの配送不能通知（バウンスメール）,電子メール,0
-XDR,Extended Detection and Response,端末・ネットワーク・クラウドなどを横断して検知・対応する製品,監視・対応,0
-SOAR,Security Orchestration Automation and Response,セキュリティ運用を自動化・連携させるしくみ,監視・対応,1
-DNSSEC,DNS Security Extensions,DNSの応答に署名して改ざんを防ぐ拡張,ネットワーク・防御,1
-SPF,Sender Policy Framework,送信元IPアドレスでメール送信ドメインを認証する方式,電子メール,1
-DKIM,DomainKeys Identified Mail,電子署名でメールの送信ドメインを認証する方式,電子メール,1
-DMARC,Domain-based Message Authentication Reporting and Conformance,SPF/DKIMの結果に基づく処理方針と報告のしくみ,電子メール,1
-ゼロトラスト,Zero Trust,何も信頼せずアクセスのたびに検証する考え方,ネットワーク・防御,1
-CASB,Cloud Access Security Broker,クラウドサービスの利用を可視化・制御するしくみ,ネットワーク・防御,1
-SASE,Secure Access Service Edge,ネットワークとセキュリティ機能をクラウドで一体提供する構成,ネットワーク・防御,1
-DLP,Data Loss Prevention,機密情報の漏えいを防ぐしくみ,ネットワーク・防御,1
-MDM,Mobile Device Management,モバイル端末を一元管理するしくみ,ネットワーク・防御,1
-BYOD,Bring Your Own Device,私物端末を業務に使うこと,ネットワーク・防御,0
-XSS,Cross-Site Scripting,悪意あるスクリプトを他人のブラウザで実行させる攻撃,脆弱性・攻撃,0
-CSRF,Cross-Site Request Forgery,利用者が意図しないリクエストを送らせる攻撃,脆弱性・攻撃,1
-SSRF,Server-Side Request Forgery,サーバに内部向けなどの不正なリクエストを送らせる攻撃,脆弱性・攻撃,1
-SQLi,SQL Injection,不正なSQL文を注入してデータベースを操作する攻撃,脆弱性・攻撃,1
-XXE,XML eXternal Entity,XMLの外部実体参照を悪用する攻撃,脆弱性・攻撃,0
-RCE,Remote Code Execution,遠隔から任意のコードを実行させる攻撃・脆弱性,脆弱性・攻撃,0
-DoS,Denial of Service,サービスを妨害する攻撃,脆弱性・攻撃,0
-DDoS,Distributed Denial of Service,多数の拠点から行う分散型DoS攻撃,脆弱性・攻撃,1
-APT,Advanced Persistent Threat,特定の標的を長期間ねらう高度な攻撃,脆弱性・攻撃,0
-MITM,Man-In-The-Middle attack,通信の間に割り込んで盗聴・改ざんする中間者攻撃,脆弱性・攻撃,0
-C2,Command and Control,感染端末に指令を出す攻撃者のサーバ,脆弱性・攻撃,0
-BEC,Business Email Compromise,取引先などになりすまして送金させるビジネスメール詐欺,電子メール,1
-BCP,Business Continuity Plan,災害や障害が起きても事業を続けるための計画,管理・運用,1
-RTO,Recovery Time Objective,目標復旧時間。どれだけ早く復旧するかの目標,管理・運用,0
-RPO,Recovery Point Objective,目標復旧時点。どの時点までのデータを取り戻すかの目標,管理・運用,0
-PDCA,Plan-Do-Check-Act,計画・実行・評価・改善を繰り返すサイクル,管理・運用,1
-SBOM,Software Bill of Materials,ソフトウェアに含まれる部品の一覧,管理・運用,1
-PoLP,Principle of Least Privilege,必要最小限の権限だけを与える原則,管理・運用,1
-TCP,Transmission Control Protocol,信頼性のあるコネクション型の通信プロトコル,ネットワーク基礎,0
-UDP,User Datagram Protocol,コネクションレスで高速だが到達保証のない通信プロトコル,ネットワーク基礎,0
-IP,Internet Protocol,パケットを宛先まで届けるネットワーク層のプロトコル,ネットワーク基礎,0
-IPv4,Internet Protocol version 4,32ビットのアドレスを使う現行主流のIP,ネットワーク基礎,0
-IPv6,Internet Protocol version 6,128ビットのアドレスを使う次世代のIP,ネットワーク基礎,0
-TCP/IP,Transmission Control Protocol / Internet Protocol,インターネットの標準となる通信プロトコル群の総称,ネットワーク基礎,0
-ARP,Address Resolution Protocol,IPアドレスからMACアドレスを求めるプロトコル,ネットワーク基礎,0
-RARP,Reverse Address Resolution Protocol,MACアドレスからIPアドレスを求める古いプロトコル,ネットワーク基礎,0
-DHCP,Dynamic Host Configuration Protocol,端末にIPアドレスなどを自動割り当てするプロトコル,ネットワーク基礎,0
-DNS,Domain Name System,ドメイン名とIPアドレスを対応づける仕組み,ネットワーク基礎,0
-ICMP,Internet Control Message Protocol,疎通確認やエラー通知に使う（pingなど）,ネットワーク基礎,0
-NAT,Network Address Translation,プライベートIPとグローバルIPを変換する仕組み,ネットワーク基礎,1
-RIP,Routing Information Protocol,距離ベクトル型の経路制御プロトコル,ネットワーク基礎,0
-OSPF,Open Shortest Path First,リンクステート型の経路制御プロトコル,ネットワーク基礎,0
-BGP,Border Gateway Protocol,インターネットのAS間で経路を交換するプロトコル,ネットワーク基礎,0
-SNMP,Simple Network Management Protocol,ネットワーク機器を監視・管理するプロトコル,ネットワーク基礎,0
-NTP,Network Time Protocol,時刻を同期するプロトコル,ネットワーク基礎,0
-HTTP,HyperText Transfer Protocol,Webページをやり取りするプロトコル,ネットワーク基礎,0
-HTTPS,HTTP Secure,TLSで暗号化したHTTP,ネットワーク基礎,0
-FTP,File Transfer Protocol,ファイル転送用のプロトコル,ネットワーク基礎,0
-SMTP,Simple Mail Transfer Protocol,メールを送信・転送するプロトコル,電子メール,0
-POP,Post Office Protocol,メールをサーバから取り出すプロトコル,電子メール,0
-IMAP,Internet Message Access Protocol,メールをサーバ上で管理・閲覧するプロトコル,電子メール,0
-MACアドレス,Media Access Control address,ネットワークインタフェース固有のハードウェアアドレス,ネットワーク基礎,0
-NetBIOS,Network Basic Input/Output System,Windowsなどで使われた名前解決・通信の仕組み,ネットワーク基礎,0
-NetBEUI,NetBIOS Extended User Interface,NetBIOS向けの古いローカルネットワーク用プロトコル,ネットワーク基礎,0
-VLAN,Virtual LAN,物理ネットワークを論理的に分割する仕組み,ネットワーク基礎,1
-MTU,Maximum Transmission Unit,1回に送れる最大パケットサイズ,ネットワーク基礎,0
-TTL,Time To Live,パケットが破棄されるまでのホップ数などの寿命,ネットワーク基礎,0
-MUA,Mail User Agent,利用者がメールの作成・閲覧に使うクライアント,電子メール,0
-MSA,Mail Submission Agent,利用者が送信したメールを受け取りMTAへ渡す送信受付役,電子メール,0
-MTA,Mail Transfer Agent,メールをサーバ間で転送するソフトウェア,電子メール,0
-BOF,Buffer Overflow,バッファの境界を超えて書き込みメモリを破壊する攻撃手法,脆弱性・攻撃,1
-SASL,Simple Authentication and Security Layer,アプリケーションに認証機能を載せる枠組み,認証・認可,0
-GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,認証・認可,0
-IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,電子メール,0
-IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,電子メール,1
-OP25B,Outbound Port 25 Blocking,自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策,電子メール,1
-EDNS0,Extension Mechanisms for DNS (version 0),DNSの機能拡張。UDP応答サイズ拡大や追加オプションを可能にする,ネットワーク基礎,1
-RDBMS,Relational Database Management System,関係モデルに基づくデータベース管理システム,管理・運用,0
-PMI,Project Management Institute,プロジェクトマネジメント協会。PMPなど資格・標準の策定団体,標準・組織,0
-PMBOK,Project Management Body of Knowledge,PMIがまとめたプロジェクトマネジメントの知識体系,標準・組織,0
-CISO,Chief Information Security Officer,情報セキュリティ責任者。組織のセキュリティ戦略を統括する役職,管理・運用,0
-IDaaS,Identity as a Service,クラウド上で認証・ID管理を提供するサービス,認証・認可,0
-VDI,Virtual Desktop Infrastructure,サーバ上の仮想デスクトップを端末から利用する仕組み,ネットワーク・防御,1
-ISMAP,Information system Security Management and Assessment Program,政府情報システムのためのセキュリティ評価制度（日本）,標準・組織,1
-SaaS,Software as a Service,ソフトウェアをクラウドサービスとして提供する形態,管理・運用,1
-PaaS,Platform as a Service,アプリ実行環境などの基盤をクラウドで提供する形態,管理・運用,1
-IaaS,Infrastructure as a Service,サーバやストレージなどのインフラをクラウドで提供する形態,管理・運用,1
-TPM,Trusted Platform Module,端末内で鍵管理や改ざん検知などを行うハードウェアセキュリティモジュール,暗号,0
-TCG,Trusted Computing Group,TPMなどの信頼コンピューティング仕様を策定する業界団体,標準・組織,0
-CVCF,Constant Voltage Constant Frequency,定電圧・定周波の安定化電源装置,管理・運用,0
-UPS,Uninterruptible Power Supply,停電時にも一定時間電力を供給する無停電電源装置,管理・運用,0
-IDC,Internet Data Center,サーバやネットワーク機器を集約して運用するデータセンター,管理・運用,1
-TEMPEST,TEMPEST,機器から漏れる電磁波を傍受して情報を盗む攻撃（およびその対策規格の通称）,脆弱性・攻撃,0
-ISAC,Information Sharing and Analysis Center,業界ごとにサイバー脅威情報を共有・分析する組織（情報共有分析センター）,標準・組織,0
-OCF,Open CSIRT Foundation,SIM3などCSIRT成熟度評価を推進する財団,標準・組織,0
-SIM3,Security Incident Management Maturity Model,CSIRT等のインシデント管理成熟度を評価するモデル（OCF）,管理・運用,0
-EPP,Endpoint Protection Platform,ウイルス対策などエンドポイントを総合的に守る製品・基盤,ネットワーク・防御,0
-SLA,Service Level Agreement,提供サービスの品質・可用性などを定めた合意,管理・運用,0
-OODA,Observe-Orient-Decide-Act,観察・情勢判断・意思決定・行動を素早く回す意思決定ループ,管理・運用,1
-BCM,Business Continuity Management,事業継続を実現するためのマネジメント活動全体,管理・運用,1
-SOX法,Sarbanes-Oxley Act,企業の財務報告の信頼性を高める米国法。内部統制が求められる,標準・組織,0
-BCI,Business Continuity Institute,事業継続の普及・資格認定などを行う国際的な専門団体,標準・組織,0
-BCMS,Business Continuity Management System,事業継続マネジメントの仕組み（ISO 22301など）,管理・運用,0
-JIPDEC,Japan Information Processing and Development Center,プライバシーマークなど情報経済社会の推進を行う日本の団体（日本情報経済社会推進協会）,標準・組織,0
-BIA,Business Impact Analysis,業務中断の影響を分析し優先度や許容停止時間を明らかにする,管理・運用,1
-CP,Contingency Plan,緊急事態に備えた代替手順・応急対応の計画（コンティンジェンシープラン）,管理・運用,1
-DR,Disaster Recovery,災害や障害後にITシステム等を復旧するディザスタリカバリ,管理・運用,1
-情報セキュリティ,Information Security,情報の機密性・完全性・可用性などを守ること,管理・運用,1
-サイバー攻撃,Cyber Attack,コンピュータやネットワークを狙う攻撃の総称,脆弱性・攻撃,1
-機密性,Confidentiality,許可された者だけが情報にアクセスできること,管理・運用,1
-完全性,Integrity,情報が改ざんされず正確であること,管理・運用,1
-可用性,Availability,必要なときに情報やシステムを使えること,管理・運用,1
-真正性,Authenticity,主体や情報が本物であること（なりすましでないこと）,管理・運用,1
-責任追跡性,Accountability,誰が何をしたかを後から追跡できること,管理・運用,1
-否認防止,Non-repudiation,行為や送受信の事実を後から否認できないこと,管理・運用,1
-信頼性,Reliability,意図どおり一貫して動作すること,管理・運用,1
-職務の分離の原則,Separation of Duties,重要な権限を一人に集中させず役割を分ける原則,管理・運用,1
-ISMS適合性評価制度,ISMS Conformity Assessment Scheme,ISMSが規格に適合しているかを第三者が認証する日本の制度,標準・組織,1
-直接損失,Direct Loss,インシデントにより直接生じた金銭的損失,管理・運用,1
-間接損失,Indirect Loss,信用低下など間接的に生じる損失,管理・運用,1
-対応費用,Response Costs,インシデント対応に要する費用,管理・運用,1
-定性的評価,Qualitative Risk Assessment,高・中・低など定性尺度でリスクを評価する方法,管理・運用,1
-定量的評価,Quantitative Risk Assessment,金額など数値でリスクを評価する方法,管理・運用,1
-リスクマネジメント,Risk Management,リスクを特定・評価し対応する一連の活動,管理・運用,1
-リスクコントロール,Risk Control,リスクの発生や影響を抑える対策（回避・低減など）,管理・運用,1
-リスクファイナンシング,Risk Financing,保険など金銭面でリスクに備える手法（移転・保有）,管理・運用,1
-リスク回避,Risk Avoidance,リスク源となる活動自体をやめること,管理・運用,1
-リスク低減,Risk Reduction,発生確率や影響を下げる対策,管理・運用,1
-リスク移転,Risk Transfer,保険や委託でリスクの影響を他者へ移すこと,管理・運用,1
-リスクの受容,Risk Acceptance,対策せずリスクを許容すること,管理・運用,1
-情報資産,Information Asset,守るべき情報とその媒体・システムなどの資産,管理・運用,1
-ソーシャルエンジニアリング,Social Engineering,人の心理や隙を突いて情報やアクセスを得る手法,脆弱性・攻撃,1
-サイバーレジリエンス,Cyber Resilience,攻撃や障害に耐え回復し事業を継続する力,管理・運用,1
-トリアージ,Triage,インシデントの対応優先度を振り分けること,監視・対応,1
-情報セキュリティ監査基準,Information Security Audit Standards,情報セキュリティ監査の実施基準（経済産業省）,標準・組織,1
-システム監査基準,System Audit Standards,システム監査の実施基準（経済産業省）,標準・組織,1
-ブラックボックス診断,Black-box Testing,内部構造を知らず外部から行うセキュリティ診断,管理・運用,1
-ホワイトボックス診断,White-box Testing,ソースコード等を把握したうえで行うセキュリティ診断,管理・運用,1
-ファジング,Fuzzing,異常なデータを大量に入力して脆弱性を探るテスト手法,脆弱性・攻撃,1
-ASM,Attack Surface Management,外部から見える攻撃対象領域を継続的に把握・管理すること,管理・運用,1
-TLPT,Threat-Led Penetration Testing,脅威情報に基づき実攻撃に近い形で行うペネトレーションテスト,管理・運用,1
-RAID,Redundant Arrays of Independent Disks,複数ディスクで冗長性や性能を高める構成,管理・運用,1
-クラスタリングシステム,Clustering System,複数サーバを連携させ可用性・性能を高める構成,管理・運用,1
-コンテンツサーバ,Content Server,Webコンテンツを提供するサーバ,ネットワーク基礎,1
-キャッシュサーバ,Cache Server,コンテンツを一時保存し応答を速くするサーバ,ネットワーク基礎,1
-GETメソッド,GET Method,HTTPでリソース取得に使うメソッド。パラメータはURLに付く,ネットワーク基礎,1
-POSTメソッド,POST Method,HTTPでデータをメッセージボディで送信するメソッド,ネットワーク基礎,1
-Referer,Referer,リンク元URLを伝えるHTTPヘッダ（綴りは仕様どおり）,ネットワーク基礎,1
-Cookie,HTTP Cookie,サーバがブラウザに保存させる小さなデータ,ネットワーク基礎,1
-セッションID,Session ID,利用者のセッションを識別する値,ネットワーク基礎,1
-hiddenフィールド,Hidden Field,画面に表示されないが送信されるHTMLフォーム項目,ネットワーク基礎,1
-secure属性,Secure Attribute,HTTPS通信時のみCookieを送信させる属性,ネットワーク基礎,1
-HttpOnly属性,HttpOnly Attribute,JavaScriptからCookieを読めなくする属性,ネットワーク基礎,1
-仮想化,Virtualization,物理資源を論理的に分割・抽象化して使う技術,管理・運用,1
-シンクライアント,Thin Client,処理やデータをサーバ側に任せる最小限の端末,ネットワーク・防御,1
-RBI,Remote Browser Isolation,ブラウザ処理を遠隔環境で行い端末を隔離する技術,ネットワーク・防御,1
-境界防御モデル,Perimeter Defense Model,内外の境界で守る従来の防御モデル,ネットワーク・防御,1
-SDP,Software Defined Perimeter,ソフトウェアで動的に境界を作るアクセス制御,ネットワーク・防御,1
-ZTNA,Zero Trust Network Access,ゼロトラストに基づき都度認証・認可するリモートアクセス,ネットワーク・防御,1
-SD-WAN,Software-Defined Wide Area Network,ソフトウェアでWANを制御する技術,ネットワーク基礎,1
-SDN,Software-Defined Networking,ネットワーク制御をソフトウェアで集中管理する技術,ネットワーク基礎,1
-SWG,Secure Web Gateway,Webアクセスを検査・制御するゲートウェイ,ネットワーク・防御,1
-ブロードキャストドメイン,Broadcast Domain,ブロードキャストが届く範囲,ネットワーク基礎,1
-NAPT,Network Address Port Translation,IPアドレスとポート番号を変換するアドレス変換（IPマスカレード）,ネットワーク基礎,1
-ステートフルパケットインスペクション型,Stateful Packet Inspection,通信の状態を追跡して通否を判断するFW方式,ネットワーク・防御,1
-サンドボックス,Sandbox,隔離環境でプログラムを実行・観察する仕組み,ネットワーク・防御,1
-アノマリ検知,Anomaly Detection,平常と異なる振る舞いを異常として検知する方式,監視・対応,1
-フォールスポジティブ,False Positive,正常を誤って異常と判定すること（誤検知）,監視・対応,1
-フォールスネガティブ,False Negative,異常を見逃して正常と判定すること（検知漏れ）,監視・対応,1
-プロミスキャスモード,Promiscuous Mode,自分宛以外のパケットも受信するNICモード,ネットワーク・防御,1
-インラインモード,Inline Mode,通信経路上に直列に設置して検査・遮断する配置,ネットワーク・防御,1
-フェールオープン機能,Fail-open,障害時に通信を通過させる動作,ネットワーク・防御,1
-不正のトライアングル,Fraud Triangle,動機・機会・正当化が揃うと不正が起きやすいとする理論,脆弱性・攻撃,1
-サイバーキルチェーン,Cyber Kill Chain,攻撃の段階を鎖として捉えるモデル（Lockheed Martin）,脆弱性・攻撃,1
-MITRE ATT&CK,"Adversarial Tactics, Techniques, and Common Knowledge",攻撃者の戦術・技法を整理した知識ベース,脆弱性・攻撃,1
-脅威インテリジェンス,Threat Intelligence,脅威に関する収集・分析済みの情報,監視・対応,1
-パスワードリスト攻撃,Password List Attack,漏洩したID・パスワードで他サービスへのログインを試す攻撃,脆弱性・攻撃,1
-セッションハイジャック,Session Hijacking,他人のセッションIDを奪いなりすます攻撃,脆弱性・攻撃,1
-ARPスプーフィング,ARP Spoofing,偽のARP応答で通信を誘導する攻撃,脆弱性・攻撃,1
-DNSキャッシュポイズニング,DNS Cache Poisoning,DNSキャッシュに偽情報を注入して誘導する攻撃,脆弱性・攻撃,1
-DRDoS,Distributed Reflection Denial of Service,第三者サーバの反射・増幅を使う分散型DoS攻撃,脆弱性・攻撃,1
-反射型XSS,Reflected XSS,リクエストに含めたスクリプトをその応答で実行させるXSS,脆弱性・攻撃,1
-格納型XSS,Stored XSS,サーバに保存したスクリプトを他利用者に実行させるXSS,脆弱性・攻撃,1
-DOM-based XSS,DOM-based XSS,クライアント側のDOM操作でスクリプトが実行されるXSS,脆弱性・攻撃,1
-エスケープ処理,Escaping,特殊文字を無害な文字列に置き換える処理,脆弱性・攻撃,1
-ディレクトリトラバーサル,Directory Traversal,パス操作で意図しないファイルにアクセスする攻撃,脆弱性・攻撃,1
-OSコマンドインジェクション,OS Command Injection,不正なOSコマンドを注入して実行させる攻撃,脆弱性・攻撃,1
-HTTPヘッダインジェクション,HTTP Header Injection,改行コードを注入し任意の応答ヘッダを追加する攻撃,脆弱性・攻撃,1
-CDN,Content Delivery Network,コンテンツを分散配置して配信するネットワーク,ネットワーク基礎,1
-ランサムウェア,Ransomware,データを暗号化するなどして身代金を要求するマルウェア,脆弱性・攻撃,1
-標的型攻撃,Targeted Attack,特定の組織・個人を狙う攻撃,脆弱性・攻撃,1
-サプライチェーン攻撃,Supply Chain Attack,取引先や製品・ソフトウェアを経由して侵入する攻撃,脆弱性・攻撃,1
-ファイルレス攻撃,Fileless Attack,ディスクにファイルを残さずメモリ上や正規ツールで動く攻撃,脆弱性・攻撃,1
-ラテラルムーブメント,Lateral Movement,侵入後に組織内の他端末へ横展開する動き,脆弱性・攻撃,1
-エクスプロイトコード,Exploit Code,脆弱性を悪用するためのコード,脆弱性・攻撃,1
-ゼロデイ攻撃,Zero-day Attack,修正プログラム提供前の脆弱性を突く攻撃,脆弱性・攻撃,1
-EPSS,Exploit Prediction Scoring System,脆弱性が今後悪用される確率を予測する指標（FIRST）,SCAP,1
-KEV,Known Exploited Vulnerabilities,CISAが公開する既知の悪用済み脆弱性カタログ,SCAP,1
-迷惑メール,Unsolicited Bulk/Commercial Email (UBE/UCE),受信者が望まない広告・大量送信メールの総称,電子メール,1
-第三者中継,Open Relay,無関係な第三者間のメールを中継してしまう状態,電子メール,1
-Submission,Message Submission,利用者からのメール投稿を認証付きで受け付ける仕組み（587番ポート）,電子メール,1
-Sender ID,Sender ID,SPFを拡張した送信ドメイン認証（Microsoft）,電子メール,1
-DomainKeys,DomainKeys,Yahoo!発の電子署名による送信ドメイン認証。DKIMの前身,電子メール,1
-STARTTLS,STARTTLS,平文接続の途中からTLS暗号化へ切り替える拡張,電子メール,1
+NIST,National Institute of Standards and Technology,米国の国立標準技術研究所（National Institute of Standards and Technology）。情報セキュリティではSP 800シリーズを発行し、管理策（SP 800-53）、インシデント対応（SP 800-61）、リスクアセスメント（SP 800-30）などが実務の参照源となる。暗号アルゴリズムの選定やSCAP関連仕様にも関与し、ISO/IEC規格とは別に米政府起点の技術ガイダンスとして引用される。,標準・組織,0
+ISO,International Organization for Standardization,国際標準化機構（International Organization for Standardization）。各国の標準化機関が参加する国際規格の策定団体。情報セキュリティではIECと共同でISO/IEC 27000シリーズ（ISMS）やISO/IEC 15408（CC）などを発行する。NISTのSP 800のような一国のガイダンスではなく、認証や契約条件に使われる国際規格の発行元として位置づけられる。,標準・組織,0
+IEC,International Electrotechnical Commission,国際電気標準会議（International Electrotechnical Commission）。電気・電子技術分野の国際規格を策定する機関。情報セキュリティ関連ではISOと共同でISO/IEC規格（27001、15408など）を発行する。電気設備や機能安全などハードウェア寄りの規格も所管し、ITセキュリティをISO単体ではなく電気・電子の国際標準と一体で扱う点が特徴である。,標準・組織,0
+IPA,Information-technology Promotion Agency,"独立行政法人情報処理推進機構（Information-technology Promotion Agency, Japan）。情報処理安全確保支援士試験の実施、脆弱性関連情報の届出受付、JVNへの情報提供、セキュリティガイドラインの公開などを担う。日本国内の情報セキュリティ対策の実務拠点であり、JPCERT/CCがインシデント調整に特化するのに対し、制度・啓発・試験・届出制度など幅広い推進を行う。",標準・組織,0
+JPCERT/CC,Japan Computer Emergency Response Team Coordination Center,一般社団法人JPCERTコーディネーションセンター（Japan Computer Emergency Response Team Coordination Center）。国内のインシデント報告の受付・調整、海外CSIRTとの連携、注意喚起の発信を行う調整機関。組織内CSIRTの上位の調整役であり、IPAと共同でJVNを運営する。自らが監視センター（SOC）として常時運用する組織ではなく、インシデント対応の調整と情報共有が主たる役割である。,標準・組織,0
+NISC,National center of Incident readiness and Strategy for Cybersecurity,内閣サイバーセキュリティセンター（National center of Incident readiness and Strategy for Cybersecurity）。内閣官房に置かれ、政府のサイバーセキュリティ戦略の企画・推進、政府機関等の横断的対策、重要インフラ防護の総合調整を担う。IPAやJPCERT/CCが実務・調整を担うのに対し、NISCは政府全体の司令塔として政策と重大事案時の政府内調整に位置づけられる。,標準・組織,0
+CRYPTREC,Cryptography Research and Evaluation Committees,電子政府推奨暗号の安全性を評価・監視するプロジェクト（Cryptography Research and Evaluation Committees）。総務省・経済産業省が運営に関わり、電子政府推奨暗号リスト（CRYPTREC暗号リスト）を整備する。推奨のほか、運用監視暗号、選考対象など状態を区分して掲載する。個別製品を認証する制度ではなく、アルゴリズムやプロトコルの安全性評価と推奨の提示が役割である。,標準・組織,0
+CSIRT,Computer Security Incident Response Team,コンピュータセキュリティインシデント対応チーム（Computer Security Incident Response Team）。組織内でインシデントの受付、トリアージ、分析、封じ込め、回復、再発防止、対外調整を担う体制。SOCが常時監視と検知を主とするのに対し、CSIRTは事案発生後の対応と調整を主とする。対外的な調整窓口としてJPCERT/CCなど外部CSIRTと連携する点が重要である。,標準・組織,1
+ISMS,Information Security Management System,情報セキュリティマネジメントシステム（Information Security Management System）。情報資産の機密性・完全性・可用性などを、方針・リスクアセスメント・管理策・監査を通じて継続的に維持改善する仕組み。要求事項の中核規格はISO/IEC 27001で、運用の指針はISO/IEC 27002。PDCAサイクルで回し、日本ではISMS適合性評価制度により第三者認証を受けられる。,標準・組織,0
+CC,Common Criteria,IT製品・システムのセキュリティ機能を評価・認証する国際基準（Common Criteria）。ISO/IEC 15408として規格化されている。開発者はセキュリティターゲット（ST）、利用者・調達者はプロテクションプロファイル（PP）を用い、評価保証レベル（EAL）で保証の深さを示す。ISMS（組織のマネジメント認証）とは対象が異なり、製品やシステムのセキュリティ保証を第三者評価する枠組みである。,標準・組織,0
+OWASP,Open Worldwide Application Security Project,Webアプリケーションセキュリティの向上を目的とする国際的なコミュニティ（Open Worldwide Application Security Project）。OWASP Top 10として代表的なリスク（インジェクション、XSS、CSRFに関連する脆弱性など）を整理し、テストガイドやチートシートも公開する。政府機関や認証制度そのものではなく、開発・診断の実務で参照される知識ベースとして位置づけられる。,標準・組織,0
+PCI DSS,Payment Card Industry Data Security Standard,クレジットカード会員データを保護するための業界セキュリティ基準（Payment Card Industry Data Security Standard）。カード会員データ環境の構築・保護、脆弱性管理、アクセス制御、監視、セキュリティ方針など12の要件からなる。ISO/IEC 27001が組織のISMS全般を対象とするのに対し、PCI DSSは決済カード情報の保護に特化した業界基準であり、取扱事業者に準拠が求められる。,標準・組織,0
+SCAP,Security Content Automation Protocol,脆弱性管理を自動化するための標準仕様群（Security Content Automation Protocol）。NISTが整備し、脆弱性の識別（CVE）、深刻度（CVSS）、弱点分類（CWE）、製品識別（CPE）、設定チェックリスト（XCCDF）、検査手順（OVAL）などを組み合わせて使う。個別の脆弱性番号そのものではなく、これらの仕様を相互運用可能に束ね、スキャンや設定診断の自動化を可能にする枠組みである。,SCAP,0
+CVE,Common Vulnerabilities and Exposures,個々の脆弱性に付ける共通識別子（Common Vulnerabilities and Exposures）。MITREが採番し、CVE-西暦-番号の形式で一意に参照する。深刻度を数値化するCVSSや、弱点の種類を分類するCWEとは役割が異なる。JVNやベンダーアドバイザリ、スキャン結果の突合せに用い、同一の脆弱性を組織やツールを横断して特定するための識別の基盤である。,SCAP,0
+CVSS,Common Vulnerability Scoring System,脆弱性の深刻度を共通の尺度で評価する指標（Common Vulnerability Scoring System）。基本評価基準（攻撃元区分、攻撃条件の複雑さ、機密性・完全性・可用性への影響など）に加え、現状評価・環境評価がある。スコアはおおむね0.0〜10.0。CVEが識別、CWEが種類、EPSSが悪用されやすさの予測であるのに対し、CVSSは深刻度（影響の大きさと攻撃の成立しやすさ）の評価に使う。,SCAP,1
+CWE,Common Weakness Enumeration,ソフトウェアの弱点（脆弱性の原因となる種類）を分類した共通一覧（Common Weakness Enumeration）。MITREが維持し、SQLインジェクションやバッファオーバーフローなど弱点の類型に識別子を付ける。CVEが個別インシデントとしての脆弱性を指すのに対し、CWEは「どのような欠陥か」という分類である。開発標準や診断項目の整理、再発防止の類型化に用いられる。,SCAP,0
+CPE,Common Platform Enumeration,ハードウェア・OS・アプリケーションなどの製品やプラットフォームを一意に表す命名仕様（Common Platform Enumeration）。ベンダー、製品名、版数などを構造化した名前で示す。CVEが「どの脆弱性か」、CPEが「どの製品・版か」を表すため、脆弱性情報と資産台帳の突合せに使う。SCAPの構成要素の一つで、スキャン対象の識別や影響範囲の特定に用いられる。,SCAP,0
+XCCDF,eXtensible Configuration Checklist Description Format,セキュリティ設定のチェックリストやベンチマークを記述するためのXML形式（eXtensible Configuration Checklist Description Format）。確認項目、判定基準、合格・不合格の扱いなどを機械可読に書く。OVALが個々の検査手順（どう測るか）を表すのに対し、XCCDFはチェックリスト全体の構成と合否ルール（何をどの基準で評価するか）を表す。SCAPによる自動設定診断で併用される。,SCAP,0
+OVAL,Open Vulnerability and Assessment Language,脆弱性の有無や設定状態の検査方法を記述する言語（Open Vulnerability and Assessment Language）。対象システムの状態をどう検査し、何をもって該当とするかをXMLで定義する。XCCDFがチェックリストの枠組みであるのに対し、OVALは個々のテストの実装寄りである。SCAPの一部として脆弱性スキャンや構成コンプライアンス検査の自動化に用いられる。,SCAP,0
+JVN,Japan Vulnerability Notes,日本の脆弱性対策情報ポータル（Japan Vulnerability Notes）。IPAとJPCERT/CCが共同運営し、脆弱性の概要、影響を受ける製品、対策方法、CVEとの対応などを公開する。国内向けの注意喚起と対策情報の集約拠点であり、NISTのNVDが米側の包括的データベースであるのに対し、JVNは日本国内の調整結果や日本語での対策案内を提供する点に特色がある。,SCAP,0
+AES,Advanced Encryption Standard,現在広く標準として用いられる共通鍵（対称鍵）ブロック暗号（Advanced Encryption Standard）。ブロック長128ビット、鍵長128／192／256ビット。旧来のDES（56ビット鍵）の後継としてNISTが選定したRijndaelである。暗号化と復号に同一の鍵を用いる点がRSAなどの公開鍵暗号と異なる。通信の機密性確保やディスク暗号化など、高速な一括暗号に使われる。,暗号,0
+RSA,Rivest–Shamir–Adleman,素因数分解の計算の難しさを安全性の根拠とする公開鍵暗号方式（Rivest–Shamir–Adleman）。公開鍵で暗号化し秘密鍵で復号するほか、秘密鍵によるデジタル署名にも用いる。共通鍵暗号より処理が重いため、鍵配送や署名に使い、大容量データの暗号自体はAESなどに任せるのが一般的である。同等の強度ではECCより長い鍵を必要とし、2048ビット以上が目安とされる。,暗号,0
+ECC,Elliptic Curve Cryptography,楕円曲線上の離散対数問題の難しさを利用する公開鍵暗号の総称（Elliptic Curve Cryptography）。ECDSA（署名）やECDH（鍵共有）などに用い、RSAと比較して短い鍵長で同程度の強度を得られる。そのためTLSの鍵交換や組込み機器、制約のある環境での公開鍵処理に適する。楕円曲線のパラメータ選定を誤ると弱体化するため、推奨曲線の利用が前提となる。,暗号,0
+SHA,Secure Hash Algorithm,暗号学的ハッシュ関数の系列（Secure Hash Algorithm）。任意長のデータから固定長のダイジェストを作り、改ざん検知やデジタル署名の前処理、パスワード保存（単独利用は不適切でソルト付きが原則）などに使う。SHA-1は衝突耐性の問題から推奨されず、SHA-256などSHA-2、またはSHA-3が用いられる。暗号化とは異なり、原則として元データへ戻せない一方向の変換である。,暗号,0
+HMAC,Hash-based Message Authentication Code,ハッシュ関数と秘密鍵を組み合わせて作るメッセージ認証コード（Hash-based Message Authentication Code）。データの改ざん検知に加え、鍵を共有する相手からの真正性を確認できる。単なるハッシュ（改ざんは分かっても送信者の証明にはならない）やデジタル署名（公開鍵を用いる）とは仕組みが異なる。TLSやAPI認証などで完全性と真正性の確保に使われる。,暗号,0
+PKI,Public Key Infrastructure,公開鍵証明書によって公開鍵の持ち主を保証し、暗号化・署名・認証の信頼を成り立たせる基盤（Public Key Infrastructure）。認証局（CA）が証明書を発行し、登録局（RA）が本人確認、CRLやOCSPが失効確認を担う。公開鍵暗号そのものではなく、公開鍵と主体の対応を第三者の信頼の連鎖（証明書チェーン）で検証できるようにする制度・技術の総体である。,暗号,0
+CA,Certificate Authority,デジタル証明書を発行する認証局（Certificate Authority）。申請者の公開鍵と身元情報を結び付けた証明書に署名し、利用者がその公開鍵を信頼できる根拠を与える。ルートCAと中間CAによる階層構造をとり、証明書チェーンで検証する。本人確認を担うRA、失効情報を配布するCRL／OCSPとは役割が分かれる。信頼するルートCAの管理がPKIの前提である。,暗号,0
+RA,Registration Authority,証明書の申請者に対する本人確認・登録審査を行う登録局（Registration Authority）。審査結果を認証局（CA）へ渡し、CAが証明書を発行する。CAが署名・発行の主体であるのに対し、RAは申請の受付と身元確認に特化する。小規模な運用ではCAがRA機能を兼ねることもあるが、職務分離の観点では発行権限と審査を分ける構成が取られる。,暗号,0
+CRL,Certificate Revocation List,有効期限内でも失効させたデジタル証明書の一覧（Certificate Revocation List）。認証局が定期的に発行し、利用側はダウンロードして提示された証明書が掲載されていないかを確認する。鍵漏洩や退職、誤発行などが失効理由となる。OCSPがその場で個別の状態を問い合わせるのに対し、CRLは一覧の一括配布であり、発行間隔によるタイムラグやファイル肥大が課題となる。,暗号,0
+OCSP,Online Certificate Status Protocol,証明書の失効状態をリアルタイムに問い合わせるプロトコル（Online Certificate Status Protocol）。利用者が証明書の識別情報をOCSPレスポンダに送り、good／revoked／unknownなどの応答を得る。CRLが失効リスト全体を定期取得するのに対し、OCSPは対象証明書単位の確認で即時性と通信量の点で有利である。レスポンダの可用性や応答の署名検証が運用上の要点となる。,暗号,0
+TLS,Transport Layer Security,通信内容の盗聴・改ざんを防ぐトランスポート層の暗号プロトコル（Transport Layer Security）。HTTPSやメール（SMTP等）の保護に用い、証明書によるサーバ認証（必要に応じ相互認証）、鍵交換、共通鍵による暗号化と改ざん検知を行う。SSLの後継であり、旧版のSSLや弱いTLSは無効化が原則である。IPsecがIP層で保護するのに対し、TLSはアプリケーションに近い接続単位で保護する。,暗号,0
+HSM,Hardware Security Module,暗号鍵の生成・保管・利用を耐タンパ性のある専用装置で行うハードウェア（Hardware Security Module）。秘密鍵を装置外に出さず署名や復号の演算を内部で実行し、鍵漏洩リスクを下げる。端末に内蔵されるTPMがプラットフォームの信頼性計測やディスク暗号鍵の保護に使われるのに対し、HSMはサーバやCAなど集中的な鍵管理に用いる専用モジュールである。,暗号,0
+MFA,Multi-Factor Authentication,知識情報（パスワード等）、所持情報（トークン、端末、証明書等）、生体情報のうち異なる種別を組み合わせて本人確認する認証（Multi-Factor Authentication）。同じ種別を二つ重ねるだけの多段階認証とは区別される。単要素のパスワード認証より、漏洩や使い回しへの耐性が高い。OTPやFIDO、スマートカードなどが要素として使われ、特権アクセスや遠隔アクセスで特に求められる。,認証・認可,0
+OTP,One-Time Password,一度限り有効なパスワード（One-Time Password）。再利用できないため、盗聴やリスト型攻撃で得た固定パスワードより被害が広がりにくい。生成方法により、時刻に基づくTOTP、カウンタに基づくHOTP、チャレンジレスポンス型などがある。単独では「持っているもの」（生成器やアプリ）に近く、パスワード（知識）と組み合わせて多要素認証の一要素として用いることが多い。,認証・認可,0
+TOTP,Time-based One-Time Password,共有秘密と現在時刻（通常は30秒などの時間枠）からワンタイムパスワードを生成する方式（Time-based One-Time Password）。RFC 6238として規定され、認証アプリとサーバが同じ時刻と秘密を持てば同じ値になる。カウンタ同期のHOTPと異なり、利用のたびにカウンタを合わせる必要が少ない。NTPなどによる時刻同期が前提で、ずれが大きいと認証に失敗する。,認証・認可,0
+SSO,Single Sign-On,一度の認証で複数のシステムやサービスを利用できるようにする仕組み（Single Sign-On）。認証情報やセッションを連携させ、サービスごとの逐次ログインを不要にする。利便性が上がる一方、認証基盤が突破されると影響範囲が広がるため、多要素認証やセッション管理が重要になる。実装にはSAML（主に企業間・業務システム）やOpenID Connect（主にコンシューマ／API連携）などが使われる。,認証・認可,0
+SAML,Security Assertion Markup Language,XMLベースのアサーションで認証・属性情報をやり取りする標準（Security Assertion Markup Language）。IdP（Identity Provider）が認証結果を発行し、SP（Service Provider）がそれを検証してシングルサインオンを実現する。OAuth／OIDCがJSONとトークンを中心とするのに対し、SAMLは企業の業務システム連携で多用されるXML方式である。認可そのものより、認証情報の安全な受け渡しに主眼がある。,認証・認可,0
+OAuth,Open Authorization,利用者がサービスに権限の一部を委譲し、パスワードを渡さずにアクセスを許可する認可の枠組み（Open Authorization）。現在はOAuth 2.0が主流で、アクセストークンによりAPI利用範囲（スコープ）を制限する。認証（本人確認）の標準ではなく認可（権限委譲）の標準である点が重要で、認証が必要な場合は上位のOpenID Connectを用いる。第三者アプリ連携でパスワード共有を避ける目的がある。,認証・認可,0
+OIDC,OpenID Connect,OAuth 2.0を拡張し、認証（本人確認）を行う仕組み（OpenID Connect）。認可サーバがIDトークン（通常はJWT）を発行し、クライアントは署名検証により利用者の識別情報を得る。OAuthが「何を許可するか」の認可であるのに対し、OIDCは「誰がログインしたか」の認証を加える。SAMLと並ぶSSOの実装手段で、モバイルやAPI連携を含む比較的新しい構成で多用される。,認証・認可,0
+FIDO,Fast IDentity Online,パスワードに依存しないオンライン認証の標準群（Fast IDentity Online）。公開鍵暗号を用い、認証器（セキュリティキーや端末の生体認証）がサイトごとに鍵対を生成し、秘密鍵は認証器内に残す。フィッシングでパスワードを盗まれても成り立たない設計が特徴である。WebAuthnやCTAPなどの仕様からなり、知識情報中心の従来認証やOTPとは脅威モデルが異なる。,認証・認可,0
+Kerberos,Kerberos,信頼できる第三者（KDC：鍵配布センター）とチケットを用いてネットワーク上の相互認証を行う方式。利用者が認証サーバからチケット許可チケット（TGT）を得て、各サービスのサービスチケットを取得する。パスワードを毎回ネットワークに流さず、時刻同期が前提となる。LDAPがディレクトリ照会のプロトコルであるのに対し、Kerberosは認証プロトコルそのものである。Windowsドメインなどで用いられる。,認証・認可,0
+LDAP,Lightweight Directory Access Protocol,ディレクトリサービスに対する参照・更新のための軽量プロトコル（Lightweight Directory Access Protocol）。利用者や組織、公開鍵証明書などの情報を階層的なエントリとして格納したディレクトリへアクセスする。認証情報の置き場や検索手段として使われることが多く、認証プロトコル自体（KerberosやRADIUS）とは役割が異なる。Active Directoryへのアクセスにも広く用いられる。,認証・認可,0
+RADIUS,Remote Authentication Dial-In User Service,ネットワークアクセスにおける認証・認可・アカウンティング（AAA）を提供するプロトコル（Remote Authentication Dial-In User Service）。UDPを用い、主にVPN、無線LAN、IEEE 802.1Xなどの利用者アクセス制御で使う。TACACS+がTCPで通信全体を暗号化し機器管理（デバイス管理者のコマンド認可）に強いのに対し、RADIUSはアクセス認証が中心で、パスワード部分を中心に保護する伝統的な構成である。,認証・認可,0
+TACACS+,Terminal Access Controller Access-Control System Plus,端末などネットワーク機器の管理アクセス向けにAAAを提供するプロトコル（Terminal Access Controller Access-Control System Plus）。TCPを使用し、認証・認可・アカウンティングを分離して扱える。通信ペイロード全体を暗号化するため、RADIUSより機器管理用途での機密性に優れる。利用者のネットワーク接続認証（無線LANやVPN）に多用されるRADIUSと対比して理解する。,認証・認可,0
+WAF,Web Application Firewall,Webアプリケーションへの攻撃をアプリケーション層で検知・遮断する防御装置（Web Application Firewall）。SQLインジェクション、XSS、CSRFなど、ポート許可だけでは防げないHTTP上の不正リクエストを検査する。ネットワークファイアウォールやIDS／IPSが主に通信制御や汎用侵入検知であるのに対し、WAFはWeb特有のパラメータやセッションを対象とする。署名型と振る舞い型がある。,ネットワーク・防御,0
+IDS,Intrusion Detection System,ネットワークやホストへの侵入・攻撃の兆候を検知し、管理者に通知するシステム（Intrusion Detection System）。通信を監視するNIDSと、ホスト上のログやファイルを見るHIDSがある。IPSと異なり原則として通信経路を遮断せず、検知と記録・警報が役割である。そのため誤検知が通信障害になりにくいかわり、防御は人の対応や他装置との連携に依存する。インライン配置のIPSと対比される。,ネットワーク・防御,0
+IPS,Intrusion Prevention System,侵入や攻撃を検知したうえで、該当通信の遮断やリセットなど予防的な防御まで行うシステム（Intrusion Prevention System）。通信経路上に直列（インライン）で置くことが多く、IDSが監視・通知中心であるのに対し、IPSは自動遮断を含む。遮断できる反面、誤検知（フォールスポジティブ）が正規通信の阻害につながる。シグネチャ型とアノマリ型などの検知方式を取り得る。,ネットワーク・防御,0
+UTM,Unified Threat Management,ファイアウォール、侵入防御、アンチウイルス、VPN、URLフィルタなどを一台または一体の基盤に集約した統合脅威管理（Unified Threat Management）。中小規模環境で管理点を減らす目的で導入されることが多い。個別の専用装置（WAF、NIDSなどに特化したもの）より機能は幅広いが、性能や専門性では専用機に劣る場合がある。境界に置いて複合的な脅威へまとめて対処する位置づけである。,ネットワーク・防御,1
+DMZ,DeMilitarized Zone,外部（インターネット等）と内部ネットワークの間に設ける緩衝区間（DeMilitarized Zone）。Webサーバ、メールサーバ、DNSサーバなど外部公開が必要なホストを配置し、内部セグメントへの直接暴露を避ける。ファイアウォールで外部—DMZ—内部の通信を制限する。公開サーバを内部LANに置く構成より侵害時の横展開を抑えやすく、境界防御モデルの基本的な区画である。,ネットワーク・防御,0
+VPN,Virtual Private Network,公衆ネットワーク上に暗号通信路を設け、遠隔拠点や遠隔利用者をあたかも専用線で接続しているかのように扱う仮想専用ネットワーク（Virtual Private Network）。拠点間接続ではIPsec-VPN、遠隔利用者アクセスではSSL-VPN（TLS）が多い。通信の機密性と完全性を確保するが、接続後の権限管理は別途必要である。近年は常時接続VPNに代わるZTNAなども対比される。,ネットワーク・防御,0
+IPsec,IP Security,IP層（ネットワーク層）でパケットの暗号化と認証を行うプロトコル群（IP Security）。認証ヘッダ（AH）は完全性と認証、暗号ペイロード（ESP）は機密性（と必要に応じ認証）を提供する。通信モードには、パケット全体を包むトンネルモード（拠点間VPN向き）と、ペイロードのみ保護するトランスポートモードがある。鍵交換にはIKEを用いる。TLSがトランスポート寄りの接続を守るのに対し、IPsecはIPパケット単位で保護する。,ネットワーク・防御,0
+SSH,Secure Shell,暗号化された遠隔ログインおよびセキュアなコマンド実行・ファイル転送を提供するプロトコル（Secure Shell）。標準でTCP 22番を用い、サーバ認証（ホスト鍵）と利用者認証（パスワードまたは公開鍵）を行う。従来のtelnetやftpが平文であるのに対し、SSHは盗聴・改ざん・なりすましを防ぐ。ポートフォワーディングやSCP／SFTPによる転送にも使われる。ネットワーク全体を仮想化するVPNとは異なり、主に管理アクセスの保護に用いる。,ネットワーク・防御,0
+SIEM,Security Information and Event Management,サーバ、ネットワーク機器、セキュリティ装置などからログを集約し、正規化と相関分析によって脅威や異常を検出する仕組み（Security Information and Event Management）。長期保管と検索、インシデント調査の材料提供も担う。SOCの中核ツールとなることが多い。SOARが検知後の対応手順の自動化・連携に主眼を置くのに対し、SIEMは収集・分析・警報が中心である。適切なログ源の設計と相関ルールの整備が有効性を左右する。,監視・対応,1
+SOC,Security Operation Center,組織の情報システムを継続的に監視し、検知した事象の分析と初動を行うセキュリティ運用拠点（Security Operation Center）。SIEM等でログやアラートを見て、トリアージしたうえでCSIRTやシステム管理者へエスカレーションする。CSIRTがインシデント対応全般（封じ込めから再発防止、対外調整）を担うのに対し、SOCは常時監視と検知・一次対応が主たる役割である。内製、委託、ハイブリッドなどの運用形態がある。,監視・対応,1
+EDR,Endpoint Detection and Response,PCやサーバなどのエンドポイント上でプロセス、通信、ファイル操作などを継続監視し、侵入後の脅威を検知して隔離やプロセス停止などの対応を行う製品（Endpoint Detection and Response）。従来のEPP（ウイルス対策を中心とした予防）が既知のマルウェア排除に強いのに対し、EDRは実行後の振る舞い検知と調査・対応に重点を置く。NDRがネットワーク通信、XDRが複数領域の横断である点と対比される。,監視・対応,1
+NDR,Network Detection and Response,ネットワーク上の通信トラフィックを収集・分析し、侵入や横展開、C2通信などの脅威を検知して対応する製品・技術（Network Detection and Response）。エンドポイントにエージェントを入れるEDRが端末内部の挙動を見るのに対し、NDRはパケットやフローなど通信側から見通し、エージェントが入れられない機器も含めて監視しやすい。XDRはEDRやNDR、クラウドなどを横断して相関させる上位・拡張の位置づけである。,監視・対応,0
+NDR,Non-Delivery Report,メールが宛先へ届けられなかったときに、配送システムが送信元へ返す配送不能通知（Non-Delivery Report）。バウンスメールとも呼ばれる。宛先不明、容量超過、拒否ポリシーなどが理由となる。攻撃者は存在確認やリストクリーニングに悪用することがあり、不達詳細の返し方には注意が必要である。同略語のNetwork Detection and Response（通信監視製品）とは全く別概念で、電子メール配送の制御通知を指す。,電子メール,0
+XDR,Extended Detection and Response,エンドポイント、ネットワーク、クラウド、メールなど複数領域のテレメトリを統合し、横断的に検知・調査・対応する基盤（Extended Detection and Response）。EDRが端末、NDRが通信に特化するのに対し、XDRは領域をまたいだ相関で見逃しを減らし、対応操作も一箇所に寄せることを目指す。SIEMがログ全般の収集・分析基盤であるのに対し、XDRは検知とレスポンスに特化した製品カテゴリとして位置づけられることが多い。,監視・対応,0
+SOAR,Security Orchestration Automation and Response,"セキュリティ運用におけるオーケストレーション、自動化、レスポンスを担う仕組み（Security Orchestration, Automation and Response）。プレイブックに沿い、アラートの付加情報収集、チケット起票、隔離、通知などをツール横断で自動または半自動実行する。SIEMが収集と相関分析による検知を主とするのに対し、SOARは検知後の対応手順の標準化と省力化が目的である。誤った自動化は影響を拡大し得るため、適用範囲の設計が重要である。",監視・対応,1
+DNSSEC,DNS Security Extensions,DNS応答にデジタル署名を付与し、利用者側で改ざんやなりすまし応答でないことを検証できるようにする拡張（DNS Security Extensions）。ゾーン署名鍵や鍵署名鍵、RRSIGレコードなどを用いる。DNSキャッシュポイズニングへの対策として位置づけられるが、通信内容の暗号化（機密性）は提供しない。導入には対応リゾルバと、大きな応答を運ぶためのEDNS0が事実上必要になる。,ネットワーク・防御,1
+SPF,Sender Policy Framework,送信側ドメインのDNS（主にTXTレコード）に、そのドメインとしてメール送信を許可するホスト（IPアドレス等）を宣言し、受信側がエンベロープの送信元（MAIL FROM）を検証する仕組み（Sender Policy Framework）。許可されていないIPからの送信を偽装と判定できる。本文の改ざんまでは検知せず、DKIMが署名による内容・ドメインの対応確認、DMARCが両者の結果に基づく方針と報告を担う。,電子メール,1
+DKIM,DomainKeys Identified Mail,送信側がメールのヘッダや本文に電子署名を付与し、受信側がDNS上の公開鍵で検証する送信ドメイン認証（DomainKeys Identified Mail）。転送などで送信元IPが変わっても署名が残れば検証できる点がSPFと異なる。署名対象が改ざんされると検証に失敗する。DomainKeysやIIMを前身とする。SPFが送信IPの認可、DMARCがSPF／DKIMのアライメント評価と処分方針・レポートを担う。,電子メール,1
+DMARC,Domain-based Message Authentication Reporting and Conformance,"SPFおよびDKIMの検証結果と、ヘッダFromドメインとの一致（アライメント）に基づき、失敗時の扱い（none／quarantine／reject）を送信側ドメインがDNSで宣言し、受信側から報告を受ける仕組み（Domain-based Message Authentication, Reporting and Conformance）。SPFやDKIM単体ではヘッダの表示上の送信者まで保証しにくい問題を補う。なりすましメール対策の方針制御と可視化を担う上位の枠組みである。",電子メール,1
+ゼロトラスト,Zero Trust,ネットワークの内外を問わず、アクセス要求のたびに利用者・端末・コンテキストを検証し、最小権限で許可するという考え方（Zero Trust）。従来の境界防御モデルが「内部は信頼できる」とみなすのに対し、侵害や内部不正を前提に都度認証・認可する。実装の構成要素としてZTNA、マイクロセグメンテーション、継続的なデバイス健全性確認などがある。特定製品の名称ではなく、アーキテクチャ上の原則である。,ネットワーク・防御,1
+CASB,Cloud Access Security Broker,クラウドサービス（特にSaaS）の利用状況を可視化し、アクセス制御、データ保護、脅威対策を仲介する仕組み（Cloud Access Security Broker）。シャドウITの発見、不適切な共有や機密データの持ち出し防止、クラウド上の設定不備への対処などに用いる。SWGがWeb全般の通信制御、SASEがネットワーク機能とセキュリティのクラウド一体提供であるのに対し、CASBはクラウド利用の可視性と制御に焦点を置く。,ネットワーク・防御,1
+SASE,Secure Access Service Edge,WAN機能（SD-WANなど）とセキュリティ機能（SWG、CASB、ZTNA、FWaaSなど）をクラウド上のサービスエッジとして一体提供するアーキテクチャ（Secure Access Service Edge）。拠点や遠隔利用者をデータセンターの境界装置へ集約させる従来型から、利用者が近いエッジで検査・制御する形へ移す。ゼロトラストの実装手段の一つとなり得るが、用語自体はネットワークとセキュリティの統合提供モデルを指す。,ネットワーク・防御,1
+DLP,Data Loss Prevention,機密情報の外部持ち出しや不正な転送を、内容の識別とポリシーにより検知・遮断する仕組み（Data Loss Prevention）。メール、Web、エンドポイント、クラウドストレージなどを検査対象とし、個人情報や機密区分付きデータなどのパターンや指紋で識別する。CASBやメールセキュリティと併用されることが多い。暗号化やアクセス制御が開示そのものを制限するのに対し、DLPは持ち出しの検知と抑止に主眼がある。,ネットワーク・防御,1
+MDM,Mobile Device Management,スマートフォンやタブレットなどのモバイル端末を、設定配布、遠隔ロック／ワイプ、アプリ制御、構成コンプライアンス確認などで一元管理する仕組み（Mobile Device Management）。BYODでは私物と業務データの分離が課題となり、MDMに加えMAM（アプリ管理）やコンテナ化が検討される。端末全体を管理する点が、ブラウザ隔離（RBI）や仮想デスクトップ（VDI）によるデータ分離とはアプローチが異なる。,ネットワーク・防御,1
+BYOD,Bring Your Own Device,従業員の私物端末を業務に利用すること（Bring Your Own Device）。導入コストや利便性の利点がある一方、端末の管理権限が組織に限定的で、紛失・マルウェア・私的アプリ経由の情報漏えいリスクが高まる。対策としてMDM／MAMによる管理、業務データのコンテナ分離、VDIやアプリケーション仮想化でデータを端末に残さない構成などが用いられる。会社貸与端末の一括管理モデルと対比される。,ネットワーク・防御,0
+XSS,Cross-Site Scripting,Webページに悪意あるスクリプトを混入させ、他の利用者のブラウザ上で実行させる攻撃（Cross-Site Scripting）。セッションIDの窃取、画面の改ざん、偽フォームによる認証情報の奪取などが典型的な被害である。反射型、格納型、DOMベースの類型がある。対策の基本は出力時のエスケープ（適切なエンコーディング）、コンテンツセキュリティポリシー、CookieのHttpOnly属性などである。入力をSQLとして解釈させるSQLiとは注入先が異なる。,脆弱性・攻撃,0
+CSRF,Cross-Site Request Forgery,利用者が認証済みのセッションを持っている状態を悪用し、本人の意図しないリクエストを外部サイトから送信させる攻撃（Cross-Site Request Forgery）。送金、設定変更、パスワード変更などが被害例となる。XSSが利用者のブラウザ内でスクリプトを実行させるのに対し、CSRFは正規のリクエスト形式を第三者サイトから踏ませる点が異なる。対策はCSRFトークン、SameSite属性付きCookie、重要操作での再認証などである。,脆弱性・攻撃,1
+SSRF,Server-Side Request Forgery,攻撃者が指定したURLへ、脆弱なサーバ自身からリクエストを発行させる攻撃（Server-Side Request Forgery）。サーバが内部ネットワークやクラウドのメタデータサービス、ローカルインタフェースへ届く立場にあることを悪用し、外部から直接は到達できない資源の情報取得や操作を狙う。XSS／CSRFが利用者ブラウザ側の問題であるのに対し、SSRFはサーバの出向き通信が対象である。対策は出向き先の制限とURLの厳格な検証である。,脆弱性・攻撃,1
+SQLi,SQL Injection,アプリケーションが組み立てるSQL文に、入力値として不正なSQL断片を差し込み、データベースを意図せず操作する攻撃（SQL Injection）。認証回避、データ窃取・改ざん・削除、場合によってはOSコマンド実行へ発展し得る。対策の基本はプレースホルダ（パラメータ化照会）の利用で、入力のエスケープだけに頼るのは不十分とされやすい。XSSがブラウザ向けスクリプトの注入であるのに対し、SQLiはデータベース向け言語の注入である。,脆弱性・攻撃,1
+XXE,XML eXternal Entity,XMLの外部実体（External Entity）参照を処理するパーサの仕様を悪用し、サーバ上のローカルファイル読取り、内部ネットワークへのリクエスト（SSRF的被害）、サービス妨害などを引き起こす攻撃（XML eXternal Entity）。XMLを受け取るAPIや文書処理が対象となる。対策は外部実体の解決を無効化するなど、パーサ設定の硬化が中心である。HTML／スクリプトを対象とするXSSや、SQL文を対象とするSQLiとは注入先の言語が異なる。,脆弱性・攻撃,0
+RCE,Remote Code Execution,遠隔の攻撃者が対象システム上で任意のコードやコマンドを実行できる状態、またはそれを可能にする攻撃・脆弱性（Remote Code Execution）。バッファオーバーフロー、脆弱なデシリアライゼーション、OSコマンドインジェクションなどがきっかけとなり得る。侵害後は永続化や横展開、データ窃取へ進むことが多い。影響度が極めて高いため、パッチ適用、入力検証、最小権限、実行防止機構（DEP／ASLR等）が防御側の要点となる。,脆弱性・攻撃,0
+DoS,Denial of Service,システムの資源（帯域、CPU、メモリ、アプリケーションの処理能力など）を枯渇または不能にし、正当な利用者がサービスを使えない状態にする攻撃（Denial of Service）。大量トラフィック型のほか、脆弱性を突いてプロセスを落とすロジック型もある。多数の発信源から行うものがDDoS、第三者サーバの応答を反射・増幅させるものがDRDoSである。可用性を直接損なう点が、機密性を狙う情報窃取型攻撃と異なる。,脆弱性・攻撃,0
+DDoS,Distributed Denial of Service,多数のホスト（ボットネットなど）から同時に負荷を掛け、単一発信源の遮断だけでは止めにくいDoS攻撃（Distributed Denial of Service）。帯域飽和、コネクション枯渇、アプリケーション層への大量リクエストなど形態は多様である。DRDoSは開いたサービス（DNS、NTPなど）を反射・増幅に使う亜種である。対策は上流でのフィルタ、CDNやスクラビング、レート制限、サーバ資源の余裕と監視である。,脆弱性・攻撃,1
+APT,Advanced Persistent Threat,特定の組織や目的に対し、高度な手法を組み合わせて長期間にわたって潜入・偵察・窃取などを行う脅威（Advanced Persistent Threat）。機会的なばらまき型マルウェアと異なり、標的調査、正規ツールの悪用やゼロデイの使用、潜伏と横展開が特徴とされる。サイバーキルチェーンやMITRE ATT&CKで段階を整理して対処する。防御は入口対策だけでなく、侵入前提の検知（EDR／NDR）、権限管理、ログ保全が重要である。,脆弱性・攻撃,0
+MITM,Man-In-The-Middle attack,通信経路上に攻撃者が割り込み、当事者の間に入って盗聴・改ざん・なりすましを行う中間者攻撃（Man-In-The-Middle attack）。無線LANへの偽アクセスポイント設置、ARPスプーフィング、DNSの偽応答などが前提になりやすい。対策はTLSなどによる暗号化とサーバ認証、証明書の検証、HSTS、ネットワークの改ざん検知である。単なる受動的な盗聴と異なり、通信内容の改変やセッションの乗っ取りまで行い得る点が特徴である。,脆弱性・攻撃,0
+C2,Command and Control,侵入済みのマルウェアやバックドアが、攻撃者から指令を受け結果を送り返すために接続する指令サーバおよびその通信（Command and Control）。DNS、HTTPS、クラウドサービスを偽装したチャネルが使われることもある。キルチェーンでは侵入後の持続的な操作フェーズの要となる。防御側は通信先の脅威インテリジェンス、プロキシやDNSでの遮断、EDR／NDRによる異常通信の検知で指令経路を断つことを目指す。,脆弱性・攻撃,0
+BEC,Business Email Compromise,取引先や経営者、従業員になりすました電子メールにより、送金先の変更や機密情報の送付などを行わせる詐欺（Business Email Compromise）。マルウェア感染を必ずしも伴わず、文面とメールヘッダの偽装、正規アカウントの乗っ取りが手段となる。技術的にはSPF／DKIM／DMARC、表示名と実アドレスの確認、送金時の複数人承認や別チャネル確認が有効である。不特定多数向けの迷惑メールとは、特定組織を狙う社会工学的手法である点で異なる。,電子メール,1
+BCP,Business Continuity Plan,災害、大規模障害、サイバー攻撃などでも重要業務を中断せず、中断した場合も目標時間内に再開するための計画（Business Continuity Plan）。BIAで把握した重要業務と許容停止時間を前提に、代替手順、体制、資源を定める。BCMがマネジメント活動全体、BCMSがその管理システム、DRが主にITシステムの復旧であるのに対し、BCPは事業継続の具体的な計画文書を指す。RTO／RPOの目標設定と訓練が実効性を左右する。,管理・運用,1
+RTO,Recovery Time Objective,障害や災害の発生後、業務やシステムを復旧させるまでに許容できる目標時間（Recovery Time Objective）。どれだけ早く戻すかを表す。RPOがどの時点までのデータを戻すか（データ損失の許容範囲）であるのに対し、RTOは停止時間の許容である。BIAの結果を踏まえて設定し、バックアップ方式、冗長化、代替サイトの設計を制約する。RTOを短くするにはホットスタンバイやクラスタなど、より即応性の高い構成が必要になる。,管理・運用,0
+RPO,Recovery Point Objective,障害発生時に、どの時点までデータに戻せればよいかを示す目標復旧時点（Recovery Point Objective）。許容できる最大のデータ損失量を時間で表したものである。RTOがサービスの停止時間、RPOがデータの鮮度（バックアップや複製の間隔）に対応する。例えばRPOが1時間なら、少なくとも1時間以内に取得した複製が必要である。同期複製はRPOを小さくでき、日次バックアップはRPOが長くなりやすい。,管理・運用,0
+PDCA,Plan-Do-Check-Act,計画（Plan）、実施（Do）、点検（Check）、改善（Act）を繰り返してマネジメントを継続的に改善するサイクル。ISMS（ISO/IEC 27001）や品質管理、BCMSなどで採用される。OODAループが観察から迅速な意思決定・行動へつなげる現場寄りのサイクルであるのに対し、PDCAは方針と評価に基づく組織的な改善に向く。計画だけで終わらせず、監査や計測（Check）と是正（Act）まで回すことが制度上も求められる。,管理・運用,1
+SBOM,Software Bill of Materials,ソフトウェアを構成するコンポーネント（ライブラリ、モジュール、版数、ライセンス、供給元など）を列挙した部品表（Software Bill of Materials）。既知の脆弱性（CVE）やライセンス違反、サプライチェーンリスクの影響範囲を特定するために使う。ASMが外部から見える攻撃面の継続把握であるのに対し、SBOMは成果物内部の構成透明性を提供する。調達時の判断や、インシデント時に自組織が影響を受けるかの切り分けに用いる。,管理・運用,1
+PoLP,Principle of Least Privilege,主体（利用者、プロセス、サービス）に対し、業務に必要な最小限の権限だけを付与するという原則（Principle of Least Privilege）。侵害や誤操作が起きたときの被害範囲を限定する。職務の分離が同一人物への権限集中を避ける（発行と承認を分ける等）のに対し、最小権限は各主体の権限の広さそのものを抑える。特権アカウントの管理、ロールベースアクセス制御、定期的な権限棚卸しが実践手段となる。,管理・運用,1
+TCP,Transmission Control Protocol,転送の信頼性を提供するトランスポート層のコネクション型プロトコル（Transmission Control Protocol）。シーケンス番号、確認応答、再送、フロー制御により、到達・順序・重複排除を保証する。接続開始には3ウェイハンドシェイクを用いる。UDPがコネクションレスで低遅延だが到達を保証しないのに対し、TCPは信頼性を優先する。HTTP、SMTP、SSHなど多くの業務通信の下位に位置する。,ネットワーク基礎,0
+UDP,User Datagram Protocol,コネクションを張らず、データグラムを送るトランスポート層プロトコル（User Datagram Protocol）。到達確認や再送、順序保証を持たないためオーバーヘッドが小さく、DNS問い合わせ、音声・映像、一部のトンネルに使われる。信頼性は上位層や応用側が担う。TCPが接続型で信頼性を提供するのに対し、UDPは速さ和非接続性を優先する。反射型DDoSの増幅に悪用されやすい開放サービスの搬送にも使われる。,ネットワーク基礎,0
+IP,Internet Protocol,パケットを宛先ホストまで中継するためのネットワーク層プロトコル（Internet Protocol）。送信元・宛先IPアドレスを持ち、ルータが経路選択して転送する。ベストエフォートであり、到達や順序の保証はTCPなど上位に委ねる。IPv4とIPv6の世代があり、ICMPが制御・エラー通知、IPsecがこの層での保護を担う。データリンク層のMACアドレスによる同一セグメント内転送とは役割が異なる。,ネットワーク基礎,0
+IPv4,Internet Protocol version 4,32ビットのアドレス空間を用いるIPの第4版（Internet Protocol version 4）。ドット区切り十進で表現され、アドレス枯渇を背景にNATやCIDR、プライベートアドレスが広く使われる。ICMP、ARP（LAN上でのMAC解決）と組み合わせて運用する。後継のIPv6は128ビットでNAT前提を弱める設計である。現在もインターネットと企業網の双方で主流として残っており、移行期には両者の共存が一般的である。,ネットワーク基礎,0
+IPv6,Internet Protocol version 6,128ビットのアドレス空間を用いるIPの第6版（Internet Protocol version 6）。アドレス枯渇への対応に加え、近隣探索、アドレス自動設定、IPsecの標準的な位置づけなど、IPv4から仕様が再設計されている。表記はコロン区切りの十六進である。IPv4との直接互換はなく、デュアルスタックや翻訳技術で共存する。広大なアドレス空間により、エンドツーエンド通信をNATなしで設計しやすい点が特徴である。,ネットワーク基礎,0
+TCP/IP,Transmission Control Protocol / Internet Protocol,インターネットおよび多くの私設網で標準となっている通信プロトコル群の総称（Transmission Control Protocol / Internet Protocol）。狭義にはトランスポートのTCPとネットワーク層のIPを指すが、実務上はUDP、ICMP、アプリケーションプロトコルまで含めた階層モデル全体を指すことが多い。OSI参照モデルと対比され、実装の事実上の標準である。セキュリティ機能はIPsecやTLSなど別プロトコルが積み上がる形で付加される。,ネットワーク基礎,0
+ARP,Address Resolution Protocol,同一リンク上で、IPアドレスに対応するMACアドレスを問い合わせて解決するプロトコル（Address Resolution Protocol）。IPv4環境で用い、广播のARP要求とユニキャストのARP応答で対応表（ARPキャッシュ）を更新する。正規の応答を装う偽ARP（ARPスプーフィング）は中間者攻撃の前提になり得る。IPv6では近隣探索（NDP）が相当する。逆向きにMACからIPを求める古い方式がRARPである。,ネットワーク基礎,0
+RARP,Reverse Address Resolution Protocol,MACアドレスから対応するIPアドレスを求める、ARPとは逆方向の古いプロトコル（Reverse Address Resolution Protocol）。ディスクレス端末が自分のIPを知る目的などで使われた。現在はDHCPがアドレス自動設定の主流であり、RARPは歴史的位置づけである。ARPが「IPに対するMAC」を知るのに対し、RARPは「MACに対するIP」を知る。運用上の現行技術というより、ARPとの対比で理解する用語である。,ネットワーク基礎,0
+DHCP,Dynamic Host Configuration Protocol,ホストにIPアドレス、サブネットマスク、デフォルトゲートウェイ、DNSサーバ情報などを自動配布するプロトコル（Dynamic Host Configuration Protocol）。リース時間付きで割り当て、期限更新や返却を管理する。手動設定の誤りを減らし、移動端末の接続を容易にする。なりすましDHCPサーバは誤ったゲートウェイやDNSを配り中間者攻撃の温床になり得る。RARPや静的設定に代わる現行の自動構成手段である。,ネットワーク基礎,0
+DNS,Domain Name System,ドメイン名とIPアドレスなどの資源レコードを対応付ける分散型の名前解決システム（Domain Name System）。スタブリゾルバ、キャッシュ（フルサービス）リゾルバ、権威サーバの役割分担で問い合わせが処理される。可用性の要であると同時に、偽応答（キャッシュポイズニング）やトンネル悪用の対象にもなる。改ざん検知にはDNSSEC、応答サイズ拡張にはEDNS0を用いる。名前と番号の対応を人間と機器の双方が扱う基盤である。,ネットワーク基礎,0
+ICMP,Internet Control Message Protocol,IPの制御情報やエラー通知を運ぶプロトコル（Internet Control Message Protocol）。到達不能、時間超過（TTL切れ）などの通知のほか、エコー要求／応答（ping）による疎通確認、経路追跡の材料として使われる。通常のアプリデータ転送ではなく、診断とエラー報告が役割である。過剰なICMPは偵察やDoSに使われ得るため、境界でのフィルタ方針が検討される。IPv6ではICMPv6が近隣探索などにも用いられる。,ネットワーク基礎,0
+NAT,Network Address Translation,私設網のプライベートIPアドレスと、インターネット側のグローバルIPアドレスを相互に変換する仕組み（Network Address Translation）。アドレス枯渇対策と、内部構成の隠蔽（限定的な防御効果）に用いられる。NAPT（IPマスカレード）はポート番号も変換し、複数内部ホストで少数のグローバルアドレスを共有する。IPv6では必須ではない。変換状態に依存するため、対向からの着信や一部プロトコルの通過に制約が出る。,ネットワーク基礎,1
+RIP,Routing Information Protocol,隣接ルータと経路情報を交換する距離ベクトル型のルーティングプロトコル（Routing Information Protocol）。経由するルータ数（ホップ数）をメトリックとし、最大15ホップまでという規模制限がある。定期的な経路広告が特徴で、小規模で単純な網に向く。OSPFがリンクステートで大規模・高速収束向き、BGPがAS間の経路交換である点と対比される。不正な経路情報の混入を防ぐため、認証や広告の送受信インタフェース制限が重要である。,ネットワーク基礎,0
+OSPF,Open Shortest Path First,リンクステート型のルーティングプロトコル（Open Shortest Path First）。各ルータがリンクの状態を領域内に広告し、ダイクストラ法で最短経路を計算する。エリア分割により規模を抑え、収束が比較的速い。メトリックにはコスト（帯域など）を用いる。RIPがホップ数に基づく距離ベクトルで小規模向きであるのに対し、OSPFは企業内などのIGPとして用いられる。AS間の経路交換はBGPの役割である。,ネットワーク基礎,0
+BGP,Border Gateway Protocol,自律システム（AS）間で経路情報を交換するパスベクトル型プロトコル（Border Gateway Protocol）。インターネットの経路制御の基盤であり、ASパスや各種属性に基づいて経路を選択する。組織内部のIGP（OSPFやRIP）がAS内の最適経路を扱うのに対し、BGPは組織間のポリシー制御と相互接続を担う。経路ハイジャックへの備えとして、フィルタやRPKIなど起源検証が重要になる。大規模な到達性そのものを左右する。,ネットワーク基礎,0
+SNMP,Simple Network Management Protocol,ルータやスイッチなどのネットワーク機器を、情報の取得（監視）と一部設定により管理するためのプロトコル（Simple Network Management Protocol）。マネージャがエージェントのMIBを読み書きする。v1／v2cはコミュニティ名による弱い認証が中心で、v3は認証と暗号化を提供する。取得情報が漏えいすると構成把握に悪用され得るため、コミュニティの管理、バージョン、アクセス元制限が要点である。機器監視の標準的な手段である。,ネットワーク基礎,0
+NTP,Network Time Protocol,ネットワーク上の機器の時計を階層的な参照源に同期させるプロトコル（Network Time Protocol）。ログの時刻突合、Kerberos認証、TOTP、証明書の有効期間判定など、セキュリティ機能の前提となる。参照源のなりすましや大きな時刻ずれは認証失敗や監査不能を招く。階層（ストラタム）で信頼の連鎖を表す。単純な時刻合わせツールではなく、分散システムにおける時刻の一貫性を支える基盤サービスである。,ネットワーク基礎,0
+HTTP,HyperText Transfer Protocol,Webブラウザとサーバの間で、ハイパーテキストなどの資源を要求・応答するアプリケーション層プロトコル（HyperText Transfer Protocol）。メソッド（GET、POSTなど）、ヘッダ、ステータスコードでやり取りする。平文であり、経路上の盗聴・改ざんに弱い。機密性を要する通信ではTLSで保護したHTTPSを用いる。ステートレスであるため、状態維持にはCookieやセッション管理が別途必要になる。Webシステムの基本搬送プロトコルである。,ネットワーク基礎,0
+HTTPS,HTTP Secure,HTTPをTLS（Transport Layer Security）で保護した通信（HTTP Secure）。盗聴防止（暗号化）、改ざん検知、サーバ証明書による相手認証を提供する。平文のHTTPと対比され、ログインや個人情報を扱うサイトでは必須とされる。証明書の検証不良や混合コンテンツ、古いプロトコル版の許容は保護を弱める。IPsecがIPパケット単位であるのに対し、HTTPSはWebのアプリケーション接続単位の保護である。,ネットワーク基礎,0
+FTP,File Transfer Protocol,クライアントとサーバの間でファイルを転送するためのプロトコル（File Transfer Protocol）。制御用とデータ用に接続を分け、能動（アクティブ）と受動（パッシブ）のモードがある。認証情報やファイル内容が平文になり得る点が問題で、保護にはFTPS（TLS保護）やSSH上のSFTPが用いられる。HTTPがWeb資源の取得に最適化されているのに対し、FTPはファイルのアップロード／ダウンロードに特化した古典的手段である。,ネットワーク基礎,0
+SMTP,Simple Mail Transfer Protocol,電子メールを送信し、サーバ間で転送するためのプロトコル（Simple Mail Transfer Protocol）。標準ではTCP 25番を用い、MTA同士の中継に使う。利用者からの投稿（Submission）は認証付きの587番などが推奨され、25番の第三者中継は迷惑メールの温床となる。通信自体は伝統的に平文で、途中からの暗号化にはSTARTTLSを用いる。POP／IMAPがメールの取出・閲覧であるのに対し、SMTPは送信と中継の役割である。,電子メール,0
+POP,Post Office Protocol,メールサーバ上のメールボックスから、利用者がメッセージを取り出すプロトコル（Post Office Protocol）。現行はPOP3で、一般に端末へダウンロードしてサーバ上からは削除する使い方が多い。IMAPがサーバ上でフォルダ管理や複数端末同期を行うのに対し、POPは取出に特化した単純な方式である。認証情報や本文の保護にはSTARTTLSや専用の暗号ポートを用いる。オフライン閲覧向きだが、横断的な管理には向かない。,電子メール,0
+IMAP,Internet Message Access Protocol,メールをサーバ上に保持したまま、フォルダ管理や検索、複数端末からの参照を可能にするプロトコル（Internet Message Access Protocol）。利用者がサーバ上の状態を直接操作する点が、ダウンロード中心のPOPと異なる。常時接続や同期に適する一方、サーバ側の容量とアクセス制御が重要になる。認証と通信路の保護にはSTARTTLSなどが用いられる。MUAが利用者インタフェース、IMAPがメールボックスへのアクセス手順という分担である。,電子メール,0
+MACアドレス,Media Access Control address,ネットワークインタフェースを識別するデータリンク層のアドレス（Media Access Control address）。通常は48ビットで、ベンダ識別と機器識別からなる。同一セグメント内のフレーム配送に使われ、IPアドレスがネットワーク層の論理アドレスであるのと対をなす。IPv4ではARPでIPからMACへ変換する。変更やなりすまし（スプーフィング）が可能なため、認証やフィルタの唯一の根拠にはしにくい。,ネットワーク基礎,0
+NetBIOS,Network Basic Input/Output System,主にWindows環境で使われてきた、名前解決やセッション、データグラム通信のためのインタフェース（Network Basic Input/Output System）。名前の登録・解決（名前サービス）、セッションサービスなどを提供する。インターネット向けのDNSとは別に、LAN上のコンピュータ名解決の文脈で扱われることが多い。上位の応用インタフェースであり、搬送そのものはNetBEUIやTCP/IP上の実装（NBT）など下位に依存する。,ネットワーク基礎,0
+NetBEUI,NetBIOS Extended User Interface,NetBIOSを小規模LANで動かすために用いられた、ルーティングされない古いプロトコル（NetBIOS Extended User Interface）。ブリッジ可能な同一ネットワーク内でのみ通信し、IPネットワークを越えた経路制御を持たない。現在のTCP/IP基盤とは異なり、セグメントを超える通信には向かない。NetBIOSがAPI／サービス、NetBEUIがその上の搬送プロトコルという関係で対比される。歴史的経緯の理解用の用語である。,ネットワーク基礎,0
+VLAN,Virtual LAN,物理的なスイッチ構成を変えずに、論理的にLANを分割する技術（Virtual LAN）。同一VLAN内が一つのブロードキャストドメインとなり、異なるVLAN間の通信はルータ（またはL3スイッチ）を経由する。部門や信頼度に応じた区画、管理トラフィックの分離などに用いる。MACアドレスやポート、タグ（IEEE 802.1Q）で所属を識別する。物理分割より柔軟だが、設定ミスによる意図しない接続（VLANホッピング）に注意が必要である。,ネットワーク基礎,1
+MTU,Maximum Transmission Unit,あるインタフェースや経路で、一度に送信できるIPデータグラム（またはフレーム）の最大サイズ（Maximum Transmission Unit）。これを超えるデータは分割（フラグメント）されるか、送信できずエラーとなる。経路上の最小MTUを把握しないと、断片化や通信不達が起きる。IPv6では中間での断片化を想定せず、送信側の経路MTU探索が重要になる。性能と到達性の双方に影響する伝送単位の上限である。,ネットワーク基礎,0
+TTL,Time To Live,パケットがネットワーク上で生存できる上限を表す値（Time To Live）。IPv4ではルータを経由するたびに減算され、0になると破棄されてICMP時間超過が返る（tracerouteの原理）。ループ時のパケット無限循環を防ぐ。IPv6では Hop Limit と呼ばれる。DNSキャッシュの有効期間もTTLと呼ばれ、こちらは資源レコードのキャッシュ時間である。文脈によりパケット寿命とDNSキャッシュ寿命の二系統がある。,ネットワーク基礎,0
+MUA,Mail User Agent,利用者がメールの作成、閲覧、送信指示、受信箱の操作を行うクライアントソフトウェア（Mail User Agent）。メーラやWebメールのインタフェースが該当する。送信時はMSAへ投稿し、受信時はPOPやIMAPでメールボックスにアクセスする。サーバ間の中継を行うMTA、投稿受付のMSAとは役割が異なる。利用者端末で動くため、認証情報の保管や添付ファイル経由のマルウェア対策がエンドポイント側の課題となる。,電子メール,0
+MSA,Mail Submission Agent,利用者が投稿するメールを受け付け、認証したうえでMTAへ渡す送信受付の役割（Mail Submission Agent）。TCP 587番（メッセージサブミッション）などが割り当てられ、送信者認証を必須とすることが多い。MTAがサーバ間の転送（25番）を担うのに対し、MSAは利用者からの入口である。OP25B環境では動的IPから外部の25番へ送れないため、自社MSA（587番）経由の送信が前提となる。迷惑メール対策上の重要な分界である。,電子メール,0
+MTA,Mail Transfer Agent,メールを宛先ドメインのサーバへ中継・配送するサーバ側ソフトウェア（Mail Transfer Agent）。SMTP（主にTCP 25番）でMTA同士が通信する。利用者からの直接投稿を無制限に受けると第三者中継（オープンリレー）となり、迷惑メールの踏み台になる。MUAが利用者インタフェース、MSAが認証付き投稿受付、MTAがサーバ間転送、という分担で理解する。経路上の保護にはSTARTTLSなどが用いられる。,電子メール,0
+BOF,Buffer Overflow,プログラムが確保したバッファの境界を超えてデータを書き込み、隣接メモリを破壊する攻撃手法（Buffer Overflow）。戻り番地の上書きによる任意コード実行（RCE）やプロセスの異常終了（DoS）につながり得る。入力長の検査不備が前提となる。防御には境界検査に加え、DEP（実行防止）、ASLR（配置のランダム化）、スタックカナリアなどがある。OSコマンドインジェクションがコマンド解釈の悪用であるのに対し、BOFはメモリ破壊による制御奪取である。,脆弱性・攻撃,1
+SASL,Simple Authentication and Security Layer,SMTP、IMAP、LDAPなどのアプリケーションに、認証方式を差し込めるようにする枠組み（Simple Authentication and Security Layer）。PLAIN、LOGIN、DIGEST-MD5、外部機構（GSS-API経由のKerberosなど）といった仕組みをプロトコル本体から分離して扱う。各アプリが独自に認証を実装する代わりに、共通の層として方式を選択・交渉する。通信路の暗号化そのものではなく、認証のプラグイン機構である点がTLSと異なる。,認証・認可,0
+GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数のセキュリティ機構を、共通のAPI経由でアプリケーションから利用するための仕様（Generic Security Service Application Program Interface）。GSS-APIとも表記する。アプリケーションは個別機構の詳細を意識せず、認証やメッセージ保護を依頼できる。SASLの認証方式の一つとしてGSSAPIが選ばれる関係にある。ディレクトリ参照のLDAPや、チケット認証そのもののKerberosとは、抽象度（共通インタフェース）が異なる。,認証・認可,0
+IIM,Identified Internet Mail,Ciscoが提唱した電子メールへの署名方式（Identified Internet Mail）。送信ドメインの正当性を暗号署名で示す着想を持ち、Yahoo!のDomainKeysと合流してDKIM（DomainKeys Identified Mail）の技術的基盤となった。現在の送信ドメイン認証の実務ではDKIMと、それを方針面で統括するDMARCが中心である。IIM単体の現行標準というより、DKIM成立前史として位置づけられる用語である。,電子メール,0
+IP25B,Inbound Port 25 Blocking,他事業者が割り当てた動的IPアドレスから、自組織のメールサーバ（SMTP 25番）への着信を制限する迷惑メール対策（Inbound Port 25 Blocking）。動的IPの末端ホストが直接25番へ送り込む、ボットなどからの直送を受けにくくする。OP25Bが「自組織の動的IPから外部25番への送信」を制限するのに対し、IP25Bは「外部の動的IPから自組織メールサーバへの着信」側の制御である。正規送信はMSA経由を前提とする。,電子メール,1
+OP25B,Outbound Port 25 Blocking,自組織が割り当てた動的IPアドレスの末端から、インターネット上の他組織メールサーバへ宛てたSMTP（25番）の直接送信を制限する対策（Outbound Port 25 Blocking）。感染端末がボットとして迷惑メールを直送する経路を塞ぐ。正規の送信は認証付きのSubmission（587番）など自社MSA経由に誘導する。IP25Bが受信側での他社動的IP制限であるのに対し、OP25Bは送信側ISPによる出口制限である。日本で広く導入されている。,電子メール,1
+EDNS0,Extension Mechanisms for DNS (version 0),"DNSの機能を拡張する仕組み（Extension Mechanisms for DNS, version 0）。従来のUDP応答サイズ制限（512バイト）を緩和し、大きな応答や追加オプションを扱えるようにする。DNSSECの署名付き応答など、サイズの大きいレコードの搬送に事実上不可欠である。TCPフォールバックだけに頼ると遅延や負荷が増える。名前解決そのものの意味は変えず、プロトコルの運搬能力と拡張領域を増やす位置づけである。",ネットワーク基礎,1
+RDBMS,Relational Database Management System,関係モデル（表形式のテーブル、キー、関係演算）に基づいてデータを管理するデータベース管理システム（Relational Database Management System）。SQLによる定義・操作、トランザクション、整合性制約を備えるものが多い。Webアプリケーションの永続層として使われ、SQLインジェクションの主たる標的にもなる。階層型やNoSQLなど他モデルと対比され、正規化や権限管理、暗号化、監査ログが情報保護上の論点となる。,管理・運用,0
+PMI,Project Management Institute,プロジェクトマネジメントの知識体系や資格（PMPなど）を整備する国際的な専門団体（Project Management Institute）。PMBOKガイドの発行元として知られる。情報セキュリティマネジメント（ISMS）の認証機関ではなく、プロジェクトの立ち上げから終結までのマネジメント標準を扱う。システム開発やセキュリティ施策をプロジェクトとして運営する際の用語・プロセスの参照源となる。PMBOKがその知識体系、PMIが団体である。,標準・組織,0
+PMBOK,Project Management Body of Knowledge,プロジェクトマネジメントに関する標準的な知識、プロセス、用語を体系化した指南（Project Management Body of Knowledge）。PMIが発行する。立上げ、計画、実行、監視・コントロール、終結などのプロセス群と、スコープ・スケジュール・コスト・品質・リスクなどの知識エリアからなる。ISMSのPDCAがセキュリティマネジメントの継続的改善であるのに対し、PMBOKは個別プロジェクト運営の枠組みである。,標準・組織,0
+CISO,Chief Information Security Officer,組織の情報セキュリティを統括する責任者（Chief Information Security Officer）。方針の策定、リスク管理、投資配分、インシデント時の経営層への報告、関係部門との調整を担う。SOCやCSIRTが運用・対応の実行組織であるのに対し、CISOは戦略とガバナンスの責任者である。情報システム全般のCIOや、個人情報保護の責任者と役割が重なり得るため、責任分界の明確化が組織設計上の論点となる。,管理・運用,0
+IDaaS,Identity as a Service,認証、シングルサインオン、アカウント管理などのID管理機能を、クラウド上のサービスとして提供する形態（Identity as a Service）。SAMLやOIDCのIdPを外部に置き、複数SaaSへの横断的な認証とライフサイクル管理を行う。自前のディレクトリやアクセス管理装置を置くオンプレミス型と対比される。認証情報が集中するため、多要素認証、特権管理、障害時の代替手段が重要になる。IaaS／PaaS／SaaSの「ID版」に相当する。,認証・認可,0
+VDI,Virtual Desktop Infrastructure,サーバ上に仮想デスクトップを集約し、利用者が端末から画面転送などで利用する基盤（Virtual Desktop Infrastructure）。アプリとデータをサーバ側に置き、端末には画面情報を届けることで、紛失時の情報漏えいやBYOD時のデータ残留を抑えやすい。シンクライアントと組み合わせることが多い。アプリケーション仮想化やRBI（ブラウザだけ遠隔実行）より広い、デスクトップ全体の集中管理である。,ネットワーク・防御,1
+ISMAP,Information system Security Management and Assessment Program,政府が調達するクラウドサービスについて、セキュリティ対策を評価・登録する日本の制度（Information system Security Management and Assessment Program、政府情報システムのためのセキュリティ評価制度）。IPAが運用に関わり、サービス事業者が申告した管理策を監査し、リストに登録する。ISMS認証が組織のマネジメント適合を見るのに対し、ISMAPは政府利用を想定したクラウドサービスの安全性評価・可視化に焦点がある。,標準・組織,1
+SaaS,Software as a Service,アプリケーション機能そのものを、利用者がインフラを持たずにオンラインで利用する提供形態（Software as a Service）。電子メール、グループウェア、CRMなどが典型である。提供者はアプリと基盤の双方を運用し、利用者は設定・アカウント・データ分類などの責任を負う（責任共有モデル）。PaaSが実行基盤、IaaSが仮想インフラの提供であるのに対し、SaaSは完成した業務機能の提供である。CASBなどの利用可視性が課題になる。,管理・運用,1
+PaaS,Platform as a Service,アプリケーションを実行・開発するための基盤（ミドルウェア、実行環境、データストアなど）をクラウドで提供する形態（Platform as a Service）。利用者はコードとデータに責任を持ち、下位のOSやハードウェアは提供者が管理する。IaaSが仮想マシンなどのインフラ、SaaSが完成アプリであるのに対し、PaaSはその中間で開発者の実行環境を抽象化する。責任共有の境界がIaaSより提供者側に寄る点が特徴である。,管理・運用,1
+IaaS,Infrastructure as a Service,仮想サーバ、ストレージ、ネットワークなどのインフラ資源を、オンデマンドで提供するクラウド形態（Infrastructure as a Service）。利用者はOS以上（パッチ、設定、アプリ、アクセス制御）に責任を持ち、物理設備や仮想化基盤は提供者が担う。PaaS／SaaSより制御の自由度が高い反面、設定硬化や監視など自前で担う範囲が広い。責任共有モデルを誤解すると、設定不備による公開事故につながりやすい。,管理・運用,1
+TPM,Trusted Platform Module,端末のマザーボードなどに搭載され、暗号鍵の保護、プラットフォームの健全性計測、ディスク暗号の鍵格納などを行う専用チップ（Trusted Platform Module）。TCGが仕様を策定する。鍵を装置外に出さず計測値（PCR）で起動改ざんを検知できる。HSMがサーバやCA向けの外付け／専用装置であるのに対し、TPMは個々のPCやサーバに内蔵される信頼の起点（ルート・オブ・トラスト）である。,暗号,0
+TCG,Trusted Computing Group,TPMをはじめとする信頼できるコンピューティング関連の仕様を策定する業界団体（Trusted Computing Group）。プラットフォームの計測、リモートアテステーション、ストレージ保護などの技術仕様を扱う。NISTやISOのような公的標準化機関ではなく、ベンダが参加するコンソーシアムである。TPMの用語や機能を理解するときの仕様発行元として参照され、製品評価制度（Common Criteria）そのものとは役割が異なる。,標準・組織,0
+CVCF,Constant Voltage Constant Frequency,入力電源が変動しても、出力を一定の電圧・周波数に保つ安定化電源装置（Constant Voltage Constant Frequency）。高精度な電力を要する計算機室や産業機器で、電源品質の乱れによる誤動作や停止を防ぐ。UPSが停電時の一時給電（バッテリー）を主目的とするのに対し、CVCFは電圧・周波数の安定化に主眼がある。データセンターの電源設計において、可用性を支える設備側の対策として位置づけられる。,管理・運用,0
+UPS,Uninterruptible Power Supply,停電や瞬断が発生しても、蓄電池などにより一定時間電力を供給し続ける無停電電源装置（Uninterruptible Power Supply）。サーバやネットワーク機器の突然停止、データの不整合、正常な手順でのシャットダウン不能を防ぐ。CVCFが電圧・周波数の定常的な安定化であるのに対し、UPSは停電への橋渡しが主目的である。BCP／DRにおける設備面の対策であり、保持時間と負荷容量の設計が要点となる。,管理・運用,0
+IDC,Internet Data Center,サーバ、ストレージ、ネットワーク機器を集約し、電源、空調、物理入退、通信回線などの設備と運用を提供する施設（Internet Data Center）。自前設置より物理セキュリティや可用性設計を外出しできる。クラウドのIaaSが仮想資源の提供であるのに対し、IDCはコロケーションやハウジングを含む施設・運用サービスを指すことが多い。入退管理、監視、災害対策が情報セキュリティの物理層を支える。,管理・運用,1
+TEMPEST,TEMPEST,電子機器から放射または伝導する電磁波を傍受し、処理中の情報を復元しようとする攻撃、およびその対策に関する技術の通称（TEMPEST）。ディスプレイやケーブルからの漏えい電磁波が対象になり得る。ソフトウェアの脆弱性を突く攻撃ではなく、物理的な側チャネルの一種である。対策は遮蔽、フィルタ、ゾーン管理、装置の選定など施設・ハードウェア面が中心となる。機密性の高い区画で問題になる。,脆弱性・攻撃,0
+ISAC,Information Sharing and Analysis Center,特定の業種やコミュニティごとに、サイバー脅威情報を共有し分析する組織（Information Sharing and Analysis Center）。金融、重要インフラなどの分野別に設けられることが多い。得られた指標（侵入痕跡など）を参加組織の防御に還元する。JPCERT/CCが国内横断の調整機関であるのに対し、ISACは業種内の共有に特化する。脅威インテリジェンスを組織の枠を越えて循環させる枠組みである。,標準・組織,0
+OCF,Open CSIRT Foundation,CSIRTの成熟度評価モデルであるSIM3などの普及・運用を推進する財団（Open CSIRT Foundation）。インシデント対応組織が、単なる連絡窓口から、プロセス・人材・ツール・連携を備えた体制へ段階的に成熟するための枠組みを扱う。FIRSTなどの国際連携コミュニティや、国内のJPCERT/CCとは別主体である。CSIRT構築や改善を評価・可視化する際の参照元として位置づけられる。,標準・組織,0
+SIM3,Security Incident Management Maturity Model,CSIRT等のインシデント管理能力を、組織、人材、ツール、プロセスなどの観点で成熟度として評価するモデル（Security Incident Management Maturity Model）。OCFが推進する。有無のチェックリストではなく、継続的に能力を高める段階的な物差しである。ISMS認証がマネジメントシステム全般の適合を見るのに対し、SIM3はインシデント対応組織に特化した成熟度診断である。体制構築の現状把握と改善計画に用いる。,管理・運用,0
+EPP,Endpoint Protection Platform,マルウェア対策、ファイアウォール、デバイス制御など、エンドポイントを予防的に守る製品・基盤（Endpoint Protection Platform）。既知の脅威の侵入阻止や実行防止が中心である。EDRが侵入後の検知・調査・対応に重点を置くのに対し、EPPは入口での防御（アンチウイルス等）を担う。近年はEPPとEDRを統合した製品も多い。端末を総合的に予防する層であり、ネットワーク側のUTMやIDSとは設置点が異なる。,ネットワーク・防御,0
+SLA,Service Level Agreement,提供者と利用者の間で、サービスの品質、可用性、障害時の対応時間、測定方法などを文書で合意したもの（Service Level Agreement）。クラウドや委託運用、通信サービスで、期待水準と責任分界を明確にする。契約上の目標であり、RTO／RPOなどの復旧目標をサービス水準として落とすこともある。罰則やクレジットの有無は個別契約による。内部の努力目標（SLO）より、対外的に約束した水準という位置づけである。,管理・運用,0
+OODA,Observe-Orient-Decide-Act,観察（Observe）、情勢判断（Orient）、意思決定（Decide）、行動（Act）を短い周期で回し、変化に適応する意思決定ループ。軍事分野に由来し、セキュリティ運用やインシデント対応の現場判断にも援用される。PDCAが方針・計画と点検に基づく継続的改善（マネジメントサイクル）であるのに対し、OODAは不確実な状況下での迅速な状況認識と行動に主眼がある。両者は排他ではなく、層の異なるサイクルである。,管理・運用,1
+BCM,Business Continuity Management,事業継続を実現するための方針、体制、計画、教育、演習、改善を含むマネジメント活動全体（Business Continuity Management）。BCPが計画そのもの、BCMSがISO 22301などに基づく管理システム、DRがITシステムの復旧に寄るのに対し、BCMはそれらを運営する継続的な活動を指す。BIAで重要業務を把握し、戦略と計画を定め、訓練で実効性を確認する。サイバー攻撃を含む中断事象全般を対象とし得る。,管理・運用,1
+SOX法,Sarbanes-Oxley Act,企業の財務報告の信頼性を高めるため、内部統制や開示、経営者・監査人の責任を強化した米国法（Sarbanes-Oxley Act）。ITに関しては財務報告に関わるシステムの統制（アクセス管理、変更管理、ログなど）が問題になる。日本ではいわゆるJ-SOX（金融商品取引法に基づく内部統制報告制度）が対応する国内制度とされる。情報セキュリティ法規そのものではなく、財務報告の正当性と統制を目的とする点がISMSと異なる。,標準・組織,0
+BCI,Business Continuity Institute,事業継続の普及、ベストプラクティスの整備、資格認定などを行う国際的な専門団体（Business Continuity Institute）。BCIのグッドプラクティス・ガイドラインなどはBCMの参照源となる。ISO 22301がマネジメントシステムの要求事項であるのに対し、BCIは専門家コミュニティと知識・資格の提供主体である。国内の公的機関（内閣府の防災・事業継続の指針など）とは別系統の民間専門団体として位置づけられる。,標準・組織,0
+BCMS,Business Continuity Management System,事業継続を方針、計画、実施、評価、改善の仕組みとして運営するマネジメントシステム（Business Continuity Management System）。国際規格はISO 22301（要求事項）である。BCPが個別の計画文書、BCMが活動全体、DRがIT復旧に寄るのに対し、BCMSはそれらを文書化し監査可能なシステムとして回す枠組みを指す。ISMS（ISO/IEC 27001）が情報セキュリティ、BCMSが事業継続と、対象は異なるがPDCAの考え方は共通する。,管理・運用,0
+JIPDEC,Japan Information Processing and Development Center,プライバシーマーク制度の運営などで知られる一般財団法人日本情報経済社会推進協会（Japan Information Processing and Development Center に由来する略称）。個人情報保護体制の第三者評価や、電子署名・情報経済社会に関する普及活動を行う。ISMS適合性評価制度の運営にも関わり得る立場として、セキュリティとプライバシーの制度インフラを支える。IPAがセキュリティ対策の推進・試験実施であるのに対し、JIPDECは認証・マーク制度寄りの役割が目立つ。,標準・組織,0
+BIA,Business Impact Analysis,業務が中断した際の影響（売上、顧客、規制、安全など）を分析し、重要業務の特定、許容中断時間、必要資源を明らかにする作業（Business Impact Analysis）。BCPやBCMの前提となる。リスクアセスメントが「どんな脅威がどの程度か」を見るのに対し、BIAは「止まったときの影響と優先度」を見る。RTO／RPOの設定根拠となり、分析結果なしに復旧目標や代替策を決めると過不足が生じやすい。,管理・運用,1
+CP,Contingency Plan,緊急事態が発生した際の応急対応や代替手段をあらかじめ定めた計画（Contingency Plan）。被災直後の連絡、手動オペレーション、代替サイトへの切替えなど、当面の継続・復旧手順を扱う。BCPが事業継続全体の計画、DRが災害後のIT復旧に重点を置くのに対し、コンティンジェンシープランは不測の事態への備えと応急の手順書という位置づけが強い。訓練と更新が実効性を左右する。,管理・運用,1
+DR,Disaster Recovery,災害や重大障害の後に、情報システムやデータを目標どおり復旧させる取り組み（Disaster Recovery）。バックアップ、予備機、遠隔地レプリケーション、復旧手順の訓練などを含む。BCP／BCMが事業全体の継続を扱うのに対し、DRは主にIT基盤の回復に焦点を置く。RTO（どれだけ早く）とRPO（どの時点のデータを）が設計指標となる。予防（冗長化）と事後復旧の両面から可用性を支える。,管理・運用,1
+情報セキュリティ,Information Security,情報の機密性、完全性、可用性を中心に、真正性、責任追跡性、否認防止、信頼性など必要な特性を維持すること（Information Security）。JIS Q 27000シリーズなどで概念が整理される。サイバーセキュリティが主に電子的な攻撃への備えを指して使われることが多いのに対し、情報セキュリティは紙媒体や人的・物理的管理も含むより広い保護活動を指す。ISMSはこれを組織的に運営する仕組みである。,管理・運用,1
+サイバー攻撃,Cyber Attack,コンピュータ、ネットワーク、情報システムを対象に、不正アクセス、マルウェア、妨害、詐取などを仕掛ける攻撃の総称（Cyber Attack）。対象や手法は、Webの注入攻撃、認証突破、DDoS、標的型メール、サプライチェーン経由など多岐にわたる。情報セキュリティ上の脅威の一類型であり、自然災害や誤操作とは別に、意図を持った敵対行為として扱う。防御は予防、検知、対応、復旧を組み合わせて設計する。,脆弱性・攻撃,1
+機密性,Confidentiality,認可された者だけが情報にアクセスでき、それ以外には開示されない特性（Confidentiality）。アクセス制御、暗号化、秘密区分、覗き見防止などが手段となる。完全性が改ざんされないこと、可用性が必要なときに使えることと並び、いわゆるCIAの三要素を構成する。漏えいは機密性の喪失であり、暗号化は主にこの特性を守る。公開してよい情報にまで適用すると利便を損ねるため、資産の分類に応じて求める水準を決める。,管理・運用,1
+完全性,Integrity,情報や処理結果が、権限のない主体により改ざん・破壊されず、正確で完全な状態に保たれる特性（Integrity）。ハッシュ、メッセージ認証コード、デジタル署名、入力検証、変更管理、データベース制約などが手段となる。機密性が「見せない」、可用性が「使い続けられる」であるのに対し、完全性は「正しく、欠けていない」ことを保証する。改ざん検知と、書き込み権限の最小化が実務上の要点である。,管理・運用,1
+可用性,Availability,認可された利用者が、必要なときに情報や情報システムを使える状態が保たれる特性（Availability）。冗長化、バックアップ、故障対策、DDoS対策、障害対応手順などが手段となる。機密性や完全性を極端に優先してシステムを止めると可用性を損ねる、というトレードオフがある。RTOは可用性を時間目標として具体化したものといえる。CIAの三要素の一つで、事業継続と直接結びつく特性である。,管理・運用,1
+真正性,Authenticity,主体や情報が、主張どおりの本物であり、なりすましや偽造でないことを保証する特性（Authenticity）。利用者・機器の認証、サーバ証明書、メッセージ認証、デジタル署名などが手段となる。責任追跡性が「誰が何をしたかを後から辿れること」、否認防止が「後から否定できないこと」であるのに対し、真正性は「今向き合っている相手やデータが本物か」に焦点がある。認証の質がこの特性を左右する。,管理・運用,1
+責任追跡性,Accountability,ある行為を誰がいつ行ったかを、後から追跡・検証できる特性（Accountability）。識別・認証、認可、監査ログの保全と時刻同期、特権操作の記録などが前提となる。真正性が相手が本物であること、否認防止が当事者による事後否定の抑止であるのに対し、責任追跡性は組織として行為の帰属をたどれることに主眼がある。ログが改ざん可能であったり、共有アカウントだけであったりすると、この特性は成り立たない。,管理・運用,1
+否認防止,Non-repudiation,ある主体が行った送信・受信や承認などの行為を、後から「自分は関与していない」と否定できないようにする特性（Non-repudiation）。デジタル署名、信頼できる時刻源、監査証跡の保全などが手段となる。真正性がその場での本物確認、責任追跡性が組織内の追跡であるのに対し、否認防止は当事者間（または対外）での事後否定の抑止に焦点がある。単なるログより、第三者検証可能な証拠性の高さが求められる。,管理・運用,1
+信頼性,Reliability,システムやプロセスが、意図したとおりに一貫して動作し、故障や不具合で期待を裏切らない特性（Reliability）。冗長化、品質管理、障害に強い設計、十分なテストが手段となる。可用性が「使いたいときに使えるか」に寄るのに対し、信頼性は「正しく安定して動き続けるか」に寄る。情報セキュリティの特性としてJISなどで挙げられ、CIAの三要素を補完する。過負荷や劣化による誤動作も信頼性の問題となり得る。,管理・運用,1
+職務の分離の原則,Separation of Duties,重要な権限や職務を一人に集中させず、複数の役割に分けて相互牽制する原則（Separation of Duties）。例として、システムの開発と運用、証明書の審査（RA）と発行（CA）、支払い依頼と承認などを同一人物が兼ねないことがある。最小権限が「必要以上の権限を与えない」ことであるのに対し、職務分離は「相容れない権限の兼務を避ける」ことである。内部不正の機会（不正のトライアングルの一角）を減らす統制である。,管理・運用,1
+ISMS適合性評価制度,ISMS Conformity Assessment Scheme,組織のISMSがISO/IEC 27001などの要求事項に適合しているかを、認定を受けた認証機関が評価し、認証書を発行する日本の仕組み（ISMS Conformity Assessment Scheme）。一般社団法人情報マネジメントシステム認定センター（ISMS-AC）などが認定を担う枠組みとして知られる。ISMSそのものが組織内の仕組みであるのに対し、本制度は第三者認証の公的な流通を支える。CC（製品評価）やISMAP（政府向けクラウド登録）とは対象が異なる。,標準・組織,1
+直接損失,Direct Loss,インシデントによって直接生じた金銭的損害（Direct Loss）。復旧不能となった資産の再調達、業務停止期間の売上減のうち直接把握できるもの、不正送金そのものなどが例となる。間接損失が信用低下や将来取引の減少など波及的な損害、対応費用が調査・通知・再発防止に要する費用である点と区別する。インシデントの影響を評価・説明する際、三者を分けて見積もることが多い。,管理・運用,1
+間接損失,Indirect Loss,インシデントに付随して生じる、直接の欠損以外の損害（Indirect Loss）。信用の低下、顧客離れ、株価への影響、今後の取引条件の悪化、従業員の士気低下などが例となる。直接損失が直ちに計上しやすい損害、対応費用が対応活動そのもののコストであるのに対し、間接損失は因果が広く、定量化が難しいことが多い。定性的評価やシナリオ分析で扱う比重が大きくなりやすい。,管理・運用,1
+対応費用,Response Costs,インシデントの調査、封じ込め、復旧、対外説明、再発防止、専門家への委託、顧客通知などに要する費用（Response Costs）。直接損失が「失われたもの」、間接損失が「波及して失われるもの」であるのに対し、対応費用は「対処するために支出するもの」である。CSIRT運用や外部フォレンジック、コールセンター増強などが該当し得る。BCPや保険設計、インシデント対応計画の予算見積もりの対象となる。,管理・運用,1
+定性的評価,Qualitative Risk Assessment,発生可能性や影響を、高・中・低などの段階的な尺度で表してリスクを評価する方法（Qualitative Risk Assessment）。専門家の判断やチェックリスト、リスクマトリクスを用いることが多く、データが少ない段階や、比較によって優先順位を付ける目的に適する。定量的評価が金額や確率の数値で示すのに対し、定性的評価は迅速さと説明のしやすさを優先する。主観が入りやすい点が限界であり、重要なリスクは定量と組み合わせることもある。,管理・運用,1
+定量的評価,Quantitative Risk Assessment,発生確率や影響額などを数値（金額、頻度）で見積もり、リスクの大きさを定量的に示す評価方法（Quantitative Risk Assessment）。年間損失期待値のように、対策費用との比較（費用対効果）に使いやすい。定性的評価が段階語で優先度を付けるのに対し、定量は計算の根拠とデータが必要で、精度は見積もりの質に依存する。情報が不足する領域では見かけの数値だけが独り歩きしないよう、前提を明示することが求められる。,管理・運用,1
+リスクマネジメント,Risk Management,組織を取り巻くリスクを特定し、分析・評価したうえで、対応（回避、低減、移転、受容など）を選び、監視・見直しを続ける一連の活動（Risk Management）。ISO 31000やISMSにおけるリスクアセスメント／リスク対応の枠組みが参照される。個別の技術対策そのものではなく、経営としてどのリスクをどれだけ持つかを決めるプロセスである。リスクコントロールとリスクファイナンシングは、対応手段の分類として位置づけられる。,管理・運用,1
+リスクコントロール,Risk Control,リスクの発生可能性や影響度を下げる、技術・運用・物理などの対策の総称（Risk Control）。リスク回避（活動自体をやめる）やリスク低減（防御・検知・復旧の強化）が含まれる。リスクファイナンシングが保険など金銭的な備え（移転・保有）であるのに対し、リスクコントロールは事象そのものの抑制に働く。情報セキュリティ対策の大半はここに分類される。残存リスクの扱いは受容や移転と組み合わせて決める。,管理・運用,1
+リスクファイナンシング,Risk Financing,リスクが顕在化したときの金銭的影響に、資金面で備える手法（Risk Financing）。保険への加入によるリスク移転や、引当金などによるリスク保有（自己負担）が含まれる。リスクコントロールが事故の発生や被害規模そのものを抑えるのに対し、ファイナンシングは「起きたあとの経済的穴埋め」を設計する。両者は代替ではなく補完関係にあり、情報漏えい保険などは移転の典型例である。,管理・運用,1
+リスク回避,Risk Avoidance,リスクの源となる活動や資産の利用そのものを中止・開始しないことで、当該リスクを取り除く対応（Risk Avoidance）。例として、危険なプロトコルを廃止する、特定の個人情報を取得しない、リスクの高いクラウド利用を見送るなどがある。リスク低減が同じ活動を続けつつ被害を抑えること、受容が許容することであるのに対し、回避は選択肢から外す判断である。便益まで失うため、過大な回避は事業機会の損失につながる。,管理・運用,1
+リスク低減,Risk Reduction,リスク源となる活動は継続しつつ、予防・軽減・検知・復旧などの管理策により、発生確率や影響を小さくする対応（Risk Reduction）。パッチ適用、多要素認証、暗号化、冗長化、教育などが該当する。リスク回避が活動自体をやめること、移転が他者へ影響を移すことであるのに対し、低減は自組織の対策で水準を下げることである。ISMSの管理策の大半は低減に分類され、残った部分を受容または移転する。,管理・運用,1
+リスク移転,Risk Transfer,契約や保険、業務委託などにより、リスクが顕在化したときの影響の一部または全部を他者へ移す対応（Risk Transfer）。サイバー保険、クラウド事業者との責任分界、警備や運用の外部委託が例となる。法的・契約上の責任まで完全に消えるとは限らず、説明責任や再委託先管理は残ることが多い。リスク低減が自前の防御、受容が自ら負担、回避が活動中止である点と区別する。リスクファイナンシングの代表的手段である。,管理・運用,1
+リスクの受容,Risk Acceptance,評価したリスクに対し、追加の対策を取らず（または現行のまま）、その影響を組織が許容する対応（Risk Acceptance）。発生可能性と影響が十分小さい場合、対策費用が効果に見合わない場合などに選ぶ。何も考えずに放置するのではなく、残存リスクとして把握し、責任者の承認を得て見直すことが前提である。回避・低減・移転のいずれも採らないという積極的な判断であり、ISMS上も文書化されることが多い。,管理・運用,1
+情報資産,Information Asset,組織が保護対象として管理すべき情報そのものと、それを格納・処理・伝送する媒体、機器、システム、人的・紙の資源などを含む資産（Information Asset）。ISMSでは資産の洗い出しと分類、管理責任者の明確化が起点となる。情報だけを指す狭義と、サーバや施設まで含む広義がある。重要性（機密性・完全性・可用性の観点から）に応じて対策の強度を変える。守る対象が不明確なままでは管理策の過不足が生じる。,管理・運用,1
+ソーシャルエンジニアリング,Social Engineering,人の心理、習慣、好意、権威への服従、不注意などを突いて、情報やアクセス権限を不正に得る手法（Social Engineering）。電話（プリテキスティング）、捨てられた書類の漁り（トラッシング）、肩越しの覗き見、偽サイトへの誘導、勧誘メールなどが典型である。技術的脆弱性ではなく人間を侵入口とする。対策は教育、複数人確認、機密の口外禁止、物理的なクリアデスク、問い合わせ時の本人確認手順である。,脆弱性・攻撃,1
+サイバーレジリエンス,Cyber Resilience,サイバー攻撃や障害を完全には防げない前提に立ち、被害を耐え、迅速に回復し、重要業務を継続できる能力（Cyber Resilience）。予防中心の従来のセキュリティに、検知・対応・復旧・学習を加えた耐性の概念である。BCMやDR、バックアップ、代替手段、インシデント対応が構成要素となる。可用性や事業継続と重なるが、敵対的な攻撃下でも機能し続けることに焦点がある。レジリエンスは計画と訓練によって維持される。,管理・運用,1
+トリアージ,Triage,多数の警報や事案候補に対し、深刻度、影響範囲、緊急度に応じて対応の優先順位を付ける作業（Triage）。SOCやCSIRTの初動で行われ、限られた人的資源を重要な事案に集中させる。医療のトリアージに由来する。深刻度判定には資産の重要度、CVSSなどの技術的重大性、進行中か否かが材料となる。誤った優先付けは重大事案の見逃しや、軽微事案への資源投下につながる。プレイブックと基準の事前整備が有効である。,監視・対応,1
+情報セキュリティ監査基準,Information Security Audit Standards,情報セキュリティ監査を実施する際の基準として経済産業省が整備した文書（Information Security Audit Standards）。監査人の倫理、監査計画、証拠、報告など、監査の進め方の枠組みを示す。被監査側の管理策そのものを定めるISMS規格（ISO/IEC 27001／27002）とは立場が異なり、監査する側の行為規範である。システム監査基準が情報システム全般の監査であるのに対し、本基準は情報セキュリティ監査に特化して参照される。,標準・組織,1
+システム監査基準,System Audit Standards,情報システムを対象とする監査の実施基準として経済産業省が整備した文書（System Audit Standards）。システムの有効性、効率性、信頼性、安全性などを、独立した立場から評価する際の枠組みである。情報セキュリティ監査基準がセキュリティ監査に特化するのに対し、システム監査基準はより広いITガバナンスとコントロールを対象とする。両者は関連しつつ役割が分かれ、内部監査や外部監査の計画時に参照される。,標準・組織,1
+ブラックボックス診断,Black-box Testing,対象システムの内部構造やソースコードを知らない前提で、外部インタフェースから攻撃可能な弱点を探すセキュリティ診断（Black-box Testing）。実際の攻撃者に近い視点で、公開面の問題を検出できる。ホワイトボックス診断が実装を把握したうえで漏れなく見るのに対し、ブラックボックスは視点が実攻撃に近い反面、内部に閉じた欠陥は見逃しやすい。ペネトレーションテストの一形態として用いられることが多い。,管理・運用,1
+ホワイトボックス診断,White-box Testing,ソースコード、設計、設定、権限などの内部情報を把握したうえで行うセキュリティ診断（White-box Testing）。認証回避や隠れたインタフェース、論理の欠陥など、外部から見えにくい問題も追いやすい。ブラックボックス診断が攻撃者視点の再現性に優れるのに対し、ホワイトボックスは網羅性と原因特定に優れる。両者を組み合わせる、あるいはグレーボックス（部分的な内部情報）で実施することもある。,管理・運用,1
+ファジング,Fuzzing,想定外の長さや形式、ランダムに近い異常データを大量に入力し、クラッシュや異常状態から脆弱性を探るテスト手法（Fuzzing）。プロトコル実装、ファイルパーサ、入力処理の欠陥（バッファオーバーフローなど）の発見に向く。手動の論理検証や署名付き既知パターンのスキャンとは異なり、予期しない入力空間を自動探索する。開発時の品質確保と、製品診断の双方で用いられる。見つかった異常は再現と影響分析が必要である。,脆弱性・攻撃,1
+ASM,Attack Surface Management,組織が外部から到達され得るIT資産（公開サーバ、クラウド資源、ドメイン、証明書など）を継続的に発見・棚卸しし、脆弱性や設定不備を管理する活動（Attack Surface Management）。従来の定期診断が時点の検査であるのに対し、ASMは変化する公開面を常時把握する。SBOMが成果物の内部構成、脆弱性スキャンが既知弱点の検出であるのに対し、ASMは「何が外に見えているか」の管理に主眼がある。,管理・運用,1
+TLPT,Threat-Led Penetration Testing,実際の脅威情報（どの攻撃者グループが、どんな手法で自組織種を狙うか）に基づき、現実の攻撃に近いシナリオで侵入を試みるペネトレーションテスト（Threat-Led Penetration Testing）。一般的な網羅的診断や契約範囲の侵入テストより、自らが直面し得る手口の再現に重点を置く。金融機関などで枠組みが整備されてきた。レッドチーム演習に近く、発見事項は検出体制（SOC／EDR）の実効性評価にもつながる。,管理・運用,1
+RAID,Redundant Arrays of Independent Disks,複数のディスクを組み合わせ、冗長性や性能を高める構成（Redundant Arrays of Independent Disks）。ミラーリング（RAID 1）は同一内容の複製、ストライピング（RAID 0）は性能優先で冗長なし、RAID 5／6はパリティによる耐障害、RAID 10はミラーとストライプの組み合わせなどがある。ディスク故障への可用性対策であり、サイト災害やランサムウェアによる論理破壊までは守れない。バックアップや遠隔複製とは目的が異なる。,管理・運用,1
+クラスタリングシステム,Clustering System,複数のサーバを連携させ、一部の障害時にもサービスを継続したり、負荷を分散したりする構成（Clustering System）。アクティブ／スタンバイ、アクティブ／アクティブなどの形態がある。単一ホスト障害に対する可用性・処理能力の向上が目的である。RAIDがディスク装置の冗長、負荷分散装置がトラフィックの振り分けであるのに対し、クラスタはノード間で状態や資源を協調させる。スプリットブレインを防ぐ設計が要点となる。,管理・運用,1
+コンテンツサーバ,Content Server,Webサイトなどのコンテンツ（HTML、画像、アプリケーション）を保持し、利用者からの要求に応じて提供するサーバ（Content Server）。オリジンサーバとも呼ばれる。キャッシュサーバやCDNが複製を末端に置いて配信を速めるのに対し、コンテンツサーバは原本の保持と生成を担う。公開面に出るため、OSやミドルウェアの硬化、WAF、最小権限が求められる。動的生成と静的配信の役割分担の起点となる。,ネットワーク基礎,1
+キャッシュサーバ,Cache Server,一度取得したコンテンツを一時保存し、後続の要求に対して原本へ都度取りに行かずに応答するサーバ（Cache Server）。応答時間の短縮と、オリジン（コンテンツサーバ）の負荷軽減が目的である。CDNのエッジノードもキャッシュの一種である。古い内容を返し続けないよう、有効期限や再検証の制御が必要である。セキュリティ上は、個人向け応答の誤共有（キャッシュの取り違え）を防ぐ設定が重要になる。,ネットワーク基礎,1
+GETメソッド,GET Method,HTTPで資源の取得に用いるメソッド（GET Method）。取得対象の指定や検索条件などのパラメータは、通常URL（クエリ文字列）に付与される。本質的に参照向けで、副作用を持たないべきとされる（冪等）。POSTがメッセージボディでデータを送り、登録や変更に使われるのと対比される。URLに含まれるため、リファラやログ、履歴にパラメータが残りやすく、機密情報をGETで送ることは適切でない。,ネットワーク基礎,1
+POSTメソッド,POST Method,HTTPでメッセージボディにデータを載せて送るメソッド（POST Method）。フォーム送信、ファイルアップロード、資源の作成や更新など、サーバ側に状態の変化を伴う操作に用いる。GETがURLにパラメータを付し参照向きであるのに対し、POSTは本文に情報を収め、ログやリファラへ出にくい。ただし通信路が平文なら傍受される点は同じで、HTTPSが前提となる。CSRFの対象にもなりやすいため、トークンなどの防御が必要である。,ネットワーク基礎,1
+Referer,Referer,遷移元のページのURLを、遷移先のサーバへ伝えるHTTPヘッダ（Referer）。仕様上の綴りはRefererであり、一般英語のReferrerではない。リンク元の把握やアクセス解析に使われる一方、クエリに含まれる機密や社内URLが外部へ漏れる経路にもなる。対策として、秘匿すべき遷移ではリファラを抑制する（Referrer-Policyなど）。ブラウザが自動付与するメタ情報であり、利用者が明示的に送る項目ではない。,ネットワーク基礎,1
+Cookie,HTTP Cookie,Webサーバがブラウザに保存させ、以降の要求時に送り返させる小さなデータ（HTTP Cookie）。セッション管理、ログイン状態の維持、利用者識別などに使う。窃取されるとセッションハイジャックの材料になるため、secure属性（HTTPS時のみ送信）、HttpOnly属性（スクリプトから参照不可）、SameSite属性（CSRF緩和）などの制限を付ける。サーバ側の状態を持たないHTTPを、状態ありの応用にするための代表的手段である。,ネットワーク基礎,1
+セッションID,Session ID,ログイン後の一連の操作を同一利用者のものとして識別するための値（Session ID）。サーバが発行し、CookieやURL、hiddenフィールドなどでブラウザと共有する。推測可能、URL埋め込みによる漏えい、XSSによるCookie窃取などがセッションハイジャックの前提となる。対策は十分に長い乱数、HTTPS、Cookie属性の適切な設定、ログイン時の番号再発行、タイムアウトである。利用者IDそのものではなく、一時的なセッションの鍵である。,ネットワーク基礎,1
+hiddenフィールド,Hidden Field,画面上には表示されないが、フォーム送信時にサーバへ送られるHTMLの入力項目（Hidden Field）。画面状態の保持やCSRFトークン、識別子の引き回しに使われる。利用者から見えないため秘密であるかのように扱われがちだが、ソース表示や改ざんで改変可能である。重要な権限判定や価格情報をhiddenだけに頼ることは、改ざんによる不正操作につながる。機密の保管場所ではなく、補助的な状態伝達手段として位置づける。,ネットワーク基礎,1
+secure属性,Secure Attribute,CookieをHTTPSのときだけブラウザがサーバへ返すようにする属性（Secure Attribute）。平文のHTTP通信にCookieが載るのを防ぎ、経路上の窃取を難しくする。HttpOnlyがスクリプトからの読み取りを禁じ、SameSiteがクロスサイト送信を制限するのに対し、secureは搬送路の保護（機密性）に焦点がある。サイト全体がHTTPSであることが前提で、HTTPページが残ると効果が限定される。セッションCookieでは設定が強く推奨される。,ネットワーク基礎,1
+HttpOnly属性,HttpOnly Attribute,JavaScriptなどクライアント側スクリプトからCookieを参照できないようにする属性（HttpOnly Attribute）。XSSでページが改ざんされても、document.cookie経由のセッションID窃取を困難にする。secure属性が通信路（HTTPSのみ送信）、SameSiteが送信先の制限であるのに対し、HttpOnlyはブラウザ内のスクリプトからの隔離である。サーバは通常のHTTPヘッダとしては受け取れる。XSS対策の一層であり、出力エスケープの代替にはならない。,ネットワーク基礎,1
+仮想化,Virtualization,物理的な計算機資源（CPU、メモリ、ストレージ、ネットワーク）を論理的に分割・抽象化し、複数の仮想マシンやコンテナとして利用する技術（Virtualization）。資源の集約と迅速な払い出し、障害の隔離に寄与する。ハイパーバイザ型やコンテナ型などの形態がある。クラウド（IaaS）の基盤技術でもある。仮想化自体はセキュリティ機能ではないが、スナップショット、隔離、権限分離の単位になると同時に、管理面の設定不備が新たなリスクにもなる。,管理・運用,1
+シンクライアント,Thin Client,アプリケーションの実行やデータの保持をサーバ側に寄せ、手元の端末は画面表示と入力に特化させる薄いクライアント（Thin Client）。VDIやサーバベースのデスクトップと組み合わせることが多い。端末紛失時にデータが残りにくく、BYODや遠隔業務での情報漏えい対策になる。通常のPC（シッククライアント）がローカルで処理・保管するのに対し、シンクライアントは集中管理とデータ残留の抑制が目的である。通信途絶時の利用制約がある。,ネットワーク・防御,1
+RBI,Remote Browser Isolation,Webページの描画やスクリプト実行を、利用者の端末ではなく遠隔の隔離環境で行い、画面情報だけを手元に返す技術（Remote Browser Isolation）。悪意あるサイトやドライブバイダウンロードから端末を守る。VDIがデスクトップ全体の仮想化であるのに対し、RBIはブラウザ処理に特化した隔離である。SWGがURLやコンテンツのフィルタであるのに対し、RBIは実行そのものを端末の外へ出す。標的型メールのURL対策などでも用いられる。,ネットワーク・防御,1
+境界防御モデル,Perimeter Defense Model,組織内部は信頼できるとみなし、外部との境界（ファイアウォールやDMZ）で主に防御する従来型のモデル（Perimeter Defense Model）。内部へ入った後の横展開や、クラウド／遠隔勤務による境界の曖昧化に弱い。ゼロトラストがアクセスのたびに検証し内部も信頼しないのに対し、境界防御は内外の一線に依拠する。現在も区画（VLAN、FW）の基礎としては有効だが、それ単独では不十分とされることが多い。,ネットワーク・防御,1
+SDP,Software Defined Perimeter,ソフトウェアによって、接続の都度、認証された主体と端末に対してだけ到達可能な境界を動的に構成するアクセス制御（Software Defined Perimeter）。アプリケーションをインターネット上に広く公開せず、コントローラが仲介して必要な経路だけを開く。従来のVPNが接続後に内部網へ広く通す傾向があるのに対し、SDPは個別アプリへの最小露出を目指す。ゼロトラストやZTNAの実装アプローチの一つとして位置づけられる。,ネットワーク・防御,1
+ZTNA,Zero Trust Network Access,ゼロトラストの考え方に基づき、利用者と端末の状態を検証したうえで、許可されたアプリケーションへ個別に遠隔アクセスさせる仕組み（Zero Trust Network Access）。常時接続のVPNが内部ネットワークへの広い通路になりやすい点を見直し、都度の認証・認可と最小権限を徹底する。SDPと重なる実装も多い。SASEの構成要素としても語られる。ネットワークに入ることではなく、資源への条件付きアクセスが中心である。,ネットワーク・防御,1
+SD-WAN,Software-Defined Wide Area Network,広域ネットワーク（WAN）の経路選択、帯域制御、拠点接続などを、個別ルータの手動設定ではなくソフトウェアのポリシーで集中制御する技術（Software-Defined Wide Area Network）。回線の使い分けやクラウド直結、可視化を容易にする。SDNがデータセンターなどネットワーク全般の制御分離であるのに対し、SD-WANは拠点間WANに特化した適用である。SASEでは、このWAN機能とクラウド上のセキュリティ機能を一体で提供する。,ネットワーク基礎,1
+SDN,Software-Defined Networking,ネットワーク機器の制御平面（経路計算や方針）を、個別装置から分離してソフトウェアのコントローラで集中管理する技術（Software-Defined Networking）。転送平面（実際のパケット処理）はスイッチなどが担う。従来の分散制御（各ルータが独立に経路を持つ）に対し、方針の一貫した適用と迅速な変更が狙いである。SD-WANはWANへの適用、仮想化はサーバ資源の抽象化であり、SDNはネットワーク制御の抽象化である。,ネットワーク基礎,1
+SWG,Secure Web Gateway,利用者のWebアクセスを中継し、URLフィルタ、マルウェア検査、TLS可視化、利用ポリシーの適用などを行うゲートウェイ（Secure Web Gateway）。組織から外部Webへの出向き通信を検査する位置づけである。WAFが公開Webアプリへの入向き攻撃を守るのに対し、SWGは内部利用者の出向きを制御する。CASBがクラウドサービス利用に特化するのに対し、SWGはWeb全般を対象とする。SASEの構成要素にもなる。,ネットワーク・防御,1
+ブロードキャストドメイン,Broadcast Domain,ブロードキャストフレームが到達する範囲（Broadcast Domain）。同一セグメント内のARP要求などが届く範囲であり、通常は一つのVLANまたは一つのL2ネットワークに相当する。ルータを越えるとブロードキャストは転送されない。衝突ドメイン（半二重での衝突範囲）とは異なり、スイッチング環境でもブロードキャストドメインはVLAN単位で残る。不要に広いとARPスプーフィングやブロードキャストストームの影響が広がりやすい。,ネットワーク基礎,1
+NAPT,Network Address Port Translation,プライベートIPとグローバルIPの変換に加え、ポート番号も変換することで、少数のグローバルアドレスを複数の内部ホストで共有する方式（Network Address Port Translation）。IPマスカレードとも呼ばれる。通常のNAT（アドレスのみの変換、静的1対1など）よりアドレス節約効果が高い。状態表に依存するため、外部からの着信は原則として内部からの通信に対する戻りに限られる。IPv4枯渇対策として広く使われる。,ネットワーク基礎,1
+ステートフルパケットインスペクション型,Stateful Packet Inspection,通過するパケットを、個別のヘッダ条件だけでなく、通信の状態（コネクションの確立状況など）と照合して許可・拒否するファイアウォール方式（Stateful Packet Inspection）。戻り通信を状態表で自動許可でき、静的なパケットフィルタより柔軟で安全性が高い。アプリケーションの中身まで見るWAFや、侵入シグネチャを見るIDS／IPSとは検査の深さが異なる。境界FWの基本的な動作方式として広く採用される。,ネットワーク・防御,1
+サンドボックス,Sandbox,本番環境から隔離した領域でプログラムを実行し、その振る舞い（ファイル変更、通信、プロセス生成など）を観察する仕組み（Sandbox）。未知のマルウェアや不審な添付ファイルの動的解析に用いる。シグネチャ型検出が既知パターンに強いのに対し、サンドボックスは実行時の挙動を見る。解析逃れ（サンドボックス検知）もあるため、単独の銀弾ではない。メールゲートウェイやEDRの動的解析機能として組み込まれることが多い。,ネットワーク・防御,1
+アノマリ検知,Anomaly Detection,平常時の通信やログ、利用者行動の基線を定め、そこから外れた振る舞いを異常として検知する方式（Anomaly Detection）。未知の攻撃や内部の不審な操作を捉えやすい。シグネチャ（ルール）型が既知のパターンに適合するものを見るのに対し、アノマリ型は「普段と違う」ことを手がかりとする。基線の質が低いと誤検知（フォールスポジティブ）が増える。IDS／IPS、UEBA、EDRなどで用いられる検知アプローチである。,監視・対応,1
+フォールスポジティブ,False Positive,実際には正常または無害である事象を、誤って異常・攻撃と判定してしまうこと（False Positive）。誤検知。正規通信の遮断や、SOCの警報疲れを招く。IPSのインライン遮断では業務影響に直結する。フォールスネガティブ（検知漏れ）が「見逃し」であるのに対し、フォールスポジティブは「空振り」である。閾値やルールを厳しくすると漏れは減るが誤検知は増えやすく、両者はトレードオフの関係にある。,監視・対応,1
+フォールスネガティブ,False Negative,実際には異常や攻撃である事象を、正常と判定して見逃すこと（False Negative）。検知漏れ。侵入の進行を許すため、被害の拡大につながりやすい。フォールスポジティブ（誤検知）が運用負荷や遮断事故の原因であるのに対し、フォールスネガティブは防御の失敗そのものである。シグネチャの更新遅れ、暗号化通信の中が見えないこと、ファイルレス手法などが漏れの要因になり得る。多層の検知で単一手段の漏れを補う。,監視・対応,1
+プロミスキャスモード,Promiscuous Mode,ネットワークインタフェースが、自分宛てのフレームだけでなく、セグメント上に流れる他のフレームも受信する動作モード（Promiscuous Mode）。パケットキャプチャやNIDS、トラフィック分析装置が、スイッチのミラーポートやタップ経由で通信を監視するために用いる。通常モードが自MAC／ブロードキャスト等に限定するのに対し、プロミスキャスは監視用の受信拡大である。機密パケットの収集が可能になるため、利用と設置場所の管理が必要である。,ネットワーク・防御,1
+インラインモード,Inline Mode,検査装置を通信経路上に直列に挿入し、トラフィックが必ず装置を通過するように配置する方式（Inline Mode）。IPSやWAF、一部のSWGが遮断や改変を行うために用いる。ミラーポートやタップを使う受動的（オフライン／スニフ）配置が検知専用であるのに対し、インラインは予防的な遮断が可能である。装置障害が通信そのものの途絶や、フェールオープンによる無検査通過につながるため、可用性設計が不可欠である。,ネットワーク・防御,1
+フェールオープン機能,Fail-open,装置の障害や過負荷時に、検査を諦めて通信を通過させる動作（Fail-open）。可用性を優先し、防御の空白を許容する。対となるフェールクローズ（フェールセーフ）は、障害時に通信を止めて安全性を優先する。インラインのIPSやフィルタで、どちらを選ぶかが設計上の論点となる。重要業務の継続を優先する場合にオープン、情報漏えい防止を優先する場合にクローズが選ばれやすい。事前の方針決定が必要である。,ネットワーク・防御,1
+不正のトライアングル,Fraud Triangle,不正行為が起きやすい条件を、動機（プレッシャー）、機会、正当化の三つが揃ったときに高まると説明する理論（Fraud Triangle）。内部不正や横領の分析に用いられる。技術的な侵入モデル（キルチェーンやATT&CK）が外部攻撃の手順を示すのに対し、不正のトライアングルは人の意思決定側の要因整理である。対策は動機の緩和だけでなく、職務分離や監視による機会の削減、倫理・教育による正当化の抑制を組み合わせる。,脆弱性・攻撃,1
+サイバーキルチェーン,Cyber Kill Chain,攻撃者が目標達成までたどる段階を鎖として整理したモデル（Cyber Kill Chain）。Lockheed Martinが提唱し、偵察、武器化、配送、攻撃、インストール、コマンド＆コントロール、目的の実行などの段階からなる。途中の環を断てば後続を止められる、という防御の考え方につながる。MITRE ATT&CKが戦術・技法の詳細な知識ベースであるのに対し、キルチェーンは侵入の時系列的な大枠である。APTなど標的型の理解に用いられる。,脆弱性・攻撃,1
+MITRE ATT&CK,"Adversarial Tactics, Techniques, and Common Knowledge","攻撃者の戦術（Tactics）、技法（Techniques）、手順に関する共通知識を体系化した知識ベース（Adversarial Tactics, Techniques, and Common Knowledge）。MITREが維持し、初期アクセス、実行、永続化、権限昇格、防御回避、横展開、収集、C2などを行列で示す。サイバーキルチェーンが段階の鎖であるのに対し、ATT&CKは各段階で取り得る具体的な技法のカタログである。検知ルールの整備、脅威インテリジェンスの整理、演習シナリオに使われる。",脆弱性・攻撃,1
+脅威インテリジェンス,Threat Intelligence,脅威アクター、攻撃手法、侵入痕跡、脆弱性の悪用状況などを収集・分析し、防御判断に使える形へ加工した情報（Threat Intelligence）。戦略（誰がなぜ狙うか）、戦術（どんな手口か）、運用（IOCなどの具体指標）といった層がある。生のログや警報そのものではなく、文脈と評価が加わったものがインテリジェンスとされる。ISACや商用フィード、OSINTが源となり、SIEM／SOARやブロックリストへ還元される。,監視・対応,1
+パスワードリスト攻撃,Password List Attack,別サイトなどから流出したIDとパスワードの一覧を用い、同じ組合せで対象サービスへのログインを試みる攻撃（Password List Attack）。パスワードの使い回しが前提となる。総当たり（ブルートフォース）が未知の文字列を試すこと、辞書攻撃がよくある単語を試すことであるのに対し、リスト型は「本物の漏洩組合せ」を横断利用する。対策は多要素認証、使い回し禁止、漏洩検知、異常ログインの監視、パスワードのハッシュ保存である。,脆弱性・攻撃,1
+セッションハイジャック,Session Hijacking,正当な利用者が確立したセッションの識別子を窃取または推測し、その利用者になりすまして操作する攻撃（Session Hijacking）。XSSによるCookie窃取、ネットワーク上の盗聴、URL埋め込みのセッションID漏洩などが手段となる。認証そのものを破るのではなく、認証後のセッションを奪う点が特徴である。対策は十分な乱数のID、HTTPSとsecure／HttpOnly、ログイン時の再発行、タイムアウト、特定操作での再認証である。,脆弱性・攻撃,1
+ARPスプーフィング,ARP Spoofing,偽のARP応答を送り、IPアドレスとMACアドレスの対応を詐称して通信を誘導する攻撃（ARP Spoofing）。同一セグメント上で中間者攻撃（盗聴・改ざん）やDoS（破棄）の前提になりやすい。ARPが認証を持たないプロトコルであることが弱点である。対策は動的ARP検査、静的ARP、ポートセキュリティ、通信の暗号化（TLSなど）である。DNSキャッシュポイズニングが名前解決の偽誘導であるのに対し、これはLAN上の住所解決の偽誘導である。,脆弱性・攻撃,1
+DNSキャッシュポイズニング,DNS Cache Poisoning,キャッシュDNSサーバに偽の資源レコードを覚えさせ、利用者が意図しないIPへ誘導する攻撃（DNS Cache Poisoning）。正規の名前解決を装ってフィッシングサイトや中間者位置へ導く。トランザクションIDや送信元ポートの予測しやすさが従来の弱点であった。対策の本丸はDNSSECによる応答署名の検証である。ARPスプーフィングが同一LANの対応表を欺くのに対し、本攻撃は名前空間のキャッシュを欺く。,脆弱性・攻撃,1
+DRDoS,Distributed Reflection Denial of Service,第三者のサーバに偽の送信元（被害者）を指定したリクエストを送り、その応答を被害者へ反射させる分散型DoS（Distributed Reflection Denial of Service）。応答が要求より大きいサービス（DNS、NTP、SNMPなど）を使うと増幅型になる。攻撃者の真の発信源が隠され、開放サービスが踏み台になる。通常のDDoSがボットから直接送り付けるのに対し、反射・増幅を間に挟む点が異なる。対策は送信元検証、開放サービスの制限、上流でのフィルタである。,脆弱性・攻撃,1
+反射型XSS,Reflected XSS,攻撃者が仕掛けたスクリプトを、被害者のリクエスト（URLパラメータやフォーム）に含め、その応答ページ上で即座に実行させるXSS（Reflected XSS）。被害者が細工リンクをクリックするなどが前提で、サーバ側にスクリプトは残らない。格納型が保存されて他者にも繰り返し配信されるのに対し、反射型は単発の応答に乗る。DOMベースはクライアント側スクリプトによるDOM操作が原因である。出力エスケープと入力の妥当性確認が防御の基本である。,脆弱性・攻撃,1
+格納型XSS,Stored XSS,攻撃者が投稿や保存データとしてスクリプトをサーバへ残し、後からそのページを閲覧した利用者のブラウザで実行させるXSS（Stored XSS）。掲示板、コメント、プロフィール、メッセージなどが典型的な保存先である。反射型がリクエスト単位であるのに対し、格納型は不特定多数へ持続的に配信され影響が大きい。DOMベースはサーバ保存ではなくクライアント側の処理が主因である。保存前の検証と、出力時のエスケープが対策の中心である。,脆弱性・攻撃,1
+DOM-based XSS,DOM-based XSS,サーバが返すHTML自体は比較的安全でも、クライアント側のJavaScriptが、URLフラグメントや外部データを十分に検査せずDOMへ挿入することでスクリプトが実行されるXSS（DOM-based XSS）。ページ遷移なしにブラウザ内だけで完結し得る。反射型・格納型がサーバ応答への混入を主因とするのに対し、DOMベースはブラウザ内のDOM操作が主因である。対策は危険なAPIの回避、入力の無害化、コンテンツセキュリティポリシーである。,脆弱性・攻撃,1
+エスケープ処理,Escaping,HTML、XML、SQL、シェルなど、文脈上特別な意味を持つ文字を、意味を持たない表示用の文字列へ置き換える処理（Escaping）。例として、HTMLにおける「<」の実体参照化がある。XSS対策では出力時に、その出力先の文脈（HTML本体、属性、JavaScript、URL）に応じたエスケープが必要である。入力検証やプレースホルダ（SQL）と並ぶ防御だが、文脈を誤ると無効になる。無害化（サニタイズ）やエンコーディングと近縁の概念である。,脆弱性・攻撃,1
+ディレクトリトラバーサル,Directory Traversal,「../」などの相対パスを混ぜ、公開が意図されていないディレクトリ上のファイルを読み書きさせる攻撃（Directory Traversal）。ファイル名を利用者入力から組み立てる処理が前提となる。設定ファイルやパスワードファイルの漏えい、不正な上書きなどが被害となる。OSコマンドインジェクションがコマンド実行、SQLiがデータベース操作であるのに対し、本攻撃はファイルパスの解釈を欺く。対策は入力をファイル名として正規化し、基点ディレクトリ外への参照を許さないことである。,脆弱性・攻撃,1
+OSコマンドインジェクション,OS Command Injection,アプリケーションが呼び出すOSコマンドの組み立てに、利用者入力を十分な検証なく連結し、付加したコマンドを実行させる攻撃（OS Command Injection）。サーバ上での任意コマンド実行（RCE）に直結し得る。SQLiがSQL文、XSSがスクリプトであるのに対し、本攻撃はシェルのメタ文字（; や | など）を悪用する。対策は外部コマンド呼び出しを避けること、避ける場合は引数を配列で渡しシェルを介さないこと、入力のホワイトリスト化である。,脆弱性・攻撃,1
+HTTPヘッダインジェクション,HTTP Header Injection,利用者入力に改行（CR／LF）などを含め、サーバが生成するHTTP応答ヘッダを途中で区切って任意のヘッダや本文を追加させる攻撃（HTTP Header Injection）。Set-Cookieの注入によるセッション固定、リダイレクト先の改変、応答分割（HTTPレスポンス分割）などが被害例である。XSSが本文のスクリプト実行であるのに対し、本攻撃はヘッダ構造そのものを破壊する。対策は改行を含む入力をヘッダへ連結しないこと、出力APIでヘッダ値を安全に設定することである。,脆弱性・攻撃,1
+CDN,Content Delivery Network,コンテンツを地理的・ネットワーク的に分散したキャッシュサーバ群から配信し、オリジンへの負荷と遅延を減らす仕組み（Content Delivery Network）。静的ファイルだけでなく、DDoS緩和やTLS終端、WAF機能を併せ持つサービスも多い。キャッシュサーバが単体の一時保存であるのに対し、CDNは広域に展開した配信網である。キャッシュの誤共有や、オリジンの実アドレス露出がセキュリティ上の留意点となる。,ネットワーク基礎,1
+ランサムウェア,Ransomware,利用者のファイルなどを暗号化または利用不能にし、復号や回復と引き換えに金銭（身代金）を要求するマルウェア（Ransomware）。近年はデータを窃取したうえで公開すると脅迫する二重恐喝も多い。可用性（および機密性）を直接毀損する。対策は権限の最小化、メール／Webの入口対策、EDR、書き込み不能なバックアップ、復旧訓練である。バックアップが同一領域で同時に暗号化されると、RTO／RPOを満たせなくなる。,脆弱性・攻撃,1
+標的型攻撃,Targeted Attack,不特定多数へのばらまきではなく、特定の組織や個人を狙って仕掛ける攻撃（Targeted Attack）。事前調査、関係者を装ったメール（標的型メール）、正規ツールの悪用、長期潜伏などが特徴となる。APTと重なる概念だが、APTは特に高度で持続的な主体を指して使うことが多い。入口での完全な阻止が難しいため、多層防御と、侵入後の検知（EDR／SIEM）、権限管理、教育が組み合わせて用いられる。,脆弱性・攻撃,1
+サプライチェーン攻撃,Supply Chain Attack,ソフトウェアの更新、委託先、供給ライブラリ、ハードウェア製造など、正規の供給経路を侵入口にして対象組織へ到達する攻撃（Supply Chain Attack）。信頼している更新やベンダ接続を悪用するため、境界の入口対策だけでは気づきにくい。対策は供給者の管理、署名検証、SBOMによる構成把握、特権的な接続経路の監視である。直接の脆弱性攻撃が対象システム自体を突くのに対し、本攻撃は信頼の連鎖を迂回する。,脆弱性・攻撃,1
+ファイルレス攻撃,Fileless Attack,ディスク上に実行ファイルを残さず、メモリ上での実行や、OS標準の管理ツール（PowerShellなど）の悪用によって目的を達する攻撃（Fileless Attack）。従来のファイルハッシュ検査や、ディスクのマルウェアスキャンを回避しやすい。正規ツールの悪用（リビング・オフ・ザ・ランド）と重なる。対策はスクリプトの実行制御、EDRによる振る舞い検知、特権の最小化、メモリ・コマンドラインの監査である。永続化の痕跡はレジストリや正規機能に残ることがある。,脆弱性・攻撃,1
+ラテラルムーブメント,Lateral Movement,最初に侵入した端末から、同一組織内の他のホストやアカウントへ侵入範囲を広げる動き（Lateral Movement）。認証情報の窃取、遠隔管理機能の悪用、内部の信頼関係の利用などが手段となる。初期アクセスの後、目的データへ近づく過程としてキルチェーンやATT&CKで重視される。対策はセグメント分割、最小権限、特権アカウント管理、EDR／NDRによる内部横断の異常検知である。境界防御だけでは止めにくい、侵入後の展開である。,脆弱性・攻撃,1
+エクスプロイトコード,Exploit Code,ソフトウェアやシステムの脆弱性を実際に悪用し、意図しない動作（権限昇格、コード実行など）を引き起こすためのプログラムや脚本（Exploit Code）。脆弱性情報（CVE）が「何が弱いか」を示すのに対し、エクスプロイトは「どう突破するか」の実装である。公開されると攻撃の自動化が進み、パッチ適用の猶予が短くなる。防御側はパッチ、WAF／IPSの仮想パッチ、攻撃コードの実行防止機構で対抗する。研究・検証目的の利用と攻撃利用は表裏である。,脆弱性・攻撃,1
+ゼロデイ攻撃,Zero-day Attack,ベンダーが修正プログラムを提供するより前、または利用者が適用する前に、未知もしくは未修正の脆弱性を悪用する攻撃（Zero-day Attack）。署名型の防御だけでは検知しにくい。公開された既知脆弱性の未修正放置（N-day）とは、防御側に正規の修正手段がまだない（または届いていない）点が異なる。緩和策は振る舞い検知、最小権限、攻撃面の縮小、仮想パッチである。発見から公表・修正までの期間が被害を左右する。,脆弱性・攻撃,1
+EPSS,Exploit Prediction Scoring System,ある脆弱性が近い将来に実際に悪用される確率を予測する指標（Exploit Prediction Scoring System）。FIRSTが公開する。CVSSが深刻度（影響の大きさや攻撃の成立しやすさの性質）を示すのに対し、EPSSは悪用される見込みの確率予測である。KEVが既に悪用が確認されたもののカタログである点とも異なる。パッチ適用の優先順位付けで、CVSSやKEVと併用される。スコアは時間とともに更新され得る。,SCAP,1
+KEV,Known Exploited Vulnerabilities,実際の攻撃で悪用されたことが確認されている脆弱性を、CISA（米国サイバーセキュリティ・インフラセキュリティ庁）がカタログ化したもの（Known Exploited Vulnerabilities）。連邦機関などには期限内の対処が求められる。CVSSが高得点でも実害が出ていないもの、EPSSが予測であるものと異なり、KEVは「既に使われた」という観測に基づく。優先パッチの判断材料として国際的にも参照される。,SCAP,1
+迷惑メール,Unsolicited Bulk/Commercial Email (UBE/UCE),受信者が望んでいない大量送信メールや商業広告メールの総称（Unsolicited Bulk/Commercial Email。UBE／UCE）。いわゆるスパム。感染した端末からの直送、第三者中継の悪用、ボットネットなどが送信インフラになる。BECが特定組織を狙う詐欺であるのに対し、迷惑メールは大量・無差別性が特徴である。対策はOP25B／IP25B、送信ドメイン認証（SPF／DKIM／DMARC）、フィルタ、送信者認証付きSubmissionである。,電子メール,1
+第三者中継,Open Relay,自組織と無関係な第三者間のメール転送を、認証なく中継してしまうメールサーバの状態（Open Relay）。攻撃者に踏み台にされると、大量の迷惑メールが自サーバを経由して送られ、送信元レピュテーションの失墜やブラックリスト登録につながる。SMTPのMTAが本来は自ドメイン向け受信と、自組織利用者からの送信中継に限定すべきところを、制限なく受けてしまうことが原因である。対策は中継の許可を認証済みまたは自網に限定することである。,電子メール,1
+Submission,Message Submission,利用者が作成したメールを、認証したうえで投稿受付する仕組み（Message Submission）。TCP 587番が割り当てられ、RFC 6409などでMSAの役割として整理される。サーバ間転送のSMTP（25番）と分離し、OP25B環境下でも正規利用者が送れるようにする。STARTTLSやSMTP AUTHと組み合わせることが多い。MUAからMSAへの入口であり、MTA間の中継とはポートも方針も異なる。迷惑メール対策上の正規送信路である。,電子メール,1
+Sender ID,Sender ID,Microsoftが提唱した送信ドメイン認証で、SPFの仕組みを拡張し、実践上の送信者（PRA：Purported Responsible Address）を検証対象とする方式（Sender ID）。SPFがエンベロープのMAIL FROMを主に見るのに対し、Sender IDはヘッダ側の責任アドレスも意識する。現在の主流はSPF、DKIM、それらを統括するDMARCであり、Sender IDは歴史的・補助的な位置づけとして理解する。DNS上のポリシー宣言を用いる点はSPFと共通する。,電子メール,1
+DomainKeys,DomainKeys,Yahoo!が提唱した、電子署名によってメールの送信ドメインを検証する方式（DomainKeys）。送信側が署名し、受信側がDNS上の公開鍵で検証する。後にCiscoのIIMと合流し、DKIMとして標準化された。本文やヘッダの改ざん検知ができる点が、送信IPを見るSPFと異なる。現行の実装・運用の中心はDKIMであり、DomainKeysはその前身として位置づけられる。送信ドメイン認証の署名系の起点となった技術である。,電子メール,1
+STARTTLS,STARTTLS,いったん平文で接続を開始したあと、途中でSTARTTLSコマンドなどを発行してTLSによる暗号化へ切り替える拡張。SMTP、IMAP、POPなどで用いられる。最初から暗号ポートへ接続する暗黙的TLS（SMTPSの465番など）と対比される。ダウングレード攻撃（暗号化への切替えを妨害する）への耐性は、強制方針やHSTS的な事前知識の有無に依存する。メール経路の機密性を、既存の平文ポートを維持したまま追加する手段である。,電子メール,1
