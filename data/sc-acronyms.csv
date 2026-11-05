@@ -155,3 +155,100 @@ JIPDEC,Japan Information Processing and Development Center,プライバシーマ
 BIA,Business Impact Analysis,業務中断の影響を分析し優先度や許容停止時間を明らかにする,管理・運用
 CP,Contingency Plan,緊急事態に備えた代替手順・応急対応の計画（コンティンジェンシープラン）,管理・運用
 DR,Disaster Recovery,災害や障害後にITシステム等を復旧するディザスタリカバリ,管理・運用
+情報セキュリティ,Information Security,情報の機密性・完全性・可用性などを守ること,管理・運用
+サイバー攻撃,Cyber Attack,コンピュータやネットワークを狙う攻撃の総称,脆弱性・攻撃
+機密性,Confidentiality,許可された者だけが情報にアクセスできること,管理・運用
+完全性,Integrity,情報が改ざんされず正確であること,管理・運用
+可用性,Availability,必要なときに情報やシステムを使えること,管理・運用
+真正性,Authenticity,主体や情報が本物であること（なりすましでないこと）,管理・運用
+責任追跡性,Accountability,誰が何をしたかを後から追跡できること,管理・運用
+否認防止,Non-repudiation,行為や送受信の事実を後から否認できないこと,管理・運用
+信頼性,Reliability,意図どおり一貫して動作すること,管理・運用
+職務の分離の原則,Separation of Duties,重要な権限を一人に集中させず役割を分ける原則,管理・運用
+ISMS適合性評価制度,ISMS Conformity Assessment Scheme,ISMSが規格に適合しているかを第三者が認証する日本の制度,標準・組織
+直接損失,Direct Loss,インシデントにより直接生じた金銭的損失,管理・運用
+間接損失,Indirect Loss,信用低下など間接的に生じる損失,管理・運用
+対応費用,Response Costs,インシデント対応に要する費用,管理・運用
+定性的評価,Qualitative Risk Assessment,高・中・低など定性尺度でリスクを評価する方法,管理・運用
+定量的評価,Quantitative Risk Assessment,金額など数値でリスクを評価する方法,管理・運用
+リスクマネジメント,Risk Management,リスクを特定・評価し対応する一連の活動,管理・運用
+リスクコントロール,Risk Control,リスクの発生や影響を抑える対策（回避・低減など）,管理・運用
+リスクファイナンシング,Risk Financing,保険など金銭面でリスクに備える手法（移転・保有）,管理・運用
+リスク回避,Risk Avoidance,リスク源となる活動自体をやめること,管理・運用
+リスク低減,Risk Reduction,発生確率や影響を下げる対策,管理・運用
+リスク移転,Risk Transfer,保険や委託でリスクの影響を他者へ移すこと,管理・運用
+リスクの受容,Risk Acceptance,対策せずリスクを許容すること,管理・運用
+情報資産,Information Asset,守るべき情報とその媒体・システムなどの資産,管理・運用
+ソーシャルエンジニアリング,Social Engineering,人の心理や隙を突いて情報やアクセスを得る手法,脆弱性・攻撃
+サイバーレジリエンス,Cyber Resilience,攻撃や障害に耐え回復し事業を継続する力,管理・運用
+トリアージ,Triage,インシデントの対応優先度を振り分けること,監視・対応
+情報セキュリティ監査基準,Information Security Audit Standards,情報セキュリティ監査の実施基準（経済産業省）,標準・組織
+システム監査基準,System Audit Standards,システム監査の実施基準（経済産業省）,標準・組織
+ブラックボックス診断,Black-box Testing,内部構造を知らず外部から行うセキュリティ診断,管理・運用
+ホワイトボックス診断,White-box Testing,ソースコード等を把握したうえで行うセキュリティ診断,管理・運用
+ファジング,Fuzzing,異常なデータを大量に入力して脆弱性を探るテスト手法,脆弱性・攻撃
+ASM,Attack Surface Management,外部から見える攻撃対象領域を継続的に把握・管理すること,管理・運用
+TLPT,Threat-Led Penetration Testing,脅威情報に基づき実攻撃に近い形で行うペネトレーションテスト,管理・運用
+RAID,Redundant Arrays of Independent Disks,複数ディスクで冗長性や性能を高める構成,管理・運用
+クラスタリングシステム,Clustering System,複数サーバを連携させ可用性・性能を高める構成,管理・運用
+コンテンツサーバ,Content Server,Webコンテンツを提供するサーバ,ネットワーク基礎
+キャッシュサーバ,Cache Server,コンテンツを一時保存し応答を速くするサーバ,ネットワーク基礎
+GETメソッド,GET Method,HTTPでリソース取得に使うメソッド。パラメータはURLに付く,ネットワーク基礎
+POSTメソッド,POST Method,HTTPでデータをメッセージボディで送信するメソッド,ネットワーク基礎
+Referer,Referer,リンク元URLを伝えるHTTPヘッダ（綴りは仕様どおり）,ネットワーク基礎
+Cookie,HTTP Cookie,サーバがブラウザに保存させる小さなデータ,ネットワーク基礎
+セッションID,Session ID,利用者のセッションを識別する値,ネットワーク基礎
+hiddenフィールド,Hidden Field,画面に表示されないが送信されるHTMLフォーム項目,ネットワーク基礎
+secure属性,Secure Attribute,HTTPS通信時のみCookieを送信させる属性,ネットワーク基礎
+HttpOnly属性,HttpOnly Attribute,JavaScriptからCookieを読めなくする属性,ネットワーク基礎
+仮想化,Virtualization,物理資源を論理的に分割・抽象化して使う技術,管理・運用
+シンクライアント,Thin Client,処理やデータをサーバ側に任せる最小限の端末,ネットワーク・防御
+RBI,Remote Browser Isolation,ブラウザ処理を遠隔環境で行い端末を隔離する技術,ネットワーク・防御
+境界防御モデル,Perimeter Defense Model,内外の境界で守る従来の防御モデル,ネットワーク・防御
+SDP,Software Defined Perimeter,ソフトウェアで動的に境界を作るアクセス制御,ネットワーク・防御
+ZTNA,Zero Trust Network Access,ゼロトラストに基づき都度認証・認可するリモートアクセス,ネットワーク・防御
+SD-WAN,Software-Defined Wide Area Network,ソフトウェアでWANを制御する技術,ネットワーク基礎
+SDN,Software-Defined Networking,ネットワーク制御をソフトウェアで集中管理する技術,ネットワーク基礎
+SWG,Secure Web Gateway,Webアクセスを検査・制御するゲートウェイ,ネットワーク・防御
+ブロードキャストドメイン,Broadcast Domain,ブロードキャストが届く範囲,ネットワーク基礎
+NAPT,Network Address Port Translation,IPアドレスとポート番号を変換するアドレス変換（IPマスカレード）,ネットワーク基礎
+ステートフルパケットインスペクション型,Stateful Packet Inspection,通信の状態を追跡して通否を判断するFW方式,ネットワーク・防御
+サンドボックス,Sandbox,隔離環境でプログラムを実行・観察する仕組み,ネットワーク・防御
+アノマリ検知,Anomaly Detection,平常と異なる振る舞いを異常として検知する方式,監視・対応
+フォールスポジティブ,False Positive,正常を誤って異常と判定すること（誤検知）,監視・対応
+フォールスネガティブ,False Negative,異常を見逃して正常と判定すること（検知漏れ）,監視・対応
+プロミスキャスモード,Promiscuous Mode,自分宛以外のパケットも受信するNICモード,ネットワーク・防御
+インラインモード,Inline Mode,通信経路上に直列に設置して検査・遮断する配置,ネットワーク・防御
+フェールオープン機能,Fail-open,障害時に通信を通過させる動作,ネットワーク・防御
+不正のトライアングル,Fraud Triangle,動機・機会・正当化が揃うと不正が起きやすいとする理論,脆弱性・攻撃
+サイバーキルチェーン,Cyber Kill Chain,攻撃の段階を鎖として捉えるモデル（Lockheed Martin）,脆弱性・攻撃
+MITRE ATT&CK,"Adversarial Tactics, Techniques, and Common Knowledge",攻撃者の戦術・技法を整理した知識ベース,脆弱性・攻撃
+脅威インテリジェンス,Threat Intelligence,脅威に関する収集・分析済みの情報,監視・対応
+パスワードリスト攻撃,Password List Attack,漏洩したID・パスワードで他サービスへのログインを試す攻撃,脆弱性・攻撃
+セッションハイジャック,Session Hijacking,他人のセッションIDを奪いなりすます攻撃,脆弱性・攻撃
+ARPスプーフィング,ARP Spoofing,偽のARP応答で通信を誘導する攻撃,脆弱性・攻撃
+DNSキャッシュポイズニング,DNS Cache Poisoning,DNSキャッシュに偽情報を注入して誘導する攻撃,脆弱性・攻撃
+DRDoS,Distributed Reflection Denial of Service,第三者サーバの反射・増幅を使う分散型DoS攻撃,脆弱性・攻撃
+反射型XSS,Reflected XSS,リクエストに含めたスクリプトをその応答で実行させるXSS,脆弱性・攻撃
+格納型XSS,Stored XSS,サーバに保存したスクリプトを他利用者に実行させるXSS,脆弱性・攻撃
+DOM-based XSS,DOM-based XSS,クライアント側のDOM操作でスクリプトが実行されるXSS,脆弱性・攻撃
+エスケープ処理,Escaping,特殊文字を無害な文字列に置き換える処理,脆弱性・攻撃
+ディレクトリトラバーサル,Directory Traversal,パス操作で意図しないファイルにアクセスする攻撃,脆弱性・攻撃
+OSコマンドインジェクション,OS Command Injection,不正なOSコマンドを注入して実行させる攻撃,脆弱性・攻撃
+HTTPヘッダインジェクション,HTTP Header Injection,改行コードを注入し任意の応答ヘッダを追加する攻撃,脆弱性・攻撃
+CDN,Content Delivery Network,コンテンツを分散配置して配信するネットワーク,ネットワーク基礎
+ランサムウェア,Ransomware,データを暗号化するなどして身代金を要求するマルウェア,脆弱性・攻撃
+標的型攻撃,Targeted Attack,特定の組織・個人を狙う攻撃,脆弱性・攻撃
+サプライチェーン攻撃,Supply Chain Attack,取引先や製品・ソフトウェアを経由して侵入する攻撃,脆弱性・攻撃
+ファイルレス攻撃,Fileless Attack,ディスクにファイルを残さずメモリ上や正規ツールで動く攻撃,脆弱性・攻撃
+ラテラルムーブメント,Lateral Movement,侵入後に組織内の他端末へ横展開する動き,脆弱性・攻撃
+エクスプロイトコード,Exploit Code,脆弱性を悪用するためのコード,脆弱性・攻撃
+ゼロデイ攻撃,Zero-day Attack,修正プログラム提供前の脆弱性を突く攻撃,脆弱性・攻撃
+EPSS,Exploit Prediction Scoring System,脆弱性が今後悪用される確率を予測する指標（FIRST）,SCAP
+KEV,Known Exploited Vulnerabilities,CISAが公開する既知の悪用済み脆弱性カタログ,SCAP
+迷惑メール,Unsolicited Bulk/Commercial Email (UBE/UCE),受信者が望まない広告・大量送信メールの総称,電子メール
+第三者中継,Open Relay,無関係な第三者間のメールを中継してしまう状態,電子メール
+Submission,Message Submission,利用者からのメール投稿を認証付きで受け付ける仕組み（587番ポート）,電子メール
+Sender ID,Sender ID,SPFを拡張した送信ドメイン認証（Microsoft）,電子メール
+DomainKeys,DomainKeys,Yahoo!発の電子署名による送信ドメイン認証。DKIMの前身,電子メール
+STARTTLS,STARTTLS,平文接続の途中からTLS暗号化へ切り替える拡張,電子メール
