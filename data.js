@@ -331,8 +331,8 @@ window.SC_ACRONYMS = [
   },
   {
     "略語": "NDR",
-    "正式名称": "Network Detection and Response",
-    "一言定義": "ネットワーク通信を分析して脅威を検知・対応する製品",
+    "正式名称": "Network Detection and Response / Non-Delivery Report",
+    "一言定義": "①ネットワーク通信を分析して脅威を検知・対応する製品。②メールの配送不能通知",
     "分類": "ネットワーク・防御"
   },
   {
