@@ -147,3 +147,11 @@ SIM3,Security Incident Management Maturity Model,CSIRT等のインシデント�
 EPP,Endpoint Protection Platform,ウイルス対策などエンドポイントを総合的に守る製品・基盤,ネットワーク・防御
 SLA,Service Level Agreement,提供サービスの品質・可用性などを定めた合意,管理・運用
 OODA,Observe-Orient-Decide-Act,観察・情勢判断・意思決定・行動を素早く回す意思決定ループ,管理・運用
+BCM,Business Continuity Management,事業継続を実現するためのマネジメント活動全体,管理・運用
+SOX法,Sarbanes-Oxley Act,企業の財務報告の信頼性を高める米国法。内部統制が求められる,標準・組織
+BCI,Business Continuity Institute,事業継続の普及・資格認定などを行う国際的な専門団体,標準・組織
+BCMS,Business Continuity Management System,事業継続マネジメントの仕組み（ISO 22301など）,管理・運用
+JIPDEC,Japan Information Processing and Development Center,プライバシーマークなど情報経済社会の推進を行う日本の団体（日本情報経済社会推進協会）,標準・組織
+BIA,Business Impact Analysis,業務中断の影響を分析し優先度や許容停止時間を明らかにする,管理・運用
+CP,Contingency Plan,緊急事態に備えた代替手順・応急対応の計画（コンティンジェンシープラン）,管理・運用
+DR,Disaster Recovery,災害や障害後にITシステム等を復旧するディザスタリカバリ,管理・運用
