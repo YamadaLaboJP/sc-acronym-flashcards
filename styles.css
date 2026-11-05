@@ -41,6 +41,11 @@ body {
   touch-action: manipulation;
 }
 
+body.is-live,
+body.is-live button {
+  cursor: pointer;
+}
+
 main {
   width: min(440px, 100%);
   display: flex;

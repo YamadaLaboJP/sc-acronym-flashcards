@@ -49,6 +49,7 @@
     actionEl.disabled = true;
     cardEl.classList.add("is-error");
     cardEl.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("is-live");
     acronymEl.textContent = "表示できません";
     promptEl.hidden = false;
     promptEl.textContent = message;
@@ -115,8 +116,7 @@
     else reveal();
   }
 
-  cardEl.addEventListener("click", onActivate);
-  actionEl.addEventListener("click", onActivate);
+  document.addEventListener("click", onActivate);
 
   document.addEventListener("keydown", function (event) {
     if (!ready) return;
@@ -145,6 +145,7 @@
   }
 
   ready = true;
+  document.body.classList.add("is-live");
   cardEl.disabled = false;
   actionEl.disabled = false;
   startCycle(null);
