@@ -850,5 +850,23 @@ window.SC_ACRONYMS = [
     "正式名称": "TEMPEST",
     "一言定義": "機器から漏れる電磁波を傍受して情報を盗む攻撃（およびその対策規格の通称）",
     "分類": "脆弱性・攻撃"
+  },
+  {
+    "略語": "ISAC",
+    "正式名称": "Information Sharing and Analysis Center",
+    "一言定義": "業界ごとにサイバー脅威情報を共有・分析する組織（情報共有分析センター）",
+    "分類": "標準・組織"
+  },
+  {
+    "略語": "OCF",
+    "正式名称": "Open CSIRT Foundation",
+    "一言定義": "SIM3などCSIRT成熟度評価を推進する財団",
+    "分類": "標準・組織"
+  },
+  {
+    "略語": "SIM3",
+    "正式名称": "Security Incident Management Maturity Model",
+    "一言定義": "CSIRT等のインシデント管理成熟度を評価するモデル（OCF）",
+    "分類": "管理・運用"
   }
 ];

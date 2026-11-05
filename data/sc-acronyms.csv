@@ -141,3 +141,6 @@ CVCF,Constant Voltage Constant Frequency,定電圧・定周波の安定化電源
 UPS,Uninterruptible Power Supply,停電時にも一定時間電力を供給する無停電電源装置,管理・運用
 IDC,Internet Data Center,サーバやネットワーク機器を集約して運用するデータセンター,管理・運用
 TEMPEST,TEMPEST,機器から漏れる電磁波を傍受して情報を盗む攻撃（およびその対策規格の通称）,脆弱性・攻撃
+ISAC,Information Sharing and Analysis Center,業界ごとにサイバー脅威情報を共有・分析する組織（情報共有分析センター）,標準・組織
+OCF,Open CSIRT Foundation,SIM3などCSIRT成熟度評価を推進する財団,標準・組織
+SIM3,Security Incident Management Maturity Model,CSIRT等のインシデント管理成熟度を評価するモデル（OCF）,管理・運用
