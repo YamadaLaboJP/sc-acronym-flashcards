@@ -121,3 +121,4 @@ BOF,Buffer Overflow,バッファの境界を超えて書き込みメモリを破
 SASL,Simple Authentication and Security Layer,アプリケーションに認証機能を載せる枠組み,暗号・認証
 GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,暗号・認証
 IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,ネットワーク・防御
+IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,ネットワーク・防御

@@ -730,5 +730,11 @@ window.SC_ACRONYMS = [
     "正式名称": "Identified Internet Mail",
     "一言定義": "Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった",
     "分類": "ネットワーク・防御"
+  },
+  {
+    "略語": "IP25B",
+    "正式名称": "Inbound Port 25 Blocking",
+    "一言定義": "他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策",
+    "分類": "ネットワーク・防御"
   }
 ];
