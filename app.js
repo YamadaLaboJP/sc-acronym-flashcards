@@ -62,11 +62,18 @@
     return picked && picked.value === "random" ? "random" : "abc";
   }
 
+  function importantOnly() {
+    const box = document.getElementById("important-only");
+    return !!(box && box.checked);
+  }
+
   function filteredItems() {
     const category = selectedCategory();
-    if (category === "すべて") return deck.slice();
+    const onlyImportant = importantOnly();
     return deck.filter(function (item) {
-      return item["分類"] === category;
+      if (category !== "すべて" && item["分類"] !== category) return false;
+      if (onlyImportant && item["重要"] !== true) return false;
+      return true;
     });
   }
 
@@ -296,6 +303,7 @@
   });
 
   categorySelect.addEventListener("change", clearError);
+  document.getElementById("important-only").addEventListener("change", clearError);
 
   document.addEventListener("click", function (event) {
     if (view !== "quiz" || !ready) return;
@@ -330,7 +338,7 @@
   }
 
   const invalid = deck.some(function (item) {
-    return !item || !item["略語"] || !item["正式名称"] || !item["一言定義"] || !item["分類"];
+    return !item || !item["略語"] || !item["正式名称"] || !item["一言定義"] || !item["分類"] || typeof item["重要"] !== "boolean";
   });
   if (invalid) {
     showError("用語データの列が足りません。");

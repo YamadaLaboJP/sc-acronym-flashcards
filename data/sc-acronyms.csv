@@ -1,254 +1,254 @@
-略語,正式名称,一言定義,分類
-NIST,National Institute of Standards and Technology,米国国立標準技術研究所。SP800シリーズを出している,標準・組織
-ISO,International Organization for Standardization,国際標準化機構,標準・組織
-IEC,International Electrotechnical Commission,国際電気標準会議,標準・組織
-IPA,Information-technology Promotion Agency,情報処理推進機構。SC試験を実施している,標準・組織
-JPCERT/CC,Japan Computer Emergency Response Team Coordination Center,日本のインシデント対応調整機関,標準・組織
-NISC,National center of Incident readiness and Strategy for Cybersecurity,内閣サイバーセキュリティセンター,標準・組織
-CRYPTREC,Cryptography Research and Evaluation Committees,電子政府推奨暗号リストを作る評価プロジェクト,標準・組織
-CSIRT,Computer Security Incident Response Team,組織内のインシデント対応チーム,標準・組織
-ISMS,Information Security Management System,情報セキュリティマネジメントシステム（ISO/IEC 27001）,標準・組織
-CC,Common Criteria,IT製品のセキュリティを評価する国際基準（ISO/IEC 15408）,標準・組織
-OWASP,Open Worldwide Application Security Project,Webアプリのセキュリティ向上を目指すコミュニティ,標準・組織
-PCI DSS,Payment Card Industry Data Security Standard,クレジットカード会員データを守る業界基準,標準・組織
-SCAP,Security Content Automation Protocol,脆弱性管理を自動化するための標準仕様群,SCAP
-CVE,Common Vulnerabilities and Exposures,個々の脆弱性に付ける共通の識別番号,SCAP
-CVSS,Common Vulnerability Scoring System,脆弱性の深刻度を評価する共通指標,SCAP
-CWE,Common Weakness Enumeration,脆弱性の種類を分類した共通一覧,SCAP
-CPE,Common Platform Enumeration,製品・プラットフォームを表す共通の名前,SCAP
-XCCDF,eXtensible Configuration Checklist Description Format,セキュリティ設定チェックリストを書くための形式,SCAP
-OVAL,Open Vulnerability and Assessment Language,脆弱性や設定状態の検査方法を書く言語,SCAP
-JVN,Japan Vulnerability Notes,日本の脆弱性対策情報ポータル,SCAP
-AES,Advanced Encryption Standard,現在標準の共通鍵ブロック暗号,暗号
-RSA,Rivest–Shamir–Adleman,素因数分解の難しさを利用した公開鍵暗号,暗号
-ECC,Elliptic Curve Cryptography,楕円曲線を使う公開鍵暗号。短い鍵で高い強度が出る,暗号
-SHA,Secure Hash Algorithm,安全なハッシュ関数のシリーズ（SHA-2、SHA-3など）,暗号
-HMAC,Hash-based Message Authentication Code,ハッシュ関数を使うメッセージ認証コード,暗号
-PKI,Public Key Infrastructure,公開鍵証明書で信頼を成り立たせる基盤,暗号
-CA,Certificate Authority,デジタル証明書を発行する認証局,暗号
-RA,Registration Authority,証明書申請者の本人確認を行う登録局,暗号
-CRL,Certificate Revocation List,失効した証明書の一覧,暗号
-OCSP,Online Certificate Status Protocol,証明書が失効していないかをその場で確認するプロトコル,暗号
-TLS,Transport Layer Security,通信を暗号化するプロトコル（SSLの後継）,暗号
-HSM,Hardware Security Module,暗号鍵を安全に保管・処理する専用ハードウェア,暗号
-MFA,Multi-Factor Authentication,複数の要素を組み合わせる多要素認証,認証・認可
-OTP,One-Time Password,一度だけ使えるパスワード,認証・認可
-TOTP,Time-based One-Time Password,時刻をもとに生成するOTP,認証・認可
-SSO,Single Sign-On,1回の認証で複数のサービスを使えるしくみ,認証・認可
-SAML,Security Assertion Markup Language,XMLで認証情報を受け渡すSSOの標準,認証・認可
-OAuth,Open Authorization,権限の委譲（認可）を行う標準,認証・認可
-OIDC,OpenID Connect,OAuth 2.0の上で認証を行うしくみ,認証・認可
-FIDO,Fast IDentity Online,パスワードを使わない認証の標準,認証・認可
-Kerberos,Kerberos,チケットを使うネットワーク認証方式,認証・認可
-LDAP,Lightweight Directory Access Protocol,ディレクトリサービスへのアクセス用プロトコル,認証・認可
-RADIUS,Remote Authentication Dial-In User Service,ネットワークの認証・認可・課金（UDP）,認証・認可
-TACACS+,Terminal Access Controller Access-Control System Plus,AAAを個別に扱い通信全体を暗号化する（TCP）,認証・認可
-WAF,Web Application Firewall,Webアプリへの攻撃を防ぐファイアウォール,ネットワーク・防御
-IDS,Intrusion Detection System,侵入を検知するシステム,ネットワーク・防御
-IPS,Intrusion Prevention System,侵入を検知して遮断するシステム,ネットワーク・防御
-UTM,Unified Threat Management,複数のセキュリティ機能をまとめた統合脅威管理装置,ネットワーク・防御
-DMZ,DeMilitarized Zone,内部と外部の間に置く公開サーバ用の緩衝ネットワーク,ネットワーク・防御
-VPN,Virtual Private Network,暗号化して作る仮想的な専用線,ネットワーク・防御
-IPsec,IP Security,IP層で暗号化と認証を行うプロトコル,ネットワーク・防御
-SSH,Secure Shell,暗号化されたリモートログイン,ネットワーク・防御
-SIEM,Security Information and Event Management,ログを集めて相関分析し脅威を見つけるしくみ,監視・対応
-SOC,Security Operation Center,セキュリティを常時監視する組織,監視・対応
-EDR,Endpoint Detection and Response,端末上の脅威を検知して対応する製品,監視・対応
-NDR,Network Detection and Response,ネットワーク通信を分析して脅威を検知・対応する製品,監視・対応
-NDR,Non-Delivery Report,メールの配送不能通知（バウンスメール）,電子メール
-XDR,Extended Detection and Response,端末・ネットワーク・クラウドなどを横断して検知・対応する製品,監視・対応
-SOAR,Security Orchestration Automation and Response,セキュリティ運用を自動化・連携させるしくみ,監視・対応
-DNSSEC,DNS Security Extensions,DNSの応答に署名して改ざんを防ぐ拡張,ネットワーク・防御
-SPF,Sender Policy Framework,送信元IPアドレスでメール送信ドメインを認証する方式,電子メール
-DKIM,DomainKeys Identified Mail,電子署名でメールの送信ドメインを認証する方式,電子メール
-DMARC,Domain-based Message Authentication Reporting and Conformance,SPF/DKIMの結果に基づく処理方針と報告のしくみ,電子メール
-ゼロトラスト,Zero Trust,何も信頼せずアクセスのたびに検証する考え方,ネットワーク・防御
-CASB,Cloud Access Security Broker,クラウドサービスの利用を可視化・制御するしくみ,ネットワーク・防御
-SASE,Secure Access Service Edge,ネットワークとセキュリティ機能をクラウドで一体提供する構成,ネットワーク・防御
-DLP,Data Loss Prevention,機密情報の漏えいを防ぐしくみ,ネットワーク・防御
-MDM,Mobile Device Management,モバイル端末を一元管理するしくみ,ネットワーク・防御
-BYOD,Bring Your Own Device,私物端末を業務に使うこと,ネットワーク・防御
-XSS,Cross-Site Scripting,悪意あるスクリプトを他人のブラウザで実行させる攻撃,脆弱性・攻撃
-CSRF,Cross-Site Request Forgery,利用者が意図しないリクエストを送らせる攻撃,脆弱性・攻撃
-SSRF,Server-Side Request Forgery,サーバに内部向けなどの不正なリクエストを送らせる攻撃,脆弱性・攻撃
-SQLi,SQL Injection,不正なSQL文を注入してデータベースを操作する攻撃,脆弱性・攻撃
-XXE,XML eXternal Entity,XMLの外部実体参照を悪用する攻撃,脆弱性・攻撃
-RCE,Remote Code Execution,遠隔から任意のコードを実行させる攻撃・脆弱性,脆弱性・攻撃
-DoS,Denial of Service,サービスを妨害する攻撃,脆弱性・攻撃
-DDoS,Distributed Denial of Service,多数の拠点から行う分散型DoS攻撃,脆弱性・攻撃
-APT,Advanced Persistent Threat,特定の標的を長期間ねらう高度な攻撃,脆弱性・攻撃
-MITM,Man-In-The-Middle attack,通信の間に割り込んで盗聴・改ざんする中間者攻撃,脆弱性・攻撃
-C2,Command and Control,感染端末に指令を出す攻撃者のサーバ,脆弱性・攻撃
-BEC,Business Email Compromise,取引先などになりすまして送金させるビジネスメール詐欺,電子メール
-BCP,Business Continuity Plan,災害や障害が起きても事業を続けるための計画,管理・運用
-RTO,Recovery Time Objective,目標復旧時間。どれだけ早く復旧するかの目標,管理・運用
-RPO,Recovery Point Objective,目標復旧時点。どの時点までのデータを取り戻すかの目標,管理・運用
-PDCA,Plan-Do-Check-Act,計画・実行・評価・改善を繰り返すサイクル,管理・運用
-SBOM,Software Bill of Materials,ソフトウェアに含まれる部品の一覧,管理・運用
-PoLP,Principle of Least Privilege,必要最小限の権限だけを与える原則,管理・運用
-TCP,Transmission Control Protocol,信頼性のあるコネクション型の通信プロトコル,ネットワーク基礎
-UDP,User Datagram Protocol,コネクションレスで高速だが到達保証のない通信プロトコル,ネットワーク基礎
-IP,Internet Protocol,パケットを宛先まで届けるネットワーク層のプロトコル,ネットワーク基礎
-IPv4,Internet Protocol version 4,32ビットのアドレスを使う現行主流のIP,ネットワーク基礎
-IPv6,Internet Protocol version 6,128ビットのアドレスを使う次世代のIP,ネットワーク基礎
-TCP/IP,Transmission Control Protocol / Internet Protocol,インターネットの標準となる通信プロトコル群の総称,ネットワーク基礎
-ARP,Address Resolution Protocol,IPアドレスからMACアドレスを求めるプロトコル,ネットワーク基礎
-RARP,Reverse Address Resolution Protocol,MACアドレスからIPアドレスを求める古いプロトコル,ネットワーク基礎
-DHCP,Dynamic Host Configuration Protocol,端末にIPアドレスなどを自動割り当てするプロトコル,ネットワーク基礎
-DNS,Domain Name System,ドメイン名とIPアドレスを対応づける仕組み,ネットワーク基礎
-ICMP,Internet Control Message Protocol,疎通確認やエラー通知に使う（pingなど）,ネットワーク基礎
-NAT,Network Address Translation,プライベートIPとグローバルIPを変換する仕組み,ネットワーク基礎
-RIP,Routing Information Protocol,距離ベクトル型の経路制御プロトコル,ネットワーク基礎
-OSPF,Open Shortest Path First,リンクステート型の経路制御プロトコル,ネットワーク基礎
-BGP,Border Gateway Protocol,インターネットのAS間で経路を交換するプロトコル,ネットワーク基礎
-SNMP,Simple Network Management Protocol,ネットワーク機器を監視・管理するプロトコル,ネットワーク基礎
-NTP,Network Time Protocol,時刻を同期するプロトコル,ネットワーク基礎
-HTTP,HyperText Transfer Protocol,Webページをやり取りするプロトコル,ネットワーク基礎
-HTTPS,HTTP Secure,TLSで暗号化したHTTP,ネットワーク基礎
-FTP,File Transfer Protocol,ファイル転送用のプロトコル,ネットワーク基礎
-SMTP,Simple Mail Transfer Protocol,メールを送信・転送するプロトコル,電子メール
-POP,Post Office Protocol,メールをサーバから取り出すプロトコル,電子メール
-IMAP,Internet Message Access Protocol,メールをサーバ上で管理・閲覧するプロトコル,電子メール
-MACアドレス,Media Access Control address,ネットワークインタフェース固有のハードウェアアドレス,ネットワーク基礎
-NetBIOS,Network Basic Input/Output System,Windowsなどで使われた名前解決・通信の仕組み,ネットワーク基礎
-NetBEUI,NetBIOS Extended User Interface,NetBIOS向けの古いローカルネットワーク用プロトコル,ネットワーク基礎
-VLAN,Virtual LAN,物理ネットワークを論理的に分割する仕組み,ネットワーク基礎
-MTU,Maximum Transmission Unit,1回に送れる最大パケットサイズ,ネットワーク基礎
-TTL,Time To Live,パケットが破棄されるまでのホップ数などの寿命,ネットワーク基礎
-MUA,Mail User Agent,利用者がメールの作成・閲覧に使うクライアント,電子メール
-MSA,Mail Submission Agent,利用者が送信したメールを受け取りMTAへ渡す送信受付役,電子メール
-MTA,Mail Transfer Agent,メールをサーバ間で転送するソフトウェア,電子メール
-BOF,Buffer Overflow,バッファの境界を超えて書き込みメモリを破壊する攻撃手法,脆弱性・攻撃
-SASL,Simple Authentication and Security Layer,アプリケーションに認証機能を載せる枠組み,認証・認可
-GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,認証・認可
-IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,電子メール
-IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,電子メール
-OP25B,Outbound Port 25 Blocking,自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策,電子メール
-EDNS0,Extension Mechanisms for DNS (version 0),DNSの機能拡張。UDP応答サイズ拡大や追加オプションを可能にする,ネットワーク基礎
-RDBMS,Relational Database Management System,関係モデルに基づくデータベース管理システム,管理・運用
-PMI,Project Management Institute,プロジェクトマネジメント協会。PMPなど資格・標準の策定団体,標準・組織
-PMBOK,Project Management Body of Knowledge,PMIがまとめたプロジェクトマネジメントの知識体系,標準・組織
-CISO,Chief Information Security Officer,情報セキュリティ責任者。組織のセキュリティ戦略を統括する役職,管理・運用
-IDaaS,Identity as a Service,クラウド上で認証・ID管理を提供するサービス,認証・認可
-VDI,Virtual Desktop Infrastructure,サーバ上の仮想デスクトップを端末から利用する仕組み,ネットワーク・防御
-ISMAP,Information system Security Management and Assessment Program,政府情報システムのためのセキュリティ評価制度（日本）,標準・組織
-SaaS,Software as a Service,ソフトウェアをクラウドサービスとして提供する形態,管理・運用
-PaaS,Platform as a Service,アプリ実行環境などの基盤をクラウドで提供する形態,管理・運用
-IaaS,Infrastructure as a Service,サーバやストレージなどのインフラをクラウドで提供する形態,管理・運用
-TPM,Trusted Platform Module,端末内で鍵管理や改ざん検知などを行うハードウェアセキュリティモジュール,暗号
-TCG,Trusted Computing Group,TPMなどの信頼コンピューティング仕様を策定する業界団体,標準・組織
-CVCF,Constant Voltage Constant Frequency,定電圧・定周波の安定化電源装置,管理・運用
-UPS,Uninterruptible Power Supply,停電時にも一定時間電力を供給する無停電電源装置,管理・運用
-IDC,Internet Data Center,サーバやネットワーク機器を集約して運用するデータセンター,管理・運用
-TEMPEST,TEMPEST,機器から漏れる電磁波を傍受して情報を盗む攻撃（およびその対策規格の通称）,脆弱性・攻撃
-ISAC,Information Sharing and Analysis Center,業界ごとにサイバー脅威情報を共有・分析する組織（情報共有分析センター）,標準・組織
-OCF,Open CSIRT Foundation,SIM3などCSIRT成熟度評価を推進する財団,標準・組織
-SIM3,Security Incident Management Maturity Model,CSIRT等のインシデント管理成熟度を評価するモデル（OCF）,管理・運用
-EPP,Endpoint Protection Platform,ウイルス対策などエンドポイントを総合的に守る製品・基盤,ネットワーク・防御
-SLA,Service Level Agreement,提供サービスの品質・可用性などを定めた合意,管理・運用
-OODA,Observe-Orient-Decide-Act,観察・情勢判断・意思決定・行動を素早く回す意思決定ループ,管理・運用
-BCM,Business Continuity Management,事業継続を実現するためのマネジメント活動全体,管理・運用
-SOX法,Sarbanes-Oxley Act,企業の財務報告の信頼性を高める米国法。内部統制が求められる,標準・組織
-BCI,Business Continuity Institute,事業継続の普及・資格認定などを行う国際的な専門団体,標準・組織
-BCMS,Business Continuity Management System,事業継続マネジメントの仕組み（ISO 22301など）,管理・運用
-JIPDEC,Japan Information Processing and Development Center,プライバシーマークなど情報経済社会の推進を行う日本の団体（日本情報経済社会推進協会）,標準・組織
-BIA,Business Impact Analysis,業務中断の影響を分析し優先度や許容停止時間を明らかにする,管理・運用
-CP,Contingency Plan,緊急事態に備えた代替手順・応急対応の計画（コンティンジェンシープラン）,管理・運用
-DR,Disaster Recovery,災害や障害後にITシステム等を復旧するディザスタリカバリ,管理・運用
-情報セキュリティ,Information Security,情報の機密性・完全性・可用性などを守ること,管理・運用
-サイバー攻撃,Cyber Attack,コンピュータやネットワークを狙う攻撃の総称,脆弱性・攻撃
-機密性,Confidentiality,許可された者だけが情報にアクセスできること,管理・運用
-完全性,Integrity,情報が改ざんされず正確であること,管理・運用
-可用性,Availability,必要なときに情報やシステムを使えること,管理・運用
-真正性,Authenticity,主体や情報が本物であること（なりすましでないこと）,管理・運用
-責任追跡性,Accountability,誰が何をしたかを後から追跡できること,管理・運用
-否認防止,Non-repudiation,行為や送受信の事実を後から否認できないこと,管理・運用
-信頼性,Reliability,意図どおり一貫して動作すること,管理・運用
-職務の分離の原則,Separation of Duties,重要な権限を一人に集中させず役割を分ける原則,管理・運用
-ISMS適合性評価制度,ISMS Conformity Assessment Scheme,ISMSが規格に適合しているかを第三者が認証する日本の制度,標準・組織
-直接損失,Direct Loss,インシデントにより直接生じた金銭的損失,管理・運用
-間接損失,Indirect Loss,信用低下など間接的に生じる損失,管理・運用
-対応費用,Response Costs,インシデント対応に要する費用,管理・運用
-定性的評価,Qualitative Risk Assessment,高・中・低など定性尺度でリスクを評価する方法,管理・運用
-定量的評価,Quantitative Risk Assessment,金額など数値でリスクを評価する方法,管理・運用
-リスクマネジメント,Risk Management,リスクを特定・評価し対応する一連の活動,管理・運用
-リスクコントロール,Risk Control,リスクの発生や影響を抑える対策（回避・低減など）,管理・運用
-リスクファイナンシング,Risk Financing,保険など金銭面でリスクに備える手法（移転・保有）,管理・運用
-リスク回避,Risk Avoidance,リスク源となる活動自体をやめること,管理・運用
-リスク低減,Risk Reduction,発生確率や影響を下げる対策,管理・運用
-リスク移転,Risk Transfer,保険や委託でリスクの影響を他者へ移すこと,管理・運用
-リスクの受容,Risk Acceptance,対策せずリスクを許容すること,管理・運用
-情報資産,Information Asset,守るべき情報とその媒体・システムなどの資産,管理・運用
-ソーシャルエンジニアリング,Social Engineering,人の心理や隙を突いて情報やアクセスを得る手法,脆弱性・攻撃
-サイバーレジリエンス,Cyber Resilience,攻撃や障害に耐え回復し事業を継続する力,管理・運用
-トリアージ,Triage,インシデントの対応優先度を振り分けること,監視・対応
-情報セキュリティ監査基準,Information Security Audit Standards,情報セキュリティ監査の実施基準（経済産業省）,標準・組織
-システム監査基準,System Audit Standards,システム監査の実施基準（経済産業省）,標準・組織
-ブラックボックス診断,Black-box Testing,内部構造を知らず外部から行うセキュリティ診断,管理・運用
-ホワイトボックス診断,White-box Testing,ソースコード等を把握したうえで行うセキュリティ診断,管理・運用
-ファジング,Fuzzing,異常なデータを大量に入力して脆弱性を探るテスト手法,脆弱性・攻撃
-ASM,Attack Surface Management,外部から見える攻撃対象領域を継続的に把握・管理すること,管理・運用
-TLPT,Threat-Led Penetration Testing,脅威情報に基づき実攻撃に近い形で行うペネトレーションテスト,管理・運用
-RAID,Redundant Arrays of Independent Disks,複数ディスクで冗長性や性能を高める構成,管理・運用
-クラスタリングシステム,Clustering System,複数サーバを連携させ可用性・性能を高める構成,管理・運用
-コンテンツサーバ,Content Server,Webコンテンツを提供するサーバ,ネットワーク基礎
-キャッシュサーバ,Cache Server,コンテンツを一時保存し応答を速くするサーバ,ネットワーク基礎
-GETメソッド,GET Method,HTTPでリソース取得に使うメソッド。パラメータはURLに付く,ネットワーク基礎
-POSTメソッド,POST Method,HTTPでデータをメッセージボディで送信するメソッド,ネットワーク基礎
-Referer,Referer,リンク元URLを伝えるHTTPヘッダ（綴りは仕様どおり）,ネットワーク基礎
-Cookie,HTTP Cookie,サーバがブラウザに保存させる小さなデータ,ネットワーク基礎
-セッションID,Session ID,利用者のセッションを識別する値,ネットワーク基礎
-hiddenフィールド,Hidden Field,画面に表示されないが送信されるHTMLフォーム項目,ネットワーク基礎
-secure属性,Secure Attribute,HTTPS通信時のみCookieを送信させる属性,ネットワーク基礎
-HttpOnly属性,HttpOnly Attribute,JavaScriptからCookieを読めなくする属性,ネットワーク基礎
-仮想化,Virtualization,物理資源を論理的に分割・抽象化して使う技術,管理・運用
-シンクライアント,Thin Client,処理やデータをサーバ側に任せる最小限の端末,ネットワーク・防御
-RBI,Remote Browser Isolation,ブラウザ処理を遠隔環境で行い端末を隔離する技術,ネットワーク・防御
-境界防御モデル,Perimeter Defense Model,内外の境界で守る従来の防御モデル,ネットワーク・防御
-SDP,Software Defined Perimeter,ソフトウェアで動的に境界を作るアクセス制御,ネットワーク・防御
-ZTNA,Zero Trust Network Access,ゼロトラストに基づき都度認証・認可するリモートアクセス,ネットワーク・防御
-SD-WAN,Software-Defined Wide Area Network,ソフトウェアでWANを制御する技術,ネットワーク基礎
-SDN,Software-Defined Networking,ネットワーク制御をソフトウェアで集中管理する技術,ネットワーク基礎
-SWG,Secure Web Gateway,Webアクセスを検査・制御するゲートウェイ,ネットワーク・防御
-ブロードキャストドメイン,Broadcast Domain,ブロードキャストが届く範囲,ネットワーク基礎
-NAPT,Network Address Port Translation,IPアドレスとポート番号を変換するアドレス変換（IPマスカレード）,ネットワーク基礎
-ステートフルパケットインスペクション型,Stateful Packet Inspection,通信の状態を追跡して通否を判断するFW方式,ネットワーク・防御
-サンドボックス,Sandbox,隔離環境でプログラムを実行・観察する仕組み,ネットワーク・防御
-アノマリ検知,Anomaly Detection,平常と異なる振る舞いを異常として検知する方式,監視・対応
-フォールスポジティブ,False Positive,正常を誤って異常と判定すること（誤検知）,監視・対応
-フォールスネガティブ,False Negative,異常を見逃して正常と判定すること（検知漏れ）,監視・対応
-プロミスキャスモード,Promiscuous Mode,自分宛以外のパケットも受信するNICモード,ネットワーク・防御
-インラインモード,Inline Mode,通信経路上に直列に設置して検査・遮断する配置,ネットワーク・防御
-フェールオープン機能,Fail-open,障害時に通信を通過させる動作,ネットワーク・防御
-不正のトライアングル,Fraud Triangle,動機・機会・正当化が揃うと不正が起きやすいとする理論,脆弱性・攻撃
-サイバーキルチェーン,Cyber Kill Chain,攻撃の段階を鎖として捉えるモデル（Lockheed Martin）,脆弱性・攻撃
-MITRE ATT&CK,"Adversarial Tactics, Techniques, and Common Knowledge",攻撃者の戦術・技法を整理した知識ベース,脆弱性・攻撃
-脅威インテリジェンス,Threat Intelligence,脅威に関する収集・分析済みの情報,監視・対応
-パスワードリスト攻撃,Password List Attack,漏洩したID・パスワードで他サービスへのログインを試す攻撃,脆弱性・攻撃
-セッションハイジャック,Session Hijacking,他人のセッションIDを奪いなりすます攻撃,脆弱性・攻撃
-ARPスプーフィング,ARP Spoofing,偽のARP応答で通信を誘導する攻撃,脆弱性・攻撃
-DNSキャッシュポイズニング,DNS Cache Poisoning,DNSキャッシュに偽情報を注入して誘導する攻撃,脆弱性・攻撃
-DRDoS,Distributed Reflection Denial of Service,第三者サーバの反射・増幅を使う分散型DoS攻撃,脆弱性・攻撃
-反射型XSS,Reflected XSS,リクエストに含めたスクリプトをその応答で実行させるXSS,脆弱性・攻撃
-格納型XSS,Stored XSS,サーバに保存したスクリプトを他利用者に実行させるXSS,脆弱性・攻撃
-DOM-based XSS,DOM-based XSS,クライアント側のDOM操作でスクリプトが実行されるXSS,脆弱性・攻撃
-エスケープ処理,Escaping,特殊文字を無害な文字列に置き換える処理,脆弱性・攻撃
-ディレクトリトラバーサル,Directory Traversal,パス操作で意図しないファイルにアクセスする攻撃,脆弱性・攻撃
-OSコマンドインジェクション,OS Command Injection,不正なOSコマンドを注入して実行させる攻撃,脆弱性・攻撃
-HTTPヘッダインジェクション,HTTP Header Injection,改行コードを注入し任意の応答ヘッダを追加する攻撃,脆弱性・攻撃
-CDN,Content Delivery Network,コンテンツを分散配置して配信するネットワーク,ネットワーク基礎
-ランサムウェア,Ransomware,データを暗号化するなどして身代金を要求するマルウェア,脆弱性・攻撃
-標的型攻撃,Targeted Attack,特定の組織・個人を狙う攻撃,脆弱性・攻撃
-サプライチェーン攻撃,Supply Chain Attack,取引先や製品・ソフトウェアを経由して侵入する攻撃,脆弱性・攻撃
-ファイルレス攻撃,Fileless Attack,ディスクにファイルを残さずメモリ上や正規ツールで動く攻撃,脆弱性・攻撃
-ラテラルムーブメント,Lateral Movement,侵入後に組織内の他端末へ横展開する動き,脆弱性・攻撃
-エクスプロイトコード,Exploit Code,脆弱性を悪用するためのコード,脆弱性・攻撃
-ゼロデイ攻撃,Zero-day Attack,修正プログラム提供前の脆弱性を突く攻撃,脆弱性・攻撃
-EPSS,Exploit Prediction Scoring System,脆弱性が今後悪用される確率を予測する指標（FIRST）,SCAP
-KEV,Known Exploited Vulnerabilities,CISAが公開する既知の悪用済み脆弱性カタログ,SCAP
-迷惑メール,Unsolicited Bulk/Commercial Email (UBE/UCE),受信者が望まない広告・大量送信メールの総称,電子メール
-第三者中継,Open Relay,無関係な第三者間のメールを中継してしまう状態,電子メール
-Submission,Message Submission,利用者からのメール投稿を認証付きで受け付ける仕組み（587番ポート）,電子メール
-Sender ID,Sender ID,SPFを拡張した送信ドメイン認証（Microsoft）,電子メール
-DomainKeys,DomainKeys,Yahoo!発の電子署名による送信ドメイン認証。DKIMの前身,電子メール
-STARTTLS,STARTTLS,平文接続の途中からTLS暗号化へ切り替える拡張,電子メール
+略語,正式名称,一言定義,分類,重要
+NIST,National Institute of Standards and Technology,米国国立標準技術研究所。SP800シリーズを出している,標準・組織,0
+ISO,International Organization for Standardization,国際標準化機構,標準・組織,0
+IEC,International Electrotechnical Commission,国際電気標準会議,標準・組織,0
+IPA,Information-technology Promotion Agency,情報処理推進機構。SC試験を実施している,標準・組織,0
+JPCERT/CC,Japan Computer Emergency Response Team Coordination Center,日本のインシデント対応調整機関,標準・組織,0
+NISC,National center of Incident readiness and Strategy for Cybersecurity,内閣サイバーセキュリティセンター,標準・組織,0
+CRYPTREC,Cryptography Research and Evaluation Committees,電子政府推奨暗号リストを作る評価プロジェクト,標準・組織,0
+CSIRT,Computer Security Incident Response Team,組織内のインシデント対応チーム,標準・組織,1
+ISMS,Information Security Management System,情報セキュリティマネジメントシステム（ISO/IEC 27001）,標準・組織,0
+CC,Common Criteria,IT製品のセキュリティを評価する国際基準（ISO/IEC 15408）,標準・組織,0
+OWASP,Open Worldwide Application Security Project,Webアプリのセキュリティ向上を目指すコミュニティ,標準・組織,0
+PCI DSS,Payment Card Industry Data Security Standard,クレジットカード会員データを守る業界基準,標準・組織,0
+SCAP,Security Content Automation Protocol,脆弱性管理を自動化するための標準仕様群,SCAP,0
+CVE,Common Vulnerabilities and Exposures,個々の脆弱性に付ける共通の識別番号,SCAP,0
+CVSS,Common Vulnerability Scoring System,脆弱性の深刻度を評価する共通指標,SCAP,1
+CWE,Common Weakness Enumeration,脆弱性の種類を分類した共通一覧,SCAP,0
+CPE,Common Platform Enumeration,製品・プラットフォームを表す共通の名前,SCAP,0
+XCCDF,eXtensible Configuration Checklist Description Format,セキュリティ設定チェックリストを書くための形式,SCAP,0
+OVAL,Open Vulnerability and Assessment Language,脆弱性や設定状態の検査方法を書く言語,SCAP,0
+JVN,Japan Vulnerability Notes,日本の脆弱性対策情報ポータル,SCAP,0
+AES,Advanced Encryption Standard,現在標準の共通鍵ブロック暗号,暗号,0
+RSA,Rivest–Shamir–Adleman,素因数分解の難しさを利用した公開鍵暗号,暗号,0
+ECC,Elliptic Curve Cryptography,楕円曲線を使う公開鍵暗号。短い鍵で高い強度が出る,暗号,0
+SHA,Secure Hash Algorithm,安全なハッシュ関数のシリーズ（SHA-2、SHA-3など）,暗号,0
+HMAC,Hash-based Message Authentication Code,ハッシュ関数を使うメッセージ認証コード,暗号,0
+PKI,Public Key Infrastructure,公開鍵証明書で信頼を成り立たせる基盤,暗号,0
+CA,Certificate Authority,デジタル証明書を発行する認証局,暗号,0
+RA,Registration Authority,証明書申請者の本人確認を行う登録局,暗号,0
+CRL,Certificate Revocation List,失効した証明書の一覧,暗号,0
+OCSP,Online Certificate Status Protocol,証明書が失効していないかをその場で確認するプロトコル,暗号,0
+TLS,Transport Layer Security,通信を暗号化するプロトコル（SSLの後継）,暗号,0
+HSM,Hardware Security Module,暗号鍵を安全に保管・処理する専用ハードウェア,暗号,0
+MFA,Multi-Factor Authentication,複数の要素を組み合わせる多要素認証,認証・認可,0
+OTP,One-Time Password,一度だけ使えるパスワード,認証・認可,0
+TOTP,Time-based One-Time Password,時刻をもとに生成するOTP,認証・認可,0
+SSO,Single Sign-On,1回の認証で複数のサービスを使えるしくみ,認証・認可,0
+SAML,Security Assertion Markup Language,XMLで認証情報を受け渡すSSOの標準,認証・認可,0
+OAuth,Open Authorization,権限の委譲（認可）を行う標準,認証・認可,0
+OIDC,OpenID Connect,OAuth 2.0の上で認証を行うしくみ,認証・認可,0
+FIDO,Fast IDentity Online,パスワードを使わない認証の標準,認証・認可,0
+Kerberos,Kerberos,チケットを使うネットワーク認証方式,認証・認可,0
+LDAP,Lightweight Directory Access Protocol,ディレクトリサービスへのアクセス用プロトコル,認証・認可,0
+RADIUS,Remote Authentication Dial-In User Service,ネットワークの認証・認可・課金（UDP）,認証・認可,0
+TACACS+,Terminal Access Controller Access-Control System Plus,AAAを個別に扱い通信全体を暗号化する（TCP）,認証・認可,0
+WAF,Web Application Firewall,Webアプリへの攻撃を防ぐファイアウォール,ネットワーク・防御,0
+IDS,Intrusion Detection System,侵入を検知するシステム,ネットワーク・防御,0
+IPS,Intrusion Prevention System,侵入を検知して遮断するシステム,ネットワーク・防御,0
+UTM,Unified Threat Management,複数のセキュリティ機能をまとめた統合脅威管理装置,ネットワーク・防御,1
+DMZ,DeMilitarized Zone,内部と外部の間に置く公開サーバ用の緩衝ネットワーク,ネットワーク・防御,0
+VPN,Virtual Private Network,暗号化して作る仮想的な専用線,ネットワーク・防御,0
+IPsec,IP Security,IP層で暗号化と認証を行うプロトコル,ネットワーク・防御,0
+SSH,Secure Shell,暗号化されたリモートログイン,ネットワーク・防御,0
+SIEM,Security Information and Event Management,ログを集めて相関分析し脅威を見つけるしくみ,監視・対応,1
+SOC,Security Operation Center,セキュリティを常時監視する組織,監視・対応,1
+EDR,Endpoint Detection and Response,端末上の脅威を検知して対応する製品,監視・対応,1
+NDR,Network Detection and Response,ネットワーク通信を分析して脅威を検知・対応する製品,監視・対応,0
+NDR,Non-Delivery Report,メールの配送不能通知（バウンスメール）,電子メール,0
+XDR,Extended Detection and Response,端末・ネットワーク・クラウドなどを横断して検知・対応する製品,監視・対応,0
+SOAR,Security Orchestration Automation and Response,セキュリティ運用を自動化・連携させるしくみ,監視・対応,1
+DNSSEC,DNS Security Extensions,DNSの応答に署名して改ざんを防ぐ拡張,ネットワーク・防御,1
+SPF,Sender Policy Framework,送信元IPアドレスでメール送信ドメインを認証する方式,電子メール,1
+DKIM,DomainKeys Identified Mail,電子署名でメールの送信ドメインを認証する方式,電子メール,1
+DMARC,Domain-based Message Authentication Reporting and Conformance,SPF/DKIMの結果に基づく処理方針と報告のしくみ,電子メール,1
+ゼロトラスト,Zero Trust,何も信頼せずアクセスのたびに検証する考え方,ネットワーク・防御,1
+CASB,Cloud Access Security Broker,クラウドサービスの利用を可視化・制御するしくみ,ネットワーク・防御,1
+SASE,Secure Access Service Edge,ネットワークとセキュリティ機能をクラウドで一体提供する構成,ネットワーク・防御,1
+DLP,Data Loss Prevention,機密情報の漏えいを防ぐしくみ,ネットワーク・防御,1
+MDM,Mobile Device Management,モバイル端末を一元管理するしくみ,ネットワーク・防御,1
+BYOD,Bring Your Own Device,私物端末を業務に使うこと,ネットワーク・防御,0
+XSS,Cross-Site Scripting,悪意あるスクリプトを他人のブラウザで実行させる攻撃,脆弱性・攻撃,0
+CSRF,Cross-Site Request Forgery,利用者が意図しないリクエストを送らせる攻撃,脆弱性・攻撃,1
+SSRF,Server-Side Request Forgery,サーバに内部向けなどの不正なリクエストを送らせる攻撃,脆弱性・攻撃,1
+SQLi,SQL Injection,不正なSQL文を注入してデータベースを操作する攻撃,脆弱性・攻撃,1
+XXE,XML eXternal Entity,XMLの外部実体参照を悪用する攻撃,脆弱性・攻撃,0
+RCE,Remote Code Execution,遠隔から任意のコードを実行させる攻撃・脆弱性,脆弱性・攻撃,0
+DoS,Denial of Service,サービスを妨害する攻撃,脆弱性・攻撃,0
+DDoS,Distributed Denial of Service,多数の拠点から行う分散型DoS攻撃,脆弱性・攻撃,1
+APT,Advanced Persistent Threat,特定の標的を長期間ねらう高度な攻撃,脆弱性・攻撃,0
+MITM,Man-In-The-Middle attack,通信の間に割り込んで盗聴・改ざんする中間者攻撃,脆弱性・攻撃,0
+C2,Command and Control,感染端末に指令を出す攻撃者のサーバ,脆弱性・攻撃,0
+BEC,Business Email Compromise,取引先などになりすまして送金させるビジネスメール詐欺,電子メール,1
+BCP,Business Continuity Plan,災害や障害が起きても事業を続けるための計画,管理・運用,1
+RTO,Recovery Time Objective,目標復旧時間。どれだけ早く復旧するかの目標,管理・運用,0
+RPO,Recovery Point Objective,目標復旧時点。どの時点までのデータを取り戻すかの目標,管理・運用,0
+PDCA,Plan-Do-Check-Act,計画・実行・評価・改善を繰り返すサイクル,管理・運用,1
+SBOM,Software Bill of Materials,ソフトウェアに含まれる部品の一覧,管理・運用,1
+PoLP,Principle of Least Privilege,必要最小限の権限だけを与える原則,管理・運用,1
+TCP,Transmission Control Protocol,信頼性のあるコネクション型の通信プロトコル,ネットワーク基礎,0
+UDP,User Datagram Protocol,コネクションレスで高速だが到達保証のない通信プロトコル,ネットワーク基礎,0
+IP,Internet Protocol,パケットを宛先まで届けるネットワーク層のプロトコル,ネットワーク基礎,0
+IPv4,Internet Protocol version 4,32ビットのアドレスを使う現行主流のIP,ネットワーク基礎,0
+IPv6,Internet Protocol version 6,128ビットのアドレスを使う次世代のIP,ネットワーク基礎,0
+TCP/IP,Transmission Control Protocol / Internet Protocol,インターネットの標準となる通信プロトコル群の総称,ネットワーク基礎,0
+ARP,Address Resolution Protocol,IPアドレスからMACアドレスを求めるプロトコル,ネットワーク基礎,0
+RARP,Reverse Address Resolution Protocol,MACアドレスからIPアドレスを求める古いプロトコル,ネットワーク基礎,0
+DHCP,Dynamic Host Configuration Protocol,端末にIPアドレスなどを自動割り当てするプロトコル,ネットワーク基礎,0
+DNS,Domain Name System,ドメイン名とIPアドレスを対応づける仕組み,ネットワーク基礎,0
+ICMP,Internet Control Message Protocol,疎通確認やエラー通知に使う（pingなど）,ネットワーク基礎,0
+NAT,Network Address Translation,プライベートIPとグローバルIPを変換する仕組み,ネットワーク基礎,1
+RIP,Routing Information Protocol,距離ベクトル型の経路制御プロトコル,ネットワーク基礎,0
+OSPF,Open Shortest Path First,リンクステート型の経路制御プロトコル,ネットワーク基礎,0
+BGP,Border Gateway Protocol,インターネットのAS間で経路を交換するプロトコル,ネットワーク基礎,0
+SNMP,Simple Network Management Protocol,ネットワーク機器を監視・管理するプロトコル,ネットワーク基礎,0
+NTP,Network Time Protocol,時刻を同期するプロトコル,ネットワーク基礎,0
+HTTP,HyperText Transfer Protocol,Webページをやり取りするプロトコル,ネットワーク基礎,0
+HTTPS,HTTP Secure,TLSで暗号化したHTTP,ネットワーク基礎,0
+FTP,File Transfer Protocol,ファイル転送用のプロトコル,ネットワーク基礎,0
+SMTP,Simple Mail Transfer Protocol,メールを送信・転送するプロトコル,電子メール,0
+POP,Post Office Protocol,メールをサーバから取り出すプロトコル,電子メール,0
+IMAP,Internet Message Access Protocol,メールをサーバ上で管理・閲覧するプロトコル,電子メール,0
+MACアドレス,Media Access Control address,ネットワークインタフェース固有のハードウェアアドレス,ネットワーク基礎,0
+NetBIOS,Network Basic Input/Output System,Windowsなどで使われた名前解決・通信の仕組み,ネットワーク基礎,0
+NetBEUI,NetBIOS Extended User Interface,NetBIOS向けの古いローカルネットワーク用プロトコル,ネットワーク基礎,0
+VLAN,Virtual LAN,物理ネットワークを論理的に分割する仕組み,ネットワーク基礎,1
+MTU,Maximum Transmission Unit,1回に送れる最大パケットサイズ,ネットワーク基礎,0
+TTL,Time To Live,パケットが破棄されるまでのホップ数などの寿命,ネットワーク基礎,0
+MUA,Mail User Agent,利用者がメールの作成・閲覧に使うクライアント,電子メール,0
+MSA,Mail Submission Agent,利用者が送信したメールを受け取りMTAへ渡す送信受付役,電子メール,0
+MTA,Mail Transfer Agent,メールをサーバ間で転送するソフトウェア,電子メール,0
+BOF,Buffer Overflow,バッファの境界を超えて書き込みメモリを破壊する攻撃手法,脆弱性・攻撃,1
+SASL,Simple Authentication and Security Layer,アプリケーションに認証機能を載せる枠組み,認証・認可,0
+GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,認証・認可,0
+IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,電子メール,0
+IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,電子メール,1
+OP25B,Outbound Port 25 Blocking,自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策,電子メール,1
+EDNS0,Extension Mechanisms for DNS (version 0),DNSの機能拡張。UDP応答サイズ拡大や追加オプションを可能にする,ネットワーク基礎,1
+RDBMS,Relational Database Management System,関係モデルに基づくデータベース管理システム,管理・運用,0
+PMI,Project Management Institute,プロジェクトマネジメント協会。PMPなど資格・標準の策定団体,標準・組織,0
+PMBOK,Project Management Body of Knowledge,PMIがまとめたプロジェクトマネジメントの知識体系,標準・組織,0
+CISO,Chief Information Security Officer,情報セキュリティ責任者。組織のセキュリティ戦略を統括する役職,管理・運用,0
+IDaaS,Identity as a Service,クラウド上で認証・ID管理を提供するサービス,認証・認可,0
+VDI,Virtual Desktop Infrastructure,サーバ上の仮想デスクトップを端末から利用する仕組み,ネットワーク・防御,1
+ISMAP,Information system Security Management and Assessment Program,政府情報システムのためのセキュリティ評価制度（日本）,標準・組織,1
+SaaS,Software as a Service,ソフトウェアをクラウドサービスとして提供する形態,管理・運用,1
+PaaS,Platform as a Service,アプリ実行環境などの基盤をクラウドで提供する形態,管理・運用,1
+IaaS,Infrastructure as a Service,サーバやストレージなどのインフラをクラウドで提供する形態,管理・運用,1
+TPM,Trusted Platform Module,端末内で鍵管理や改ざん検知などを行うハードウェアセキュリティモジュール,暗号,0
+TCG,Trusted Computing Group,TPMなどの信頼コンピューティング仕様を策定する業界団体,標準・組織,0
+CVCF,Constant Voltage Constant Frequency,定電圧・定周波の安定化電源装置,管理・運用,0
+UPS,Uninterruptible Power Supply,停電時にも一定時間電力を供給する無停電電源装置,管理・運用,0
+IDC,Internet Data Center,サーバやネットワーク機器を集約して運用するデータセンター,管理・運用,1
+TEMPEST,TEMPEST,機器から漏れる電磁波を傍受して情報を盗む攻撃（およびその対策規格の通称）,脆弱性・攻撃,0
+ISAC,Information Sharing and Analysis Center,業界ごとにサイバー脅威情報を共有・分析する組織（情報共有分析センター）,標準・組織,0
+OCF,Open CSIRT Foundation,SIM3などCSIRT成熟度評価を推進する財団,標準・組織,0
+SIM3,Security Incident Management Maturity Model,CSIRT等のインシデント管理成熟度を評価するモデル（OCF）,管理・運用,0
+EPP,Endpoint Protection Platform,ウイルス対策などエンドポイントを総合的に守る製品・基盤,ネットワーク・防御,0
+SLA,Service Level Agreement,提供サービスの品質・可用性などを定めた合意,管理・運用,0
+OODA,Observe-Orient-Decide-Act,観察・情勢判断・意思決定・行動を素早く回す意思決定ループ,管理・運用,1
+BCM,Business Continuity Management,事業継続を実現するためのマネジメント活動全体,管理・運用,1
+SOX法,Sarbanes-Oxley Act,企業の財務報告の信頼性を高める米国法。内部統制が求められる,標準・組織,0
+BCI,Business Continuity Institute,事業継続の普及・資格認定などを行う国際的な専門団体,標準・組織,0
+BCMS,Business Continuity Management System,事業継続マネジメントの仕組み（ISO 22301など）,管理・運用,0
+JIPDEC,Japan Information Processing and Development Center,プライバシーマークなど情報経済社会の推進を行う日本の団体（日本情報経済社会推進協会）,標準・組織,0
+BIA,Business Impact Analysis,業務中断の影響を分析し優先度や許容停止時間を明らかにする,管理・運用,1
+CP,Contingency Plan,緊急事態に備えた代替手順・応急対応の計画（コンティンジェンシープラン）,管理・運用,1
+DR,Disaster Recovery,災害や障害後にITシステム等を復旧するディザスタリカバリ,管理・運用,1
+情報セキュリティ,Information Security,情報の機密性・完全性・可用性などを守ること,管理・運用,1
+サイバー攻撃,Cyber Attack,コンピュータやネットワークを狙う攻撃の総称,脆弱性・攻撃,1
+機密性,Confidentiality,許可された者だけが情報にアクセスできること,管理・運用,1
+完全性,Integrity,情報が改ざんされず正確であること,管理・運用,1
+可用性,Availability,必要なときに情報やシステムを使えること,管理・運用,1
+真正性,Authenticity,主体や情報が本物であること（なりすましでないこと）,管理・運用,1
+責任追跡性,Accountability,誰が何をしたかを後から追跡できること,管理・運用,1
+否認防止,Non-repudiation,行為や送受信の事実を後から否認できないこと,管理・運用,1
+信頼性,Reliability,意図どおり一貫して動作すること,管理・運用,1
+職務の分離の原則,Separation of Duties,重要な権限を一人に集中させず役割を分ける原則,管理・運用,1
+ISMS適合性評価制度,ISMS Conformity Assessment Scheme,ISMSが規格に適合しているかを第三者が認証する日本の制度,標準・組織,1
+直接損失,Direct Loss,インシデントにより直接生じた金銭的損失,管理・運用,1
+間接損失,Indirect Loss,信用低下など間接的に生じる損失,管理・運用,1
+対応費用,Response Costs,インシデント対応に要する費用,管理・運用,1
+定性的評価,Qualitative Risk Assessment,高・中・低など定性尺度でリスクを評価する方法,管理・運用,1
+定量的評価,Quantitative Risk Assessment,金額など数値でリスクを評価する方法,管理・運用,1
+リスクマネジメント,Risk Management,リスクを特定・評価し対応する一連の活動,管理・運用,1
+リスクコントロール,Risk Control,リスクの発生や影響を抑える対策（回避・低減など）,管理・運用,1
+リスクファイナンシング,Risk Financing,保険など金銭面でリスクに備える手法（移転・保有）,管理・運用,1
+リスク回避,Risk Avoidance,リスク源となる活動自体をやめること,管理・運用,1
+リスク低減,Risk Reduction,発生確率や影響を下げる対策,管理・運用,1
+リスク移転,Risk Transfer,保険や委託でリスクの影響を他者へ移すこと,管理・運用,1
+リスクの受容,Risk Acceptance,対策せずリスクを許容すること,管理・運用,1
+情報資産,Information Asset,守るべき情報とその媒体・システムなどの資産,管理・運用,1
+ソーシャルエンジニアリング,Social Engineering,人の心理や隙を突いて情報やアクセスを得る手法,脆弱性・攻撃,1
+サイバーレジリエンス,Cyber Resilience,攻撃や障害に耐え回復し事業を継続する力,管理・運用,1
+トリアージ,Triage,インシデントの対応優先度を振り分けること,監視・対応,1
+情報セキュリティ監査基準,Information Security Audit Standards,情報セキュリティ監査の実施基準（経済産業省）,標準・組織,1
+システム監査基準,System Audit Standards,システム監査の実施基準（経済産業省）,標準・組織,1
+ブラックボックス診断,Black-box Testing,内部構造を知らず外部から行うセキュリティ診断,管理・運用,1
+ホワイトボックス診断,White-box Testing,ソースコード等を把握したうえで行うセキュリティ診断,管理・運用,1
+ファジング,Fuzzing,異常なデータを大量に入力して脆弱性を探るテスト手法,脆弱性・攻撃,1
+ASM,Attack Surface Management,外部から見える攻撃対象領域を継続的に把握・管理すること,管理・運用,1
+TLPT,Threat-Led Penetration Testing,脅威情報に基づき実攻撃に近い形で行うペネトレーションテスト,管理・運用,1
+RAID,Redundant Arrays of Independent Disks,複数ディスクで冗長性や性能を高める構成,管理・運用,1
+クラスタリングシステム,Clustering System,複数サーバを連携させ可用性・性能を高める構成,管理・運用,1
+コンテンツサーバ,Content Server,Webコンテンツを提供するサーバ,ネットワーク基礎,1
+キャッシュサーバ,Cache Server,コンテンツを一時保存し応答を速くするサーバ,ネットワーク基礎,1
+GETメソッド,GET Method,HTTPでリソース取得に使うメソッド。パラメータはURLに付く,ネットワーク基礎,1
+POSTメソッド,POST Method,HTTPでデータをメッセージボディで送信するメソッド,ネットワーク基礎,1
+Referer,Referer,リンク元URLを伝えるHTTPヘッダ（綴りは仕様どおり）,ネットワーク基礎,1
+Cookie,HTTP Cookie,サーバがブラウザに保存させる小さなデータ,ネットワーク基礎,1
+セッションID,Session ID,利用者のセッションを識別する値,ネットワーク基礎,1
+hiddenフィールド,Hidden Field,画面に表示されないが送信されるHTMLフォーム項目,ネットワーク基礎,1
+secure属性,Secure Attribute,HTTPS通信時のみCookieを送信させる属性,ネットワーク基礎,1
+HttpOnly属性,HttpOnly Attribute,JavaScriptからCookieを読めなくする属性,ネットワーク基礎,1
+仮想化,Virtualization,物理資源を論理的に分割・抽象化して使う技術,管理・運用,1
+シンクライアント,Thin Client,処理やデータをサーバ側に任せる最小限の端末,ネットワーク・防御,1
+RBI,Remote Browser Isolation,ブラウザ処理を遠隔環境で行い端末を隔離する技術,ネットワーク・防御,1
+境界防御モデル,Perimeter Defense Model,内外の境界で守る従来の防御モデル,ネットワーク・防御,1
+SDP,Software Defined Perimeter,ソフトウェアで動的に境界を作るアクセス制御,ネットワーク・防御,1
+ZTNA,Zero Trust Network Access,ゼロトラストに基づき都度認証・認可するリモートアクセス,ネットワーク・防御,1
+SD-WAN,Software-Defined Wide Area Network,ソフトウェアでWANを制御する技術,ネットワーク基礎,1
+SDN,Software-Defined Networking,ネットワーク制御をソフトウェアで集中管理する技術,ネットワーク基礎,1
+SWG,Secure Web Gateway,Webアクセスを検査・制御するゲートウェイ,ネットワーク・防御,1
+ブロードキャストドメイン,Broadcast Domain,ブロードキャストが届く範囲,ネットワーク基礎,1
+NAPT,Network Address Port Translation,IPアドレスとポート番号を変換するアドレス変換（IPマスカレード）,ネットワーク基礎,1
+ステートフルパケットインスペクション型,Stateful Packet Inspection,通信の状態を追跡して通否を判断するFW方式,ネットワーク・防御,1
+サンドボックス,Sandbox,隔離環境でプログラムを実行・観察する仕組み,ネットワーク・防御,1
+アノマリ検知,Anomaly Detection,平常と異なる振る舞いを異常として検知する方式,監視・対応,1
+フォールスポジティブ,False Positive,正常を誤って異常と判定すること（誤検知）,監視・対応,1
+フォールスネガティブ,False Negative,異常を見逃して正常と判定すること（検知漏れ）,監視・対応,1
+プロミスキャスモード,Promiscuous Mode,自分宛以外のパケットも受信するNICモード,ネットワーク・防御,1
+インラインモード,Inline Mode,通信経路上に直列に設置して検査・遮断する配置,ネットワーク・防御,1
+フェールオープン機能,Fail-open,障害時に通信を通過させる動作,ネットワーク・防御,1
+不正のトライアングル,Fraud Triangle,動機・機会・正当化が揃うと不正が起きやすいとする理論,脆弱性・攻撃,1
+サイバーキルチェーン,Cyber Kill Chain,攻撃の段階を鎖として捉えるモデル（Lockheed Martin）,脆弱性・攻撃,1
+MITRE ATT&CK,"Adversarial Tactics, Techniques, and Common Knowledge",攻撃者の戦術・技法を整理した知識ベース,脆弱性・攻撃,1
+脅威インテリジェンス,Threat Intelligence,脅威に関する収集・分析済みの情報,監視・対応,1
+パスワードリスト攻撃,Password List Attack,漏洩したID・パスワードで他サービスへのログインを試す攻撃,脆弱性・攻撃,1
+セッションハイジャック,Session Hijacking,他人のセッションIDを奪いなりすます攻撃,脆弱性・攻撃,1
+ARPスプーフィング,ARP Spoofing,偽のARP応答で通信を誘導する攻撃,脆弱性・攻撃,1
+DNSキャッシュポイズニング,DNS Cache Poisoning,DNSキャッシュに偽情報を注入して誘導する攻撃,脆弱性・攻撃,1
+DRDoS,Distributed Reflection Denial of Service,第三者サーバの反射・増幅を使う分散型DoS攻撃,脆弱性・攻撃,1
+反射型XSS,Reflected XSS,リクエストに含めたスクリプトをその応答で実行させるXSS,脆弱性・攻撃,1
+格納型XSS,Stored XSS,サーバに保存したスクリプトを他利用者に実行させるXSS,脆弱性・攻撃,1
+DOM-based XSS,DOM-based XSS,クライアント側のDOM操作でスクリプトが実行されるXSS,脆弱性・攻撃,1
+エスケープ処理,Escaping,特殊文字を無害な文字列に置き換える処理,脆弱性・攻撃,1
+ディレクトリトラバーサル,Directory Traversal,パス操作で意図しないファイルにアクセスする攻撃,脆弱性・攻撃,1
+OSコマンドインジェクション,OS Command Injection,不正なOSコマンドを注入して実行させる攻撃,脆弱性・攻撃,1
+HTTPヘッダインジェクション,HTTP Header Injection,改行コードを注入し任意の応答ヘッダを追加する攻撃,脆弱性・攻撃,1
+CDN,Content Delivery Network,コンテンツを分散配置して配信するネットワーク,ネットワーク基礎,1
+ランサムウェア,Ransomware,データを暗号化するなどして身代金を要求するマルウェア,脆弱性・攻撃,1
+標的型攻撃,Targeted Attack,特定の組織・個人を狙う攻撃,脆弱性・攻撃,1
+サプライチェーン攻撃,Supply Chain Attack,取引先や製品・ソフトウェアを経由して侵入する攻撃,脆弱性・攻撃,1
+ファイルレス攻撃,Fileless Attack,ディスクにファイルを残さずメモリ上や正規ツールで動く攻撃,脆弱性・攻撃,1
+ラテラルムーブメント,Lateral Movement,侵入後に組織内の他端末へ横展開する動き,脆弱性・攻撃,1
+エクスプロイトコード,Exploit Code,脆弱性を悪用するためのコード,脆弱性・攻撃,1
+ゼロデイ攻撃,Zero-day Attack,修正プログラム提供前の脆弱性を突く攻撃,脆弱性・攻撃,1
+EPSS,Exploit Prediction Scoring System,脆弱性が今後悪用される確率を予測する指標（FIRST）,SCAP,1
+KEV,Known Exploited Vulnerabilities,CISAが公開する既知の悪用済み脆弱性カタログ,SCAP,1
+迷惑メール,Unsolicited Bulk/Commercial Email (UBE/UCE),受信者が望まない広告・大量送信メールの総称,電子メール,1
+第三者中継,Open Relay,無関係な第三者間のメールを中継してしまう状態,電子メール,1
+Submission,Message Submission,利用者からのメール投稿を認証付きで受け付ける仕組み（587番ポート）,電子メール,1
+Sender ID,Sender ID,SPFを拡張した送信ドメイン認証（Microsoft）,電子メール,1
+DomainKeys,DomainKeys,Yahoo!発の電子署名による送信ドメイン認証。DKIMの前身,電子メール,1
+STARTTLS,STARTTLS,平文接続の途中からTLS暗号化へ切り替える拡張,電子メール,1
