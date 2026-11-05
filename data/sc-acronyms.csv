@@ -54,7 +54,8 @@ SSH,Secure Shell,暗号化されたリモートログイン,ネットワーク�
 SIEM,Security Information and Event Management,ログを集めて相関分析し脅威を見つけるしくみ,ネットワーク・防御
 SOC,Security Operation Center,セキュリティを常時監視する組織,ネットワーク・防御
 EDR,Endpoint Detection and Response,端末上の脅威を検知して対応する製品,ネットワーク・防御
-NDR,"Network Detection and Response / Non-Delivery Report","①ネットワーク通信を分析して脅威を検知・対応する製品。②メールの配送不能通知",ネットワーク・防御
+NDR,Network Detection and Response,ネットワーク通信を分析して脅威を検知・対応する製品,ネットワーク・防御
+NDR,Non-Delivery Report,メールの配送不能通知（バウンスメール）,ネットワーク基礎
 XDR,Extended Detection and Response,端末・ネットワーク・クラウドなどを横断して検知・対応する製品,ネットワーク・防御
 SOAR,Security Orchestration Automation and Response,セキュリティ運用を自動化・連携させるしくみ,ネットワーク・防御
 DNSSEC,DNS Security Extensions,DNSの応答に署名して改ざんを防ぐ拡張,ネットワーク・防御
