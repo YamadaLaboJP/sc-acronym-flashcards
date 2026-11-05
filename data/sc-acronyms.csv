@@ -114,3 +114,9 @@ NetBEUI,NetBIOS Extended User Interface,NetBIOS向けの古いローカルネッ
 VLAN,Virtual LAN,物理ネットワークを論理的に分割する仕組み,ネットワーク基礎
 MTU,Maximum Transmission Unit,1回に送れる最大パケットサイズ,ネットワーク基礎
 TTL,Time To Live,パケットが破棄されるまでのホップ数などの寿命,ネットワーク基礎
+MUA,Mail User Agent,利用者がメールの作成・閲覧に使うクライアント,ネットワーク基礎
+MSA,Mail Submission Agent,利用者が送信したメールを受け取りMTAへ渡す送信受付役,ネットワーク基礎
+MTA,Mail Transfer Agent,メールをサーバ間で転送するソフトウェア,ネットワーク基礎
+BOF,Buffer Overflow,バッファの境界を超えて書き込みメモリを破壊する攻撃手法,脆弱性・攻撃
+SASL,Simple Authentication and Security Layer,アプリケーションに認証機能を載せる枠組み,暗号・認証
+GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,暗号・認証
