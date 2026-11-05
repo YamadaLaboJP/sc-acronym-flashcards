@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#10141a" />
     <meta
       name="description"
-      content="情報処理安全確保支援士（SC）の略語を1枚ずつ確認するフラッシュカード。"
+      content="情報処理安全確保支援士（SC）の略語を、カテゴリを選んで1枚ずつ確認するフラッシュカード。"
     />
     <title>SC 略語カード</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -15,21 +15,75 @@
   <body>
     <main>
       <header class="mast">
-        <p class="eyebrow">情報処理安全確保支援士</p>
-        <h1>略語カード</h1>
-        <p class="progress" id="progress" aria-live="polite">読み込み中</p>
+        <div class="mast-row">
+          <div>
+            <p class="eyebrow">情報処理安全確保支援士</p>
+            <h1>略語カード</h1>
+          </div>
+          <a href="#top" class="back-link" id="back-link" data-back hidden>トップへ</a>
+        </div>
+        <p class="progress" id="progress" aria-live="polite"></p>
       </header>
 
-      <div class="card" id="card" aria-expanded="false">
-        <span class="category" id="category" hidden></span>
-        <span class="acronym" id="acronym">…</span>
-        <span class="answer" id="answer" hidden>
-          <span class="formal" id="formal"></span>
-          <span class="definition" id="definition"></span>
-        </span>
-      </div>
+      <section id="home" class="panel">
+        <form id="setup" class="setup">
+          <label class="field" for="category">
+            カテゴリー
+            <select id="category" name="category"></select>
+          </label>
 
-      <p class="note" id="note" role="status"></p>
+          <fieldset class="orders">
+            <legend>出題順</legend>
+            <label class="choice">
+              <input type="radio" name="order" value="abc" checked />
+              ABC順
+            </label>
+            <label class="choice">
+              <input type="radio" name="order" value="random" />
+              ランダム
+            </label>
+          </fieldset>
+
+          <p class="form-error" id="home-error" role="alert" hidden></p>
+
+          <div class="actions">
+            <button type="submit" class="btn primary" id="start">スタート</button>
+            <button type="button" class="btn secondary" id="glossary">用語一覧</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="quiz" class="panel" hidden>
+        <div class="card" id="card" aria-expanded="false">
+          <span class="category" id="category-chip" hidden></span>
+          <span class="acronym" id="acronym"></span>
+          <span class="answer" id="answer" hidden>
+            <span class="formal" id="formal"></span>
+            <span class="definition" id="definition"></span>
+          </span>
+        </div>
+        <p class="note" id="note" role="status"></p>
+      </section>
+
+      <section id="list" class="panel" hidden>
+        <p class="list-meta" id="list-meta"></p>
+        <div class="table-wrap">
+          <table class="glossary">
+            <thead>
+              <tr>
+                <th>略語</th>
+                <th>正式名称</th>
+                <th>一言定義</th>
+                <th>分類</th>
+              </tr>
+            </thead>
+            <tbody id="list-body"></tbody>
+          </table>
+        </div>
+        <p class="back-row">
+          <a href="#top" class="back-link" data-back>トップへ</a>
+        </p>
+      </section>
     </main>
 
     <p class="sr-only" id="live" aria-live="polite"></p>

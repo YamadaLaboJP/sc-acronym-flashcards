@@ -53,12 +53,184 @@ main {
   gap: 14px;
 }
 
+.mast-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .mast h1 {
   margin: 0;
   font-family: var(--display);
   font-size: 1.85rem;
   font-weight: 700;
   letter-spacing: 0.04em;
+}
+
+.back-link {
+  flex: 0 0 auto;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--amber);
+}
+
+.back-row {
+  margin: 4px 0 0;
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.setup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--card-edge);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+}
+
+.orders {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.orders legend {
+  padding: 0;
+  margin-bottom: 2px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--card-edge);
+  border-radius: 12px;
+  background: var(--card);
+  font-weight: 500;
+}
+
+.choice input {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin: 0;
+  accent-color: var(--amber);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  min-height: 48px;
+  border-radius: 14px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.primary {
+  border: 0;
+  background: var(--amber);
+  color: var(--amber-ink);
+}
+
+.btn.secondary {
+  border: 1px solid var(--card-edge);
+  background: transparent;
+  color: var(--ink);
+}
+
+.btn:focus-visible,
+select:focus-visible,
+.choice input:focus-visible,
+.back-link:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.form-error {
+  margin: 0;
+  color: var(--danger);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.list-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.glossary {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.glossary th,
+.glossary td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.glossary th {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.glossary td:first-child {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+body.is-list main {
+  width: min(920px, 100%);
 }
 
 .eyebrow {
@@ -182,6 +354,47 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+@media (max-width: 720px) {
+  .glossary thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .glossary,
+  .glossary tbody,
+  .glossary tr,
+  .glossary td {
+    display: block;
+    width: 100%;
+  }
+
+  .glossary tr {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .glossary td {
+    padding: 2px 0;
+    border: 0;
+    white-space: normal;
+  }
+
+  .glossary td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 380px) {

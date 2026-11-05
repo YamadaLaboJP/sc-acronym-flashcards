@@ -1,22 +1,43 @@
 (function () {
+  const homeEl = document.getElementById("home");
+  const quizEl = document.getElementById("quiz");
+  const listEl = document.getElementById("list");
+  const setupEl = document.getElementById("setup");
+  const categorySelect = document.getElementById("category");
+  const homeErrorEl = document.getElementById("home-error");
+  const startBtn = document.getElementById("start");
+  const glossaryBtn = document.getElementById("glossary");
+  const backLink = document.getElementById("back-link");
   const cardEl = document.getElementById("card");
   const acronymEl = document.getElementById("acronym");
   const answerEl = document.getElementById("answer");
   const formalEl = document.getElementById("formal");
   const definitionEl = document.getElementById("definition");
-  const categoryEl = document.getElementById("category");
+  const categoryChipEl = document.getElementById("category-chip");
   const progressEl = document.getElementById("progress");
   const noteEl = document.getElementById("note");
   const liveEl = document.getElementById("live");
+  const listMetaEl = document.getElementById("list-meta");
+  const listBodyEl = document.getElementById("list-body");
 
   const deck = Array.isArray(window.SC_ACRONYMS) ? window.SC_ACRONYMS : [];
-  let queue = [];
+  let active = [];
+  let orderMode = "abc";
   let cursor = 0;
   let revealed = false;
   let ready = false;
+  let view = "home";
 
-  function shuffle(indices, avoid) {
-    const next = indices.slice();
+  function compareAcronym(a, b) {
+    return String(a["略語"]).localeCompare(String(b["略語"]), "en", { sensitivity: "base" });
+  }
+
+  function sortAbc(items) {
+    return items.slice().sort(compareAcronym);
+  }
+
+  function shuffle(items, avoid) {
+    const next = items.slice();
     for (let i = next.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
       const swap = next[i];
@@ -32,24 +53,84 @@
     return next;
   }
 
-  function startCycle(avoid) {
-    queue = shuffle(deck.map(function (_, index) { return index; }), avoid);
-    cursor = 0;
+  function selectedCategory() {
+    return categorySelect.value || "すべて";
+  }
+
+  function selectedOrder() {
+    const picked = setupEl.querySelector('input[name="order"]:checked');
+    return picked && picked.value === "random" ? "random" : "abc";
+  }
+
+  function filteredItems() {
+    const category = selectedCategory();
+    if (category === "すべて") return deck.slice();
+    return deck.filter(function (item) {
+      return item["分類"] === category;
+    });
+  }
+
+  function showError(message) {
+    homeErrorEl.hidden = false;
+    homeErrorEl.textContent = message;
+  }
+
+  function clearError() {
+    homeErrorEl.hidden = true;
+    homeErrorEl.textContent = "";
+  }
+
+  function showView(name) {
+    view = name;
+    homeEl.hidden = name !== "home";
+    quizEl.hidden = name !== "quiz";
+    listEl.hidden = name !== "list";
+    backLink.hidden = name === "home";
+    document.body.classList.toggle("is-live", name === "quiz" && ready);
+    document.body.classList.toggle("is-list", name === "list");
+    if (name === "home") {
+      ready = false;
+      progressEl.textContent = deck.length ? deck.length + "語" : "";
+    }
+  }
+
+  function fillCategories() {
+    const seen = [];
+    deck.forEach(function (item) {
+      const name = item && item["分類"];
+      if (name && seen.indexOf(name) === -1) seen.push(name);
+    });
+    seen.sort(function (a, b) {
+      return a.localeCompare(b, "ja");
+    });
+
+    categorySelect.replaceChildren();
+    const all = document.createElement("option");
+    all.value = "すべて";
+    all.textContent = "すべて";
+    all.selected = true;
+    categorySelect.appendChild(all);
+    seen.forEach(function (name) {
+      const option = document.createElement("option");
+      option.value = name;
+      option.textContent = name;
+      categorySelect.appendChild(option);
+    });
   }
 
   function current() {
-    return deck[queue[cursor]];
+    return active[cursor];
   }
 
   function fail(message) {
     ready = false;
+    document.body.classList.remove("is-live");
     cardEl.classList.add("is-error");
     cardEl.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("is-live");
     acronymEl.textContent = "表示できません";
     answerEl.hidden = true;
-    categoryEl.hidden = true;
-    categoryEl.textContent = "";
+    categoryChipEl.hidden = true;
+    categoryChipEl.textContent = "";
     progressEl.textContent = "データなし";
     noteEl.textContent = message;
     liveEl.textContent = message;
@@ -68,13 +149,17 @@
     acronymEl.textContent = item["略語"];
     formalEl.textContent = item["正式名称"];
     definitionEl.textContent = item["一言定義"];
-    categoryEl.hidden = false;
-    categoryEl.textContent = item["分類"];
+    categoryChipEl.hidden = false;
+    categoryChipEl.textContent = item["分類"];
     answerEl.hidden = !revealed;
-    progressEl.textContent = "この周回 " + (cursor + 1) + " / " + deck.length;
-    noteEl.textContent = wrapped
-      ? "一巡しました。順番をシャッフルして続けます。"
-      : "同じ周回では、出た略語は繰り返しません。";
+    progressEl.textContent = "この周回 " + (cursor + 1) + " / " + active.length;
+    if (wrapped && orderMode === "abc") {
+      noteEl.textContent = "一巡しました。ABC順のまま続けます。";
+    } else if (wrapped) {
+      noteEl.textContent = "一巡しました。順番をシャッフルして続けます。";
+    } else {
+      noteEl.textContent = "同じ周回では、出た略語は繰り返しません。";
+    }
 
     liveEl.textContent = revealed
       ? item["略語"] + "。分類は " + item["分類"] + "。正式名称は " + item["正式名称"] + "。" + item["一言定義"]
@@ -82,35 +167,115 @@
   }
 
   function reveal() {
-    if (!ready || revealed) return;
+    if (!ready || revealed || view !== "quiz") return;
     revealed = true;
     render(false);
   }
 
-  function advance() {
-    if (!ready || !revealed) return;
-    const previous = queue[cursor];
+  function restartCycle(previous) {
+    if (orderMode === "random") {
+      active = shuffle(active, previous);
+    }
+    cursor = 0;
     revealed = false;
-    if (cursor + 1 >= queue.length) {
-      startCycle(previous);
-      render(true);
+    render(true);
+  }
+
+  function advance() {
+    if (!ready || !revealed || view !== "quiz") return;
+    const previous = active[cursor];
+    revealed = false;
+    if (cursor + 1 >= active.length) {
+      restartCycle(previous);
       return;
     }
     cursor += 1;
     render(false);
   }
 
-  function onActivate(event) {
-    if (!ready) return;
+  function beginQuiz() {
+    const items = filteredItems();
+    if (!items.length) {
+      showView("home");
+      showError("該当する用語がありません");
+      return;
+    }
+    clearError();
+    orderMode = selectedOrder();
+    active = orderMode === "abc" ? sortAbc(items) : shuffle(items, null);
+    cursor = 0;
+    revealed = false;
+    ready = true;
+    showView("quiz");
+    render(false);
+  }
+
+  function showGlossary() {
+    const items = sortAbc(filteredItems());
+    if (!items.length) {
+      showView("home");
+      showError("該当する用語がありません");
+      return;
+    }
+    clearError();
+    ready = false;
+    listBodyEl.replaceChildren();
+    items.forEach(function (item) {
+      const row = document.createElement("tr");
+      ["略語", "正式名称", "一言定義", "分類"].forEach(function (key) {
+        const cell = document.createElement("td");
+        cell.dataset.label = key;
+        cell.textContent = item[key];
+        row.appendChild(cell);
+      });
+      listBodyEl.appendChild(row);
+    });
+    listMetaEl.textContent = selectedCategory() + " · " + items.length + "語 · ABC順";
+    progressEl.textContent = items.length + "語";
+    showView("list");
+    liveEl.textContent = selectedCategory() + "の用語一覧、" + items.length + "語です。";
+  }
+
+  function showHome() {
+    clearError();
+    showView("home");
+    liveEl.textContent = "";
+  }
+
+  document.querySelectorAll("[data-back]").forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      showHome();
+    });
+  });
+
+  setupEl.addEventListener("submit", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    beginQuiz();
+  });
+
+  glossaryBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    showGlossary();
+  });
+
+  categorySelect.addEventListener("change", clearError);
+
+  document.addEventListener("click", function (event) {
+    if (view !== "quiz" || !ready) return;
+    if (event.target.closest("a, button, input, select, label")) return;
     event.preventDefault();
     if (revealed) advance();
     else reveal();
-  }
-
-  document.addEventListener("click", onActivate);
+  });
 
   document.addEventListener("keydown", function (event) {
-    if (!ready) return;
+    if (view !== "quiz" || !ready) return;
+    const tag = event.target && event.target.tagName;
+    if (tag === "A" || tag === "BUTTON" || tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
     if (event.key !== " " && event.key !== "Enter" && event.key !== "ArrowRight") return;
     event.preventDefault();
     if (revealed || event.key === "ArrowRight") {
@@ -121,8 +286,13 @@
     }
   });
 
+  fillCategories();
+  showView("home");
+
   if (!deck.length) {
-    fail("用語データを読み込めませんでした。");
+    showError("用語データを読み込めませんでした。");
+    startBtn.disabled = true;
+    glossaryBtn.disabled = true;
     return;
   }
 
@@ -130,12 +300,8 @@
     return !item || !item["略語"] || !item["正式名称"] || !item["一言定義"] || !item["分類"];
   });
   if (invalid) {
-    fail("用語データの列が足りません。");
-    return;
+    showError("用語データの列が足りません。");
+    startBtn.disabled = true;
+    glossaryBtn.disabled = true;
   }
-
-  ready = true;
-  document.body.classList.add("is-live");
-  startCycle(null);
-  render(false);
 })();
