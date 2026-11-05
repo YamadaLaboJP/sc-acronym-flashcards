@@ -20,18 +20,13 @@
         <p class="progress" id="progress" aria-live="polite">読み込み中</p>
       </header>
 
-      <button type="button" class="card" id="card" aria-expanded="false" disabled>
+      <div class="card" id="card" aria-expanded="false">
         <span class="category" id="category" hidden></span>
         <span class="acronym" id="acronym">…</span>
-        <span class="prompt" id="prompt">用語データを読んでいます</span>
         <span class="answer" id="answer" hidden>
           <span class="formal" id="formal"></span>
           <span class="definition" id="definition"></span>
         </span>
-      </button>
-
-      <div class="actions">
-        <button type="button" class="primary" id="action" disabled>答えを見る</button>
       </div>
 
       <p class="note" id="note" role="status"></p>

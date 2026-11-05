@@ -1,12 +1,10 @@
 (function () {
   const cardEl = document.getElementById("card");
   const acronymEl = document.getElementById("acronym");
-  const promptEl = document.getElementById("prompt");
   const answerEl = document.getElementById("answer");
   const formalEl = document.getElementById("formal");
   const definitionEl = document.getElementById("definition");
   const categoryEl = document.getElementById("category");
-  const actionEl = document.getElementById("action");
   const progressEl = document.getElementById("progress");
   const noteEl = document.getElementById("note");
   const liveEl = document.getElementById("live");
@@ -45,19 +43,15 @@
 
   function fail(message) {
     ready = false;
-    cardEl.disabled = true;
-    actionEl.disabled = true;
     cardEl.classList.add("is-error");
     cardEl.setAttribute("aria-expanded", "false");
     document.body.classList.remove("is-live");
     acronymEl.textContent = "表示できません";
-    promptEl.hidden = false;
-    promptEl.textContent = message;
     answerEl.hidden = true;
     categoryEl.hidden = true;
     categoryEl.textContent = "";
     progressEl.textContent = "データなし";
-    noteEl.textContent = "";
+    noteEl.textContent = message;
     liveEl.textContent = message;
   }
 
@@ -77,9 +71,6 @@
     categoryEl.hidden = false;
     categoryEl.textContent = item["分類"];
     answerEl.hidden = !revealed;
-    promptEl.hidden = revealed;
-    promptEl.textContent = "タップして答えを見る";
-    actionEl.textContent = revealed ? "次へ" : "答えを見る";
     progressEl.textContent = "この周回 " + (cursor + 1) + " / " + deck.length;
     noteEl.textContent = wrapped
       ? "一巡しました。順番をシャッフルして続けます。"
@@ -121,7 +112,6 @@
   document.addEventListener("keydown", function (event) {
     if (!ready) return;
     if (event.key !== " " && event.key !== "Enter" && event.key !== "ArrowRight") return;
-    if (event.target === cardEl || event.target === actionEl) return;
     event.preventDefault();
     if (revealed || event.key === "ArrowRight") {
       if (revealed) advance();
@@ -146,8 +136,6 @@
 
   ready = true;
   document.body.classList.add("is-live");
-  cardEl.disabled = false;
-  actionEl.disabled = false;
   startCycle(null);
   render(false);
 })();

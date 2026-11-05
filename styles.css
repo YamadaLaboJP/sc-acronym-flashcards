@@ -18,6 +18,7 @@
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -41,8 +42,7 @@ body {
   touch-action: manipulation;
 }
 
-body.is-live,
-body.is-live button {
+body.is-live {
   cursor: pointer;
 }
 
@@ -103,14 +103,14 @@ main {
   gap: 14px;
 }
 
+.card:focus,
 .card:focus-visible,
-.primary:focus-visible {
-  outline: 2px solid var(--amber);
-  outline-offset: 3px;
-}
-
-.card:disabled {
-  cursor: default;
+.card:active {
+  outline: none;
+  outline-offset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 90px),
+    var(--card);
 }
 
 .acronym {
@@ -120,11 +120,6 @@ main {
   line-height: 1.15;
   letter-spacing: 0.02em;
   overflow-wrap: anywhere;
-}
-
-.prompt {
-  color: var(--amber);
-  font-size: 0.95rem;
 }
 
 .answer {
@@ -161,33 +156,6 @@ main {
   font-weight: 600;
 }
 
-.actions {
-  display: flex;
-}
-
-.primary {
-  appearance: none;
-  width: 100%;
-  min-height: 52px;
-  border: 0;
-  border-radius: 14px;
-  background: var(--amber);
-  color: var(--amber-ink);
-  font: inherit;
-  font-size: 1.05rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.primary:disabled {
-  opacity: 0.45;
-  cursor: default;
-}
-
-.primary:not(:disabled):active {
-  transform: translateY(1px);
-}
-
 .note {
   min-height: 1.4em;
   margin: 0;
@@ -196,8 +164,7 @@ main {
   text-align: center;
 }
 
-.card.is-error .acronym,
-.card.is-error .prompt {
+.card.is-error .acronym {
   color: var(--danger);
   font-family: var(--sans);
   font-size: 1.05rem;
@@ -223,8 +190,3 @@ main {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .primary:not(:disabled):active {
-    transform: none;
-  }
-}
