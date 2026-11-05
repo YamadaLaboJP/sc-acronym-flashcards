@@ -111,12 +111,6 @@ main {
   cursor: default;
 }
 
-.kicker {
-  color: var(--muted);
-  font-size: 0.75rem;
-  letter-spacing: 0.16em;
-}
-
 .acronym {
   font-family: var(--display);
   font-size: clamp(2rem, 9vw, 3.4rem);
@@ -146,18 +140,6 @@ main {
 
 .answer[hidden] {
   display: none;
-}
-
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.field-label {
-  color: var(--muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
 }
 
 .formal {
