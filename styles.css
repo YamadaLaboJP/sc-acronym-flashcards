@@ -130,10 +130,6 @@ main {
   min-height: 0;
 }
 
-.card.is-open .acronym {
-  font-size: clamp(1.55rem, 6vw, 2.2rem);
-}
-
 .prompt {
   color: var(--amber);
   font-size: 0.95rem;
