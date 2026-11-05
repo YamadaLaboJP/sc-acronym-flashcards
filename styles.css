@@ -79,8 +79,10 @@ main {
 .card {
   appearance: none;
   width: 100%;
+  height: min(52dvh, 460px);
   min-height: min(52dvh, 460px);
-  max-height: min(68dvh, 640px);
+  max-height: min(52dvh, 460px);
+  flex: 0 0 auto;
   overflow: auto;
   margin: 0;
   padding: 28px 24px 24px;
@@ -118,10 +120,6 @@ main {
   line-height: 1.15;
   letter-spacing: 0.02em;
   overflow-wrap: anywhere;
-}
-
-.card.is-open {
-  min-height: 0;
 }
 
 .prompt {
