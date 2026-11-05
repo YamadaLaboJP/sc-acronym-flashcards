@@ -135,3 +135,9 @@ ISMAP,Information system Security Management and Assessment Program,政府情報
 SaaS,Software as a Service,ソフトウェアをクラウドサービスとして提供する形態,管理・運用
 PaaS,Platform as a Service,アプリ実行環境などの基盤をクラウドで提供する形態,管理・運用
 IaaS,Infrastructure as a Service,サーバやストレージなどのインフラをクラウドで提供する形態,管理・運用
+TPM,Trusted Platform Module,端末内で鍵管理や改ざん検知などを行うハードウェアセキュリティモジュール,暗号
+TCG,Trusted Computing Group,TPMなどの信頼コンピューティング仕様を策定する業界団体,標準・組織
+CVCF,Constant Voltage Constant Frequency,定電圧・定周波の安定化電源装置,管理・運用
+UPS,Uninterruptible Power Supply,停電時にも一定時間電力を供給する無停電電源装置,管理・運用
+IDC,Internet Data Center,サーバやネットワーク機器を集約して運用するデータセンター,管理・運用
+TEMPEST,TEMPEST,機器から漏れる電磁波を傍受して情報を盗む攻撃（およびその対策規格の通称）,脆弱性・攻撃
