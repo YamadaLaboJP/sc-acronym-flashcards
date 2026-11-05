@@ -85,3 +85,32 @@ RPO,Recovery Point Objective,目標復旧時点。どの時点までのデータ
 PDCA,Plan-Do-Check-Act,計画・実行・評価・改善を繰り返すサイクル,管理・運用
 SBOM,Software Bill of Materials,ソフトウェアに含まれる部品の一覧,管理・運用
 PoLP,Principle of Least Privilege,必要最小限の権限だけを与える原則,管理・運用
+TCP,Transmission Control Protocol,信頼性のあるコネクション型の通信プロトコル,ネットワーク基礎
+UDP,User Datagram Protocol,コネクションレスで高速だが到達保証のない通信プロトコル,ネットワーク基礎
+IP,Internet Protocol,パケットを宛先まで届けるネットワーク層のプロトコル,ネットワーク基礎
+IPv4,Internet Protocol version 4,32ビットのアドレスを使う現行主流のIP,ネットワーク基礎
+IPv6,Internet Protocol version 6,128ビットのアドレスを使う次世代のIP,ネットワーク基礎
+TCP/IP,Transmission Control Protocol / Internet Protocol,インターネットの標準となる通信プロトコル群の総称,ネットワーク基礎
+ARP,Address Resolution Protocol,IPアドレスからMACアドレスを求めるプロトコル,ネットワーク基礎
+RARP,Reverse Address Resolution Protocol,MACアドレスからIPアドレスを求める古いプロトコル,ネットワーク基礎
+DHCP,Dynamic Host Configuration Protocol,端末にIPアドレスなどを自動割り当てするプロトコル,ネットワーク基礎
+DNS,Domain Name System,ドメイン名とIPアドレスを対応づける仕組み,ネットワーク基礎
+ICMP,Internet Control Message Protocol,疎通確認やエラー通知に使う（pingなど）,ネットワーク基礎
+NAT,Network Address Translation,プライベートIPとグローバルIPを変換する仕組み,ネットワーク基礎
+RIP,Routing Information Protocol,距離ベクトル型の経路制御プロトコル,ネットワーク基礎
+OSPF,Open Shortest Path First,リンクステート型の経路制御プロトコル,ネットワーク基礎
+BGP,Border Gateway Protocol,インターネットのAS間で経路を交換するプロトコル,ネットワーク基礎
+SNMP,Simple Network Management Protocol,ネットワーク機器を監視・管理するプロトコル,ネットワーク基礎
+NTP,Network Time Protocol,時刻を同期するプロトコル,ネットワーク基礎
+HTTP,HyperText Transfer Protocol,Webページをやり取りするプロトコル,ネットワーク基礎
+HTTPS,HTTP Secure,TLSで暗号化したHTTP,ネットワーク基礎
+FTP,File Transfer Protocol,ファイル転送用のプロトコル,ネットワーク基礎
+SMTP,Simple Mail Transfer Protocol,メールを送信・転送するプロトコル,ネットワーク基礎
+POP,Post Office Protocol,メールをサーバから取り出すプロトコル,ネットワーク基礎
+IMAP,Internet Message Access Protocol,メールをサーバ上で管理・閲覧するプロトコル,ネットワーク基礎
+MACアドレス,Media Access Control address,ネットワークインタフェース固有のハードウェアアドレス,ネットワーク基礎
+NetBIOS,Network Basic Input/Output System,Windowsなどで使われた名前解決・通信の仕組み,ネットワーク基礎
+NetBEUI,NetBIOS Extended User Interface,NetBIOS向けの古いローカルネットワーク用プロトコル,ネットワーク基礎
+VLAN,Virtual LAN,物理ネットワークを論理的に分割する仕組み,ネットワーク基礎
+MTU,Maximum Transmission Unit,1回に送れる最大パケットサイズ,ネットワーク基礎
+TTL,Time To Live,パケットが破棄されるまでのホップ数などの寿命,ネットワーク基礎
