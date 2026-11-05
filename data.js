@@ -724,5 +724,11 @@ window.SC_ACRONYMS = [
     "正式名称": "Generic Security Service Application Program Interface",
     "一言定義": "Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）",
     "分類": "暗号・認証"
+  },
+  {
+    "略語": "IIM",
+    "正式名称": "Identified Internet Mail",
+    "一言定義": "Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった",
+    "分類": "ネットワーク・防御"
   }
 ];
