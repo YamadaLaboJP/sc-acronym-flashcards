@@ -754,5 +754,17 @@ window.SC_ACRONYMS = [
     "正式名称": "Relational Database Management System",
     "一言定義": "関係モデルに基づくデータベース管理システム",
     "分類": "管理・運用"
+  },
+  {
+    "略語": "PMI",
+    "正式名称": "Project Management Institute",
+    "一言定義": "プロジェクトマネジメント協会。PMPなど資格・標準の策定団体",
+    "分類": "標準・組織"
+  },
+  {
+    "略語": "PMBOK",
+    "正式名称": "Project Management Body of Knowledge",
+    "一言定義": "PMIがまとめたプロジェクトマネジメントの知識体系",
+    "分類": "標準・組織"
   }
 ];
