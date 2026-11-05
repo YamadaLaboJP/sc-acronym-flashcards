@@ -211,7 +211,7 @@
   }
 
   function showGlossary() {
-    const items = sortAbc(filteredItems());
+    const items = filteredItems();
     if (!items.length) {
       showView("home");
       showError("該当する用語がありません");
@@ -219,21 +219,54 @@
     }
     clearError();
     ready = false;
-    listBodyEl.replaceChildren();
+
+    const grouped = new Map();
     items.forEach(function (item) {
-      const row = document.createElement("tr");
-      ["略語", "正式名称", "一言定義", "分類"].forEach(function (key) {
-        const cell = document.createElement("td");
-        cell.dataset.label = key;
-        cell.textContent = item[key];
-        row.appendChild(cell);
-      });
-      listBodyEl.appendChild(row);
+      const name = item["分類"];
+      if (!grouped.has(name)) grouped.set(name, []);
+      grouped.get(name).push(item);
     });
-    listMetaEl.textContent = selectedCategory() + " · " + items.length + "語 · ABC順";
+
+    const category = selectedCategory();
+    const names = category === "すべて"
+      ? Array.from(grouped.keys()).sort(function (a, b) {
+          return a.localeCompare(b, "ja");
+        })
+      : [category];
+
+    listBodyEl.replaceChildren();
+    names.forEach(function (name) {
+      const group = sortAbc(grouped.get(name) || []);
+      if (!group.length) return;
+      const section = document.createElement("section");
+      section.className = "gloss-section";
+      const heading = document.createElement("h2");
+      heading.className = "gloss-heading";
+      heading.textContent = name;
+      const list = document.createElement("ul");
+      list.className = "gloss-list";
+      group.forEach(function (item) {
+        const entry = document.createElement("li");
+        const abbr = document.createElement("p");
+        abbr.className = "gloss-abbr";
+        abbr.textContent = item["略語"];
+        const formal = document.createElement("p");
+        formal.className = "gloss-formal";
+        formal.textContent = item["正式名称"];
+        const definition = document.createElement("p");
+        definition.className = "gloss-def";
+        definition.textContent = item["一言定義"];
+        entry.append(abbr, formal, definition);
+        list.appendChild(entry);
+      });
+      section.append(heading, list);
+      listBodyEl.appendChild(section);
+    });
+
+    listMetaEl.textContent = category + " · " + items.length + "語 · ABC順";
     progressEl.textContent = items.length + "語";
     showView("list");
-    liveEl.textContent = selectedCategory() + "の用語一覧、" + items.length + "語です。";
+    liveEl.textContent = category + "の用語一覧、" + items.length + "語です。";
   }
 
   function showHome() {
