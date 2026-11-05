@@ -144,3 +144,6 @@ TEMPEST,TEMPEST,機器から漏れる電磁波を傍受して情報を盗む攻�
 ISAC,Information Sharing and Analysis Center,業界ごとにサイバー脅威情報を共有・分析する組織（情報共有分析センター）,標準・組織
 OCF,Open CSIRT Foundation,SIM3などCSIRT成熟度評価を推進する財団,標準・組織
 SIM3,Security Incident Management Maturity Model,CSIRT等のインシデント管理成熟度を評価するモデル（OCF）,管理・運用
+EPP,Endpoint Protection Platform,ウイルス対策などエンドポイントを総合的に守る製品・基盤,ネットワーク・防御
+SLA,Service Level Agreement,提供サービスの品質・可用性などを定めた合意,管理・運用
+OODA,Observe-Orient-Decide-Act,観察・情勢判断・意思決定・行動を素早く回す意思決定ループ,管理・運用

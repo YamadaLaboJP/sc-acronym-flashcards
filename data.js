@@ -868,5 +868,23 @@ window.SC_ACRONYMS = [
     "正式名称": "Security Incident Management Maturity Model",
     "一言定義": "CSIRT等のインシデント管理成熟度を評価するモデル（OCF）",
     "分類": "管理・運用"
+  },
+  {
+    "略語": "EPP",
+    "正式名称": "Endpoint Protection Platform",
+    "一言定義": "ウイルス対策などエンドポイントを総合的に守る製品・基盤",
+    "分類": "ネットワーク・防御"
+  },
+  {
+    "略語": "SLA",
+    "正式名称": "Service Level Agreement",
+    "一言定義": "提供サービスの品質・可用性などを定めた合意",
+    "分類": "管理・運用"
+  },
+  {
+    "略語": "OODA",
+    "正式名称": "Observe-Orient-Decide-Act",
+    "一言定義": "観察・情勢判断・意思決定・行動を素早く回す意思決定ループ",
+    "分類": "管理・運用"
   }
 ];
