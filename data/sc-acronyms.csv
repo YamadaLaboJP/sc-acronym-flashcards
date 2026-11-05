@@ -122,3 +122,4 @@ SASL,Simple Authentication and Security Layer,アプリケーションに認証�
 GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,暗号・認証
 IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,ネットワーク・防御
 IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,ネットワーク・防御
+OP25B,Outbound Port 25 Blocking,自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策,ネットワーク・防御
