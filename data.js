@@ -772,5 +772,47 @@ window.SC_ACRONYMS = [
     "正式名称": "Project Management Body of Knowledge",
     "一言定義": "PMIがまとめたプロジェクトマネジメントの知識体系",
     "分類": "標準・組織"
+  },
+  {
+    "略語": "CISO",
+    "正式名称": "Chief Information Security Officer",
+    "一言定義": "情報セキュリティ責任者。組織のセキュリティ戦略を統括する役職",
+    "分類": "管理・運用"
+  },
+  {
+    "略語": "IDaaS",
+    "正式名称": "Identity as a Service",
+    "一言定義": "クラウド上で認証・ID管理を提供するサービス",
+    "分類": "認証・認可"
+  },
+  {
+    "略語": "VDI",
+    "正式名称": "Virtual Desktop Infrastructure",
+    "一言定義": "サーバ上の仮想デスクトップを端末から利用する仕組み",
+    "分類": "ネットワーク・防御"
+  },
+  {
+    "略語": "ISMAP",
+    "正式名称": "Information system Security Management and Assessment Program",
+    "一言定義": "政府情報システムのためのセキュリティ評価制度（日本）",
+    "分類": "標準・組織"
+  },
+  {
+    "略語": "SaaS",
+    "正式名称": "Software as a Service",
+    "一言定義": "ソフトウェアをクラウドサービスとして提供する形態",
+    "分類": "管理・運用"
+  },
+  {
+    "略語": "PaaS",
+    "正式名称": "Platform as a Service",
+    "一言定義": "アプリ実行環境などの基盤をクラウドで提供する形態",
+    "分類": "管理・運用"
+  },
+  {
+    "略語": "IaaS",
+    "正式名称": "Infrastructure as a Service",
+    "一言定義": "サーバやストレージなどのインフラをクラウドで提供する形態",
+    "分類": "管理・運用"
   }
 ];

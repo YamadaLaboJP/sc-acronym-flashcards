@@ -128,3 +128,10 @@ EDNS0,Extension Mechanisms for DNS (version 0),DNSの機能拡張。UDP応答サ
 RDBMS,Relational Database Management System,関係モデルに基づくデータベース管理システム,管理・運用
 PMI,Project Management Institute,プロジェクトマネジメント協会。PMPなど資格・標準の策定団体,標準・組織
 PMBOK,Project Management Body of Knowledge,PMIがまとめたプロジェクトマネジメントの知識体系,標準・組織
+CISO,Chief Information Security Officer,情報セキュリティ責任者。組織のセキュリティ戦略を統括する役職,管理・運用
+IDaaS,Identity as a Service,クラウド上で認証・ID管理を提供するサービス,認証・認可
+VDI,Virtual Desktop Infrastructure,サーバ上の仮想デスクトップを端末から利用する仕組み,ネットワーク・防御
+ISMAP,Information system Security Management and Assessment Program,政府情報システムのためのセキュリティ評価制度（日本）,標準・組織
+SaaS,Software as a Service,ソフトウェアをクラウドサービスとして提供する形態,管理・運用
+PaaS,Platform as a Service,アプリ実行環境などの基盤をクラウドで提供する形態,管理・運用
+IaaS,Infrastructure as a Service,サーバやストレージなどのインフラをクラウドで提供する形態,管理・運用
