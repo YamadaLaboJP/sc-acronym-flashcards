@@ -742,5 +742,17 @@ window.SC_ACRONYMS = [
     "正式名称": "Outbound Port 25 Blocking",
     "一言定義": "自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策",
     "分類": "ネットワーク・防御"
+  },
+  {
+    "略語": "EDNS0",
+    "正式名称": "Extension Mechanisms for DNS (version 0)",
+    "一言定義": "DNSの機能拡張。UDP応答サイズ拡大や追加オプションを可能にする",
+    "分類": "ネットワーク基礎"
+  },
+  {
+    "略語": "RDBMS",
+    "正式名称": "Relational Database Management System",
+    "一言定義": "関係モデルに基づくデータベース管理システム",
+    "分類": "管理・運用"
   }
 ];

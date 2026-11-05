@@ -123,3 +123,5 @@ GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複�
 IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,ネットワーク・防御
 IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,ネットワーク・防御
 OP25B,Outbound Port 25 Blocking,自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策,ネットワーク・防御
+EDNS0,Extension Mechanisms for DNS (version 0),DNSの機能拡張。UDP応答サイズ拡大や追加オプションを可能にする,ネットワーク基礎
+RDBMS,Relational Database Management System,関係モデルに基づくデータベース管理システム,管理・運用
