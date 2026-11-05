@@ -53,6 +53,8 @@
     promptEl.hidden = false;
     promptEl.textContent = message;
     answerEl.hidden = true;
+    categoryEl.hidden = true;
+    categoryEl.textContent = "";
     progressEl.textContent = "データなし";
     noteEl.textContent = "";
     liveEl.textContent = message;
@@ -71,6 +73,7 @@
     acronymEl.textContent = item["略語"];
     formalEl.textContent = item["正式名称"];
     definitionEl.textContent = item["一言定義"];
+    categoryEl.hidden = false;
     categoryEl.textContent = item["分類"];
     answerEl.hidden = !revealed;
     promptEl.hidden = revealed;
@@ -82,8 +85,8 @@
       : "同じ周回では、出た略語は繰り返しません。";
 
     liveEl.textContent = revealed
-      ? item["略語"] + "。正式名称は " + item["正式名称"] + "。" + item["一言定義"] + "。分類は " + item["分類"] + "。"
-      : item["略語"] + "。答えはまだ非表示です。";
+      ? item["略語"] + "。分類は " + item["分類"] + "。正式名称は " + item["正式名称"] + "。" + item["一言定義"]
+      : item["略語"] + "。分類は " + item["分類"] + "。答えはまだ非表示です。";
   }
 
   function reveal() {
