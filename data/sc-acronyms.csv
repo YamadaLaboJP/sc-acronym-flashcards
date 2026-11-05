@@ -19,30 +19,30 @@ CPE,Common Platform Enumeration,製品・プラットフォームを表す共通
 XCCDF,eXtensible Configuration Checklist Description Format,セキュリティ設定チェックリストを書くための形式,SCAP
 OVAL,Open Vulnerability and Assessment Language,脆弱性や設定状態の検査方法を書く言語,SCAP
 JVN,Japan Vulnerability Notes,日本の脆弱性対策情報ポータル,SCAP
-AES,Advanced Encryption Standard,現在標準の共通鍵ブロック暗号,暗号・認証
-RSA,Rivest–Shamir–Adleman,素因数分解の難しさを利用した公開鍵暗号,暗号・認証
-ECC,Elliptic Curve Cryptography,楕円曲線を使う公開鍵暗号。短い鍵で高い強度が出る,暗号・認証
-SHA,Secure Hash Algorithm,安全なハッシュ関数のシリーズ（SHA-2、SHA-3など）,暗号・認証
-HMAC,Hash-based Message Authentication Code,ハッシュ関数を使うメッセージ認証コード,暗号・認証
-PKI,Public Key Infrastructure,公開鍵証明書で信頼を成り立たせる基盤,暗号・認証
-CA,Certificate Authority,デジタル証明書を発行する認証局,暗号・認証
-RA,Registration Authority,証明書申請者の本人確認を行う登録局,暗号・認証
-CRL,Certificate Revocation List,失効した証明書の一覧,暗号・認証
-OCSP,Online Certificate Status Protocol,証明書が失効していないかをその場で確認するプロトコル,暗号・認証
-TLS,Transport Layer Security,通信を暗号化するプロトコル（SSLの後継）,暗号・認証
-HSM,Hardware Security Module,暗号鍵を安全に保管・処理する専用ハードウェア,暗号・認証
-MFA,Multi-Factor Authentication,複数の要素を組み合わせる多要素認証,暗号・認証
-OTP,One-Time Password,一度だけ使えるパスワード,暗号・認証
-TOTP,Time-based One-Time Password,時刻をもとに生成するOTP,暗号・認証
-SSO,Single Sign-On,1回の認証で複数のサービスを使えるしくみ,暗号・認証
-SAML,Security Assertion Markup Language,XMLで認証情報を受け渡すSSOの標準,暗号・認証
-OAuth,Open Authorization,権限の委譲（認可）を行う標準,暗号・認証
-OIDC,OpenID Connect,OAuth 2.0の上で認証を行うしくみ,暗号・認証
-FIDO,Fast IDentity Online,パスワードを使わない認証の標準,暗号・認証
-Kerberos,Kerberos,チケットを使うネットワーク認証方式,暗号・認証
-LDAP,Lightweight Directory Access Protocol,ディレクトリサービスへのアクセス用プロトコル,暗号・認証
-RADIUS,Remote Authentication Dial-In User Service,ネットワークの認証・認可・課金（UDP）,暗号・認証
-TACACS+,Terminal Access Controller Access-Control System Plus,AAAを個別に扱い通信全体を暗号化する（TCP）,暗号・認証
+AES,Advanced Encryption Standard,現在標準の共通鍵ブロック暗号,暗号
+RSA,Rivest–Shamir–Adleman,素因数分解の難しさを利用した公開鍵暗号,暗号
+ECC,Elliptic Curve Cryptography,楕円曲線を使う公開鍵暗号。短い鍵で高い強度が出る,暗号
+SHA,Secure Hash Algorithm,安全なハッシュ関数のシリーズ（SHA-2、SHA-3など）,暗号
+HMAC,Hash-based Message Authentication Code,ハッシュ関数を使うメッセージ認証コード,暗号
+PKI,Public Key Infrastructure,公開鍵証明書で信頼を成り立たせる基盤,暗号
+CA,Certificate Authority,デジタル証明書を発行する認証局,暗号
+RA,Registration Authority,証明書申請者の本人確認を行う登録局,暗号
+CRL,Certificate Revocation List,失効した証明書の一覧,暗号
+OCSP,Online Certificate Status Protocol,証明書が失効していないかをその場で確認するプロトコル,暗号
+TLS,Transport Layer Security,通信を暗号化するプロトコル（SSLの後継）,暗号
+HSM,Hardware Security Module,暗号鍵を安全に保管・処理する専用ハードウェア,暗号
+MFA,Multi-Factor Authentication,複数の要素を組み合わせる多要素認証,認証・認可
+OTP,One-Time Password,一度だけ使えるパスワード,認証・認可
+TOTP,Time-based One-Time Password,時刻をもとに生成するOTP,認証・認可
+SSO,Single Sign-On,1回の認証で複数のサービスを使えるしくみ,認証・認可
+SAML,Security Assertion Markup Language,XMLで認証情報を受け渡すSSOの標準,認証・認可
+OAuth,Open Authorization,権限の委譲（認可）を行う標準,認証・認可
+OIDC,OpenID Connect,OAuth 2.0の上で認証を行うしくみ,認証・認可
+FIDO,Fast IDentity Online,パスワードを使わない認証の標準,認証・認可
+Kerberos,Kerberos,チケットを使うネットワーク認証方式,認証・認可
+LDAP,Lightweight Directory Access Protocol,ディレクトリサービスへのアクセス用プロトコル,認証・認可
+RADIUS,Remote Authentication Dial-In User Service,ネットワークの認証・認可・課金（UDP）,認証・認可
+TACACS+,Terminal Access Controller Access-Control System Plus,AAAを個別に扱い通信全体を暗号化する（TCP）,認証・認可
 WAF,Web Application Firewall,Webアプリへの攻撃を防ぐファイアウォール,ネットワーク・防御
 IDS,Intrusion Detection System,侵入を検知するシステム,ネットワーク・防御
 IPS,Intrusion Prevention System,侵入を検知して遮断するシステム,ネットワーク・防御
@@ -51,17 +51,17 @@ DMZ,DeMilitarized Zone,内部と外部の間に置く公開サーバ用の緩衝
 VPN,Virtual Private Network,暗号化して作る仮想的な専用線,ネットワーク・防御
 IPsec,IP Security,IP層で暗号化と認証を行うプロトコル,ネットワーク・防御
 SSH,Secure Shell,暗号化されたリモートログイン,ネットワーク・防御
-SIEM,Security Information and Event Management,ログを集めて相関分析し脅威を見つけるしくみ,ネットワーク・防御
-SOC,Security Operation Center,セキュリティを常時監視する組織,ネットワーク・防御
-EDR,Endpoint Detection and Response,端末上の脅威を検知して対応する製品,ネットワーク・防御
-NDR,Network Detection and Response,ネットワーク通信を分析して脅威を検知・対応する製品,ネットワーク・防御
-NDR,Non-Delivery Report,メールの配送不能通知（バウンスメール）,ネットワーク基礎
-XDR,Extended Detection and Response,端末・ネットワーク・クラウドなどを横断して検知・対応する製品,ネットワーク・防御
-SOAR,Security Orchestration Automation and Response,セキュリティ運用を自動化・連携させるしくみ,ネットワーク・防御
+SIEM,Security Information and Event Management,ログを集めて相関分析し脅威を見つけるしくみ,監視・対応
+SOC,Security Operation Center,セキュリティを常時監視する組織,監視・対応
+EDR,Endpoint Detection and Response,端末上の脅威を検知して対応する製品,監視・対応
+NDR,Network Detection and Response,ネットワーク通信を分析して脅威を検知・対応する製品,監視・対応
+NDR,Non-Delivery Report,メールの配送不能通知（バウンスメール）,電子メール
+XDR,Extended Detection and Response,端末・ネットワーク・クラウドなどを横断して検知・対応する製品,監視・対応
+SOAR,Security Orchestration Automation and Response,セキュリティ運用を自動化・連携させるしくみ,監視・対応
 DNSSEC,DNS Security Extensions,DNSの応答に署名して改ざんを防ぐ拡張,ネットワーク・防御
-SPF,Sender Policy Framework,送信元IPアドレスでメール送信ドメインを認証する方式,ネットワーク・防御
-DKIM,DomainKeys Identified Mail,電子署名でメールの送信ドメインを認証する方式,ネットワーク・防御
-DMARC,Domain-based Message Authentication Reporting and Conformance,SPF/DKIMの結果に基づく処理方針と報告のしくみ,ネットワーク・防御
+SPF,Sender Policy Framework,送信元IPアドレスでメール送信ドメインを認証する方式,電子メール
+DKIM,DomainKeys Identified Mail,電子署名でメールの送信ドメインを認証する方式,電子メール
+DMARC,Domain-based Message Authentication Reporting and Conformance,SPF/DKIMの結果に基づく処理方針と報告のしくみ,電子メール
 ゼロトラスト,Zero Trust,何も信頼せずアクセスのたびに検証する考え方,ネットワーク・防御
 CASB,Cloud Access Security Broker,クラウドサービスの利用を可視化・制御するしくみ,ネットワーク・防御
 SASE,Secure Access Service Edge,ネットワークとセキュリティ機能をクラウドで一体提供する構成,ネットワーク・防御
@@ -79,7 +79,7 @@ DDoS,Distributed Denial of Service,多数の拠点から行う分散型DoS攻撃
 APT,Advanced Persistent Threat,特定の標的を長期間ねらう高度な攻撃,脆弱性・攻撃
 MITM,Man-In-The-Middle attack,通信の間に割り込んで盗聴・改ざんする中間者攻撃,脆弱性・攻撃
 C2,Command and Control,感染端末に指令を出す攻撃者のサーバ,脆弱性・攻撃
-BEC,Business Email Compromise,取引先などになりすまして送金させるビジネスメール詐欺,脆弱性・攻撃
+BEC,Business Email Compromise,取引先などになりすまして送金させるビジネスメール詐欺,電子メール
 BCP,Business Continuity Plan,災害や障害が起きても事業を続けるための計画,管理・運用
 RTO,Recovery Time Objective,目標復旧時間。どれだけ早く復旧するかの目標,管理・運用
 RPO,Recovery Point Objective,目標復旧時点。どの時点までのデータを取り戻すかの目標,管理・運用
@@ -106,24 +106,24 @@ NTP,Network Time Protocol,時刻を同期するプロトコル,ネットワー�
 HTTP,HyperText Transfer Protocol,Webページをやり取りするプロトコル,ネットワーク基礎
 HTTPS,HTTP Secure,TLSで暗号化したHTTP,ネットワーク基礎
 FTP,File Transfer Protocol,ファイル転送用のプロトコル,ネットワーク基礎
-SMTP,Simple Mail Transfer Protocol,メールを送信・転送するプロトコル,ネットワーク基礎
-POP,Post Office Protocol,メールをサーバから取り出すプロトコル,ネットワーク基礎
-IMAP,Internet Message Access Protocol,メールをサーバ上で管理・閲覧するプロトコル,ネットワーク基礎
+SMTP,Simple Mail Transfer Protocol,メールを送信・転送するプロトコル,電子メール
+POP,Post Office Protocol,メールをサーバから取り出すプロトコル,電子メール
+IMAP,Internet Message Access Protocol,メールをサーバ上で管理・閲覧するプロトコル,電子メール
 MACアドレス,Media Access Control address,ネットワークインタフェース固有のハードウェアアドレス,ネットワーク基礎
 NetBIOS,Network Basic Input/Output System,Windowsなどで使われた名前解決・通信の仕組み,ネットワーク基礎
 NetBEUI,NetBIOS Extended User Interface,NetBIOS向けの古いローカルネットワーク用プロトコル,ネットワーク基礎
 VLAN,Virtual LAN,物理ネットワークを論理的に分割する仕組み,ネットワーク基礎
 MTU,Maximum Transmission Unit,1回に送れる最大パケットサイズ,ネットワーク基礎
 TTL,Time To Live,パケットが破棄されるまでのホップ数などの寿命,ネットワーク基礎
-MUA,Mail User Agent,利用者がメールの作成・閲覧に使うクライアント,ネットワーク基礎
-MSA,Mail Submission Agent,利用者が送信したメールを受け取りMTAへ渡す送信受付役,ネットワーク基礎
-MTA,Mail Transfer Agent,メールをサーバ間で転送するソフトウェア,ネットワーク基礎
+MUA,Mail User Agent,利用者がメールの作成・閲覧に使うクライアント,電子メール
+MSA,Mail Submission Agent,利用者が送信したメールを受け取りMTAへ渡す送信受付役,電子メール
+MTA,Mail Transfer Agent,メールをサーバ間で転送するソフトウェア,電子メール
 BOF,Buffer Overflow,バッファの境界を超えて書き込みメモリを破壊する攻撃手法,脆弱性・攻撃
-SASL,Simple Authentication and Security Layer,アプリケーションに認証機能を載せる枠組み,暗号・認証
-GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,暗号・認証
-IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,ネットワーク・防御
-IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,ネットワーク・防御
-OP25B,Outbound Port 25 Blocking,自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策,ネットワーク・防御
+SASL,Simple Authentication and Security Layer,アプリケーションに認証機能を載せる枠組み,認証・認可
+GSSAPI,Generic Security Service Application Program Interface,Kerberosなど複数の認証機構を共通APIで扱う仕様（GSS-API）,認証・認可
+IIM,Identified Internet Mail,Ciscoのメール署名方式。DomainKeysと合流してDKIMの基盤になった,電子メール
+IP25B,Inbound Port 25 Blocking,他社ISPの動的IPから自社メールサーバへのSMTP（25番）着信を制限するスパム対策,電子メール
+OP25B,Outbound Port 25 Blocking,自社ISPの動的IPから外部メールサーバへのSMTP（25番）送信を制限するスパム対策,電子メール
 EDNS0,Extension Mechanisms for DNS (version 0),DNSの機能拡張。UDP応答サイズ拡大や追加オプションを可能にする,ネットワーク基礎
 RDBMS,Relational Database Management System,関係モデルに基づくデータベース管理システム,管理・運用
 PMI,Project Management Institute,プロジェクトマネジメント協会。PMPなど資格・標準の策定団体,標準・組織
