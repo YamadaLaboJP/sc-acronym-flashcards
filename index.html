@@ -53,9 +53,16 @@
 
           <div class="actions">
             <button type="submit" class="btn primary" id="start">スタート</button>
+            <button type="button" class="btn secondary" id="speak">読み上げ</button>
             <button type="button" class="btn secondary" id="glossary">用語一覧</button>
           </div>
         </form>
+      </section>
+
+      <section id="speak-view" class="panel speak-view" hidden>
+        <h2 class="speak-title">読み上げモード</h2>
+        <p class="speak-status">読み上げ中</p>
+        <button type="button" class="speak-stop" id="speak-stop">停止</button>
       </section>
 
       <section id="quiz" class="panel" hidden>

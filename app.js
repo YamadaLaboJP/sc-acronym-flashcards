@@ -2,10 +2,13 @@
   const homeEl = document.getElementById("home");
   const quizEl = document.getElementById("quiz");
   const listEl = document.getElementById("list");
+  const speakViewEl = document.getElementById("speak-view");
+  const mastEl = document.querySelector(".mast");
   const setupEl = document.getElementById("setup");
   const categorySelect = document.getElementById("category");
   const homeErrorEl = document.getElementById("home-error");
   const startBtn = document.getElementById("start");
+  const speakBtn = document.getElementById("speak");
   const glossaryBtn = document.getElementById("glossary");
   const backLink = document.getElementById("back-link");
   const cardEl = document.getElementById("card");
@@ -27,6 +30,13 @@
   let revealed = false;
   let ready = false;
   let view = "home";
+  let japaneseVoice = null;
+  let speakItems = [];
+  let speakCursor = 0;
+  let speakOrder = "random";
+  let speakToken = 0;
+  let speakTimer = 0;
+  let wakeLock = null;
 
   function compareAcronym(a, b) {
     return String(a["略語"]).localeCompare(String(b["略語"]), "en", { sensitivity: "base" });
@@ -92,13 +102,134 @@
     homeEl.hidden = name !== "home";
     quizEl.hidden = name !== "quiz";
     listEl.hidden = name !== "list";
-    backLink.hidden = name === "home";
+    speakViewEl.hidden = name !== "speak";
+    mastEl.hidden = name === "speak";
+    backLink.hidden = name === "home" || name === "speak";
     document.body.classList.toggle("is-live", name === "quiz" && ready);
     document.body.classList.toggle("is-list", name === "list");
     if (name === "home") {
       ready = false;
       progressEl.textContent = deck.length ? deck.length + "語" : "";
     }
+  }
+
+  function refreshVoices() {
+    if (!window.speechSynthesis || !window.speechSynthesis.getVoices) return;
+    const voices = window.speechSynthesis.getVoices() || [];
+    const japanese = voices.filter(function (voice) {
+      return (voice.lang || "").toLowerCase().replace("_", "-").indexOf("ja") === 0;
+    });
+    japaneseVoice = japanese.filter(function (voice) {
+      return voice.lang === "ja-JP" || voice.lang === "ja_JP";
+    })[0] || japanese[0] || null;
+  }
+
+  function clearSpeakTimer() {
+    if (!speakTimer) return;
+    window.clearTimeout(speakTimer);
+    speakTimer = 0;
+  }
+
+  function releaseWakeLock() {
+    if (!wakeLock) return;
+    const current = wakeLock;
+    wakeLock = null;
+    current.release().catch(function () {});
+  }
+
+  function stopSpeaking() {
+    speakToken += 1;
+    clearSpeakTimer();
+    releaseWakeLock();
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+  }
+
+  function requestWakeLock() {
+    if (!navigator.wakeLock || !navigator.wakeLock.request) return;
+    navigator.wakeLock.request("screen").then(function (lock) {
+      if (view !== "speak") {
+        lock.release().catch(function () {});
+        return;
+      }
+      wakeLock = lock;
+    }).catch(function () {});
+  }
+
+  function speakPhrase(text, token, done) {
+    const synth = window.speechSynthesis;
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = "ja-JP";
+    if (japaneseVoice) utter.voice = japaneseVoice;
+    let finished = false;
+    function finish(event) {
+      if (finished || token !== speakToken || view !== "speak") return;
+      if (event && event.type === "error" && (event.error === "interrupted" || event.error === "canceled" || event.error === "cancelled")) return;
+      finished = true;
+      done();
+    }
+    utter.onend = finish;
+    utter.onerror = finish;
+    synth.speak(utter);
+  }
+
+  function speakStep(token, phase) {
+    if (token !== speakToken || view !== "speak") return;
+    const item = speakItems[speakCursor];
+    if (!item) return;
+    const phrase = phase === 0
+      ? item["分類"]
+      : phase === 1
+        ? item["略語"] + "、" + item["正式名称"]
+        : item["一言定義"];
+    const gap = phase === 0 ? 1000 : phase === 1 ? 2000 : 3000;
+    speakPhrase(phrase, token, function () {
+      speakTimer = window.setTimeout(function () {
+        speakTimer = 0;
+        if (token !== speakToken || view !== "speak") return;
+        if (phase < 2) speakStep(token, phase + 1);
+        else speakAdvance(token);
+      }, gap);
+    });
+  }
+
+  function speakAdvance(token) {
+    if (token !== speakToken || view !== "speak") return;
+    const previous = speakItems[speakCursor];
+    if (speakCursor + 1 >= speakItems.length) {
+      if (speakOrder === "random") speakItems = shuffle(speakItems, previous);
+      speakCursor = 0;
+    } else {
+      speakCursor += 1;
+    }
+    speakStep(token, 0);
+  }
+
+  function startSpeaking() {
+    const items = filteredItems();
+    if (!items.length) {
+      showView("home");
+      showError("該当する用語がありません");
+      return;
+    }
+    if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") {
+      showView("home");
+      showError("このブラウザでは読み上げできません");
+      return;
+    }
+    clearError();
+    refreshVoices();
+    speakToken += 1;
+    clearSpeakTimer();
+    speakOrder = selectedOrder();
+    speakItems = speakOrder === "abc" ? sortAbc(items) : shuffle(items, null);
+    speakCursor = 0;
+    const token = speakToken;
+    showView("speak");
+    liveEl.textContent = "読み上げ中";
+    speakStep(token, 0);
+    requestWakeLock();
   }
 
   function fillCategories() {
@@ -277,6 +408,7 @@
   }
 
   function showHome() {
+    stopSpeaking();
     clearError();
     showView("home");
     liveEl.textContent = "";
@@ -300,6 +432,18 @@
     event.preventDefault();
     event.stopPropagation();
     showGlossary();
+  });
+
+  speakBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    startSpeaking();
+  });
+
+  speakViewEl.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (view === "speak") showHome();
   });
 
   categorySelect.addEventListener("change", clearError);
@@ -329,11 +473,16 @@
 
   fillCategories();
   showView("home");
+  if (window.speechSynthesis) {
+    refreshVoices();
+    window.speechSynthesis.addEventListener("voiceschanged", refreshVoices);
+  }
 
   if (!deck.length) {
     showError("用語データを読み込めませんでした。");
     startBtn.disabled = true;
     glossaryBtn.disabled = true;
+    speakBtn.disabled = true;
     return;
   }
 
@@ -344,5 +493,6 @@
     showError("用語データの列が足りません。");
     startBtn.disabled = true;
     glossaryBtn.disabled = true;
+    speakBtn.disabled = true;
   }
 })();
