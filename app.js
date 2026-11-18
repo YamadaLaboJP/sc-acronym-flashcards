@@ -161,6 +161,7 @@
     const synth = window.speechSynthesis;
     const utter = new SpeechSynthesisUtterance(text);
     utter.lang = "ja-JP";
+    utter.rate = 1.3;
     if (japaneseVoice) utter.voice = japaneseVoice;
     let finished = false;
     function finish(event) {
@@ -181,8 +182,8 @@
     const phrase = phase === 0
       ? item["分類"]
       : phase === 1
-        ? item["略語"] + "、" + item["正式名称"]
-        : item["一言定義"];
+        ? (item["よみがな"] || item["略語"]) + "、" + item["正式名称"]
+        : (item["読み上げ解説"] || item["一言定義"]);
     const gap = phase === 0 ? 1000 : phase === 1 ? 2000 : 3000;
     speakPhrase(phrase, token, function () {
       speakTimer = window.setTimeout(function () {
